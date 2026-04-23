@@ -1,0 +1,8 @@
+.DS_Store
+.omx/logs/
+.omx/state/
+.omx/*.pid
+.omx/hud-config.json
+.omx/metrics.json
+.omx/setup-scope.json
+.omx/tmux-hook.json

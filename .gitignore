@@ -6,3 +6,5 @@
 .omx/metrics.json
 .omx/setup-scope.json
 .omx/tmux-hook.json
+.omx/reports/
+.omx/team/

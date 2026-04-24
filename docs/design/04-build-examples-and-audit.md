@@ -1,21 +1,178 @@
 # 04 Build Examples and Audit
 
-状态：Phase 5 scaffold only  
-Owner：worker-6
+状态：Phase 4.5 / Phase 5 审计框架已就位，等待 Phase 2–4 定稿输入  
+Owner：worker-6  
+Schema source：`docs/design/00-rule-bible.md`
 
-## Required fantasy build checks
-- 扫地僧型：TBD
-- 独臂剑侠型：TBD
-- 琴魔型：TBD
-- 白衣琴医型：TBD
-- 黑衣刺客型：TBD
-- 铁枪护法型：TBD
-- 毒医圣手型：TBD
-- 机关奇人型：TBD
+> 本文件只定义 school coherence / build audit / compile intake 的执行框架与示例构筑审计模板。除“已冻结基线”外，任何具体主修 / 旁修 / 传承组合都仅是**审计假设**，不构成 canon 定版。
 
-## Audit checklist
-- 纯主修可行性：TBD
-- 混修身份完整性：TBD
-- 低魔边界：TBD
-- mandatory tax pick 检查：TBD
-- placeholder hidden dependency 检查：TBD
+## Entry gate（进入本文件执行前必须满足）
+1. `docs/design/01-main-disciplines.md` 已完成 8 个主修的 5 字段填写。
+2. `docs/design/03-side-studies-and-loadout.md` 已完成 8 个流派旁修 1/2/3 与精修统一回报。
+3. `docs/design/02-inheritances.md` 已完成全部 24 个传承的 7 字段填写。
+4. 所有 school coherence 输入都仍遵守：
+   - `LOADOUT_INTERFACE_PENDING`
+   - `MERIDIAN_SLOT_COUNT_PENDING`
+   - `SLOT_PRESSURE_ASSUMPTION_ONLY`
+5. 任一 school 若拿不出“主修 + 旁修/精修 + 3 个传承”的完整组合视图，不得进入 Phase 4.5 / 5。
+
+## Current upstream status
+- `01-main-disciplines.md`：scaffold only
+- `03-side-studies-and-loadout.md`：scaffold only
+- `02-inheritances.md`：scaffold only
+- 结论：**当前仅可完成审计框架与红线预埋；不可提前宣告任何 school / build 通过。**
+
+## Audit assumptions（冻结前提）
+- 审计以“低魔武侠 CRPG”边界为最高约束。
+- 审计默认构筑哲学为 **主修主导型**。
+- 审计必须同时覆盖：纯主修可行性、混修身份完整性、低魔边界、mandatory tax pick、placeholder hidden dependency。
+- 任何涉及槽位 / 运功位 / loadout 的判断，都只能写成：
+  - `LOADOUT_INTERFACE_PENDING`
+  - `MERIDIAN_SLOT_COUNT_PENDING`
+  - `SLOT_PRESSURE_ASSUMPTION_ONLY`
+- 若某 build 的成立需要具体槽位数量，默认判为 **BLOCK**，返回上游修正。
+
+## School coherence checkpoint（Phase 4.5）
+
+### 审核问题（每校都必须回答）
+1. 这门主修是否先天成立，不靠旁修补闭环？
+2. 三个传承是否读起来像同门分支，而不是三个互不相干的职业？
+3. 三个传承彼此是否通过**功能职责 / 动作结构 / 资源关系 / 招牌机制**形成清晰边界？
+4. 旁修表达是否强化该 school 的打法展开，而不是偷走身份？
+5. 精修是否只是在“练深”，而不是伪装成第二传承？
+6. 是否存在任何低魔越界或对未冻结 loadout 规则的隐藏依赖？
+
+### Verdict vocabulary
+- **PASS**：school 身份清晰，可进入 Build Audit。
+- **REVISE**：school 主体可用，但存在可修正的边界重叠 / 表达漂移。
+- **BLOCK**：school 结构冲突严重，进入 Build Audit 会放大错误。
+
+### School coherence worksheet
+| School | 家族感检查 | 传承分化检查 | 旁修侵蚀检查 | 低魔边界检查 | 当前状态 |
+|---|---|---|---|---|---|
+| 游锋 | 是否仍是近身兵刃节奏 / 游斗 / 反击家族 | 连锋 / 断势 / 藏锋 是否通过节奏与破绽处理分化 | 是否吞掉破军或影踪 | 是否出现超自然瞬移式表达 | Pending upstream |
+| 破军 | 是否仍是冲阵 / 阵线改写家族 | 冲阵 / 守阵 / 震岳 是否按阵线职责分化 | 是否被旁修改写成纯单挑爆发 | 是否出现超规格范围压制 | Pending upstream |
+| 拳掌 | 是否仍是贴身控制 / 经脉干预家族 | 点穴 / 擒拿 / 摧心 是否按控制方式分化 | 是否被旁修补成万能近战 | 是否出现玄幻式隔空封脉 | Pending upstream |
+| 射艺 | 是否仍是视野 / 距离 / 投射家族 | 穿杨 / 连珠 / 猎踪 是否按射击节奏与标记方式分化 | 是否被旁修改成远程法术炮台 | 是否出现离谱制导 / 法术弹幕 | Pending upstream |
+| 影踪 | 是否仍是隐蔽 / 伏击 / 脱战家族 | 伏杀 / 暗袭 / 设伏 是否按潜入与杀机结构分化 | 是否沦为纯工具人或万能位移 | 是否出现忍法式高魔忍术 | Pending upstream |
+| 药师 | 是否仍是药 / 针 / 毒 / 蛊家族 | 济世 / 针脉 / 蛊毒 是否按治 / 调 / 蚀分化 | 是否被旁修推成万能奶妈 | 是否出现瞬发大复活 / 法术治愈 | Pending upstream |
+| 音律 | 是否仍是节拍 / 心神 / 士气家族 | 战鼓 / 清音 / 魔音 是否按节奏施压方向分化 | 是否只剩 buff 工具功能 | 是否出现法术吟唱职业化 | Pending upstream |
+| 奇门 | 是否仍是阵法 / 机关 / 符禁 / 香术家族 | 阵法 / 机关 / 符禁 是否按局部战场改写手段分化 | 是否被旁修改成泛用解题器 | 是否滑向西幻法师 | Pending upstream |
+
+## Build audit protocol（Phase 5）
+
+### Required checks（每个 build 都跑）
+1. **纯主修可行性**：同主修不靠旁修也能完成核心回合与终局收益。
+2. **混修身份完整性**：旁修/精修改变打法，但不替代主修主体。
+3. **低魔边界**：演出与机制仍落在低魔武侠范围。
+4. **mandatory tax pick**：不存在“没拿某旁修就玩不了”的单点刚需。
+5. **placeholder hidden dependency**：不需要具体 `MERIDIAN_SLOT_COUNT_PENDING` 才能证明成立。
+
+### Outcome vocabulary
+- **PASS**：fantasy 可达成，且不触犯红线。
+- **REVISE**：fantasy 基本成立，但存在边界漂移 / 强绑旁修 / 低魔风险。
+- **BLOCK**：fantasy 依赖未冻结规则或直接破坏主修主导哲学。
+
+## Required fantasy builds（审计样本）
+
+### 1. 扫地僧型
+- 审计目标：验证“纯主修 / 纯精修”也能形成完整宗师路线。
+- 候选主修假设：拳掌 / 药师 / 音律（以最终主修定稿为准）。
+- 必须证明：
+  - 不靠多门旁修也能稳定完成资源循环。
+  - 精修回报体现“练深”而非额外副职业。
+  - 终局强度来自宗师技 + 体系完成奖励，而不是隐形副修。
+- 典型失败信号：必须带某旁修入口才能起手；精修 3 实际上在扮演传承。
+
+### 2. 独臂剑侠型
+- 审计目标：验证游锋系纯主修 / 少量旁修也能支撑残缺而凌厉的武侠幻想。
+- 候选主修假设：游锋。
+- 必须证明：
+  - 主修本体能独立成立，不靠额外副修补连段。
+  - 传承分化不会把“独臂感”偷换成数值补丁。
+  - 旁修若介入，只能放大节奏或身法，不可取代兵刃核心循环。
+- 典型失败信号：必须借拳掌或影踪闭环；游锋被写成万能近战总类。
+
+### 3. 琴魔型
+- 审计目标：验证音律可走压迫 / 扰心 / 节奏控制路线，而不沦为单纯 buff 职。
+- 候选主修假设：音律。
+- 必须证明：
+  - 核心压力来自节拍 / 心神 / 群体节奏，不是法术轰炸。
+  - 魔音 / 战鼓 / 清音 分化后仍是一门“音律武学”。
+  - 混修不会把音律本体降格为战斗外增益器。
+- 典型失败信号：靠高魔精神法术成立；只在队友存在时才有价值。
+
+### 4. 白衣琴医型
+- 审计目标：验证音律 × 药师混修能形成鲜明幻想，但主次分明。
+- 候选表达假设：音律主修 + 药师旁修，或药师主修 + 音律旁修。
+- 必须证明：
+  - 两门体系存在结构接口，但主修主体不被另一门替代。
+  - 治疗 / 稳定 / 节奏表达仍在低魔边界内。
+  - 任何成立条件都不依赖未定 loadout 预算。
+- 典型失败信号：两门都只提供工具效果；没有主次，变成拼盘 support。
+
+### 5. 黑衣刺客型
+- 审计目标：验证影踪能支撑完整刺客 fantasy，而不是单点功能插件。
+- 候选主修假设：影踪。
+- 必须证明：
+  - 伏杀 / 暗袭 / 设伏 都能独立成立且差异明确。
+  - 影踪不靠游锋或射艺才能完成爆发与脱离。
+  - 潜行 / 烟雾 / 视线博弈仍属低魔武侠手段。
+- 典型失败信号：影踪只能服务别的主修；出现超自然消失或长时间无解隐身。
+
+### 6. 铁枪护法型
+- 审计目标：验证破军可走护阵 / 拦截 / 稳线 fantasy，而非只剩冲锋输出。
+- 候选主修假设：破军。
+- 必须证明：
+  - 守阵 / 冲阵 / 震岳 通过阵线职责明显分化。
+  - 纯主修能形成可靠的拦截、护线、位移干预闭环。
+  - 旁修介入后仍不丢失“阵线改变者”身份。
+- 典型失败信号：破军必须借拳掌控制或游锋机动才能成立；被写成泛用重战士。
+
+### 7. 毒医圣手型
+- 审计目标：验证药师既能救人也能害人，但不会塌成万能奶妈或万能 debuff 机。
+- 候选主修假设：药师。
+- 必须证明：
+  - 济世 / 针脉 / 蛊毒 的分化来自药性与施治/施毒方式，而非单纯数值方向。
+  - 治疗、解毒、施毒三者可形成闭环，但不能覆盖一切队伍职责。
+  - 混修不会让药师必绑音律或影踪才能成立。
+- 典型失败信号：药师能同时成为顶级治疗、顶级控制、顶级持续伤害且无代价。
+
+### 8. 机关奇人型
+- 审计目标：验证奇门能改写局部战场规则，但不滑向高魔法师。
+- 候选主修假设：奇门。
+- 必须证明：
+  - 阵法 / 机关 / 符禁 是三种不同的战场改写路径。
+  - 奇门的强度来自布置、触发、诱导，而非无成本法术轰炸。
+  - 与任何旁修组合都不应要求具体槽位数量才能解释成立。
+- 典型失败信号：奇门可直接替代射艺、影踪、药师等多门主修；出现西幻施法词汇或表现。
+
+## Build audit worksheet（执行模板）
+| Build | 主修 | 传承 | 旁修 / 精修假设 | 纯主修可行性 | 混修身份完整性 | 低魔边界 | mandatory tax pick | placeholder dependency | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| 扫地僧型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 独臂剑侠型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 琴魔型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 白衣琴医型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 黑衣刺客型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 铁枪护法型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 毒医圣手型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 机关奇人型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+
+## Cross-system stress checks
+- **Pure-main pressure test**：每个主修都至少有一条不依赖旁修的可玩 build。
+- **Mixed-build pressure test**：至少验证 1 个“单旁修 3 点”与 1 个“双旁修 1+2 / 2+1”表达，但不得越权写死 loadout 数量。
+- **Identity theft sweep**：检查游锋↔破军、游锋↔影踪、药师↔音律、奇门↔全体的生态位吞并。
+- **Low-magic sweep**：禁止出现仙侠飞剑雨、范围法术轰炸、无代价瞬移、万能复活、全图精神控制。
+- **Deferred-interface sweep**：若某审计结论依赖具体槽位数，必须回写 `SLOT_PRESSURE_ASSUMPTION_ONLY` 并标记为 revise/block。
+
+## Compile intake（Phase 6 handoff to compile）
+进入 compile 前，worker-6 需要交付：
+1. 每个 school 的 coherence verdict（PASS / REVISE / BLOCK）。
+2. 8 个 fantasy build 的审计 verdict 与触发原因。
+3. 所有触发过的 redline 编号与对应回修建议。
+4. 明确列出哪些条目仍然受：
+   - `LOADOUT_INTERFACE_PENDING`
+   - `MERIDIAN_SLOT_COUNT_PENDING`
+   - `SLOT_PRESSURE_ASSUMPTION_ONLY`
+5. 明确声明：**未过 gate 的 school / build 不得进入 canon compile。**

@@ -31,8 +31,8 @@
   Expected revision: 增加或改写 archetype 口径，说明草莽帮主 / 丐帮式幻想应先由拳掌或破军主轴、摧心 / 守阵 / 战鼓等倾向、音律或游锋旁修接口、草莽 / 号令 / 护众表现标签成立；帮派身份与具体江湖称号仅作为 deferred 包装，不可倒逼新增流派。
   Pass condition: 读者不借 `出身 / 身份`、不新增 `棍法` 流派，也能解释丐帮帮主型的战斗层；同时不会把“帮主”当作职业根节点。
   Priority: P1
-  Status: open
-  Resolution note:
+  Status: resolved
+  Resolution note: 已在 `docs/design/05-identity-and-archetypes.md` 增加丐帮帮主示例和帮派称谓边界：草莽领袖 / 掌棒 / 号令 / 护众由拳掌、破军、音律、游锋等既有层级解释；丐帮、帮主、打狗棒仅作为表现或 future identity 包装暂存，不新增棍法流派。
 
 - ID: WUX-009
   Source reviewer: worker-1 / Senior Wuxia Fan
@@ -41,8 +41,8 @@
   Expected revision: 在角色形象层增加边界说明：非战斗陪伴、侦查氛围、NPC 叙事可作为表现标签暂存；任何能在战斗中独立侦查、夹击、承伤、触发资源或占用行动经济的兽伴都必须 deferred / escalated 到 future companion system，不能由本轮传承或旁修偷渡解决。
   Pass condition: `驭鹰孤侠型` 被明确判为“表现标签可 pass，战斗 companion 版本 block/defer”，且不会污染射艺猎踪或影踪主循环。
   Priority: P1
-  Status: open
-  Resolution note:
+  Status: rejected / escalated
+  Resolution note: 已在 `docs/design/05-identity-and-archetypes.md` 增加 companion 边界和驭鹰孤侠示例：非战斗鹰伴可作为表现 / 侦查氛围 / 剧情陪伴；任何独立参战、夹击、承伤、触发资源或占用行动经济的兽伴都 deferred / escalated 到 future companion system，本轮不偷渡进射艺、影踪或奇门。
 
 - ID: WUX-010
   Source reviewer: worker-1 / Senior Wuxia Fan
@@ -51,8 +51,8 @@
   Expected revision: 在不新增流派、不定义最终 loadout 槽位的前提下，为游锋或相关旁修补充“软兵作为兵刃表现”的口径：可用于换位、牵拉、夺械、短控入口或显锋 / 断势窗口，但不能变成奇门法术、远程硬控或 mandatory side-study tax。
   Pass condition: 读者能用现有流派层级解释红绫 / 软鞭 / 绳索女侠，并清楚其战术作用、边界和 counterplay，而不需要新职业根或高魔解释。
   Priority: P1
-  Status: open
-  Resolution note:
+  Status: resolved
+  Resolution note: 已在 `docs/design/01-main-disciplines.md`、`docs/design/02-inheritances.md`、`docs/design/03-side-studies-and-loadout.md` 和 `docs/design/05-identity-and-archetypes.md` 补充软兵 / 红绫口径：软兵作为游锋兵刃表现与旁修接口，提供缠卷、牵拉、夺械、换位、显锋 / 断势窗口；明确不新增软兵职业、不滑向奇门法术或无反制远程硬控。
 
 新 ticket 必须说明它反压的是哪一层：
 - 流派边界；

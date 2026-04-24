@@ -109,3 +109,15 @@
 - `docs/design/00-rule-bible.md` 已冻结 schema 与模板。
 - `docs/working/agent-queue.md` 已定义 worker ownership / non-goals / phase gates。
 - `docs/design/*` 与 `docs/working/*` scaffolds 已建立。
+
+## Downstream kickoff packet
+下游 lane 开工前，必须同时读取以下 3 份文件：
+1. `docs/working/baseline-snapshot.md`
+2. `docs/design/00-rule-bible.md`
+3. `docs/working/agent-queue.md`
+
+若任一内容与旧摘要、个人记忆或其他阶段草稿冲突，处理顺序固定为：
+1. 本快照
+2. `00-rule-bible.md`
+3. `agent-queue.md`
+4. 其余旧文档仅作背景，不得反向覆盖 Phase 0 / 1 冻结结果

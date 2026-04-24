@@ -49,9 +49,9 @@ Owner：all workers; final reader = human / leader
 - Actionable advice for worker-2: No mandatory second rewrite from the currently visible CRPG packet. If new fantasy tickets arrive, resolve them narrowly; preserve fixed 流派, explicit counterplay, 药师 opportunity costs, and placeholder boundaries.
 
 ## 6. worker-2 second canon rewrite
-- Advice accepted: worker-3 found no mandatory CRPG rewrite, but advised narrow resolution if new fantasy tickets arrive; worker-2 resolved WUX-008 and WUX-010 and boundary-marked / escalated WUX-009 without changing fixed 流派 or placeholder contracts.
-- Files changed: `docs/design/01-main-disciplines.md`（游锋 soft-weapon boundary）, `docs/design/02-inheritances.md`（连锋 / 断势 soft-weapon hooks and counterplay）, `docs/design/03-side-studies-and-loadout.md`（游锋旁修 soft-weapon entry/interface/small-loop）, `docs/design/05-identity-and-archetypes.md`（丐帮帮主 / 驭鹰孤侠 / 红绫软兵女侠 examples and companion boundary）, `docs/working/revision-tickets.md`（WUX-008/WUX-010 resolved, WUX-009 rejected / escalated）.
-- Rejected / escalated advice: WUX-009 combat companion version is escalated to future companion system; current round only permits non-combat eagle as role-image / narrative label.
+- Advice accepted: Pending worker-3 CRPG review in the full 1 -> 2 -> 3 -> 2 -> Human sequence.
+- Files changed: Pending post-review rewrite.
+- Rejected / escalated advice: None yet; no worker-3 P0/P1 advice visible in this worktree at rewrite time.
 
 ## 7. worker-1 full regression retest
 - Total pass / revise / block: pending after both worker-2 rewrites

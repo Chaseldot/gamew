@@ -46,3 +46,14 @@
 ## Coordination rule
 - 任何下游 lane 如需修改 Phase 0 / 1 冻结的术语、模板、占位符协议，必须先按上面的 escalation format 追加记录。
 - 允许追加，不允许删除或静默改写既有 accepted / rejected 结论。
+
+## 2026-04-24 — Final compile closure
+
+### Accepted
+1. **All revision tickets resolved before terminal handoff**
+   - Reason: worker-1 landed the final canon rewrite, and worker-2 / worker-3 both re-tested against the updated canon without introducing new blockers.
+   - Downstream impact: final compile checklist can be marked complete, and the team may shut down cleanly after the closure record is committed.
+
+2. **Lore-format finalization commit should summarize the closure state**
+   - Reason: worker auto-checkpoints are useful during the loop, but the final user-facing record should be a single human-readable closure commit.
+   - Downstream impact: preserve the worker checkpoints in history, but land one explicit Lore-formatted final commit that records the terminal decision.

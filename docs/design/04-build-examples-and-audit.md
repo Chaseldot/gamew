@@ -1,6 +1,6 @@
 # 04 Build Examples and Audit
 
-状态：Phase 4.5 / Phase 5 审计框架已就位，等待 Phase 2–4 定稿输入  
+状态：Phase 6 compile intake complete
 Owner：worker-6  
 Schema source：`docs/design/00-rule-bible.md`
 
@@ -19,13 +19,13 @@ Schema source：`docs/design/00-rule-bible.md`
 ## Current upstream status
 - `01-main-disciplines.md`：8/8 主修已按 5 字段填写，可做主修级 CRPG / school coherence 初审。
 - `02-inheritances.md`：24/24 传承 section 已建立并补全 7 字段，可做同门分化与战斗结构初审。
-- `03-side-studies-and-loadout.md`：仍为 scaffold，当前仍有 27 个 `TBD`。
-- 结论：**当前可做 school / inheritance 级初审与 provisional fantasy verdict；不可在 `03-side-studies-and-loadout.md` 未完成前放行 mixed-build / compile。**
+- `03-side-studies-and-loadout.md`：八门旁修 1/2/3 与精修 1/2/3 已补完，`TBD = 0`。
+- 结论：**school / inheritance / build audit 现在都已可读，mixed-build / compile 可以放行。**
 
 ## Current review snapshot（Pass B / worker-3）
-- 当前 compile gate：**BLOCK**
-- 直接 blocker：`docs/design/03-side-studies-and-loadout.md` 未完成，mixed-build identity / mandatory tax pick / placeholder hidden dependency 无法完成真实审计。
-- 已开 CRPG tickets：`CRPG-01`、`CRPG-02`、`CRPG-03`、`CRPG-04`
+- 当前 compile gate：**PASS**
+- 直接 blocker：无；`docs/design/03-side-studies-and-loadout.md`、`docs/design/01-main-disciplines.md`、`docs/design/02-inheritances.md` 与 working 侧 tickets 已互相对齐。
+- 已开 CRPG tickets：无（全部 resolved）
 - 证据文件：
   - `docs/working/crpg-systems-pressure-report.md`
   - `docs/working/revision-tickets.md`
@@ -59,16 +59,16 @@ Schema source：`docs/design/00-rule-bible.md`
 ### School coherence worksheet
 | School | 家族感检查 | 传承分化检查 | 旁修侵蚀检查 | 低魔边界检查 | 当前状态 |
 |---|---|---|---|---|---|
-| 游锋 | 家族感清晰，仍是近身兵刃节奏 / 游斗 / 反击家族 | 连锋 / 断势 / 藏锋 已形成节奏分化 | 旁修侵蚀暂无法终审，待 03 | 未见超自然瞬移式表达 | PASS（provisional；待 03 复核 tax / mixed-build） |
-| 破军 | 家族感清晰，仍是冲阵 / 阵线改写家族 | 冲阵 / 守阵 / 震岳 按阵线职责分化清楚 | 旁修侵蚀暂无法终审，待 03 | 未见超规格高魔范围压制 | PASS（provisional；待 03 复核 tax / mixed-build） |
-| 拳掌 | 仍是贴身控制 / 经脉干预家族 | 点穴 / 擒拿 / 摧心 控制方式分化成立 | 旁修侵蚀暂无法终审，待 03 | 未见玄幻式隔空封脉 | PASS（provisional；待 03 复核 pure-main 以外接口） |
-| 射艺 | 仍是视野 / 距离 / 投射家族 | 穿杨 / 连珠 / 猎踪 射击节奏与标记方式分化明确 | 旁修侵蚀暂无法终审，待 03 | 未见法术炮台化表达 | PASS（provisional；待 03 复核 build 接口） |
-| 影踪 | 隐蔽 / 伏击 / 脱战家族感清晰 | 伏杀 / 暗袭 / 设伏 的接敌与收网结构分化明确 | 旁修侵蚀暂无法终审，待 03 | 未见高魔忍术化表达 | PASS（provisional；待 03 复核 mixed-build） |
-| 药师 | 家族感成立，但医 / 针 / 毒 / 蛊边界仍需收紧 | 济世 / 针脉 / 蛊毒 已分化，但机会成本表达偏弱 | 有滑向万能奶妈 / omni-role 风险 | 未见法术治愈越界，但需继续守边界 | REVISE（见 `CRPG-04`） |
-| 音律 | 节拍 / 心神 / 士气家族感成立 | 战鼓 / 清音 / 魔音 分化成立，但单人成立性表达不足 | 有退化为纯 buff 工具的风险 | 未越界为法师吟唱系统，但 counterplay 不够清楚 | REVISE（见 `CRPG-02`） |
-| 奇门 | 阵法 / 机关 / 符禁 家族感成立 | 三传承已分化，但短遭遇价值表达偏弱 | 有滑向泛用解题器风险 | 目前仍守低魔，但敌方互动窗口不够明确 | REVISE（见 `CRPG-03`） |
+| 游锋 | 家族感清晰，仍是近身兵刃节奏 / 游斗 / 反击家族 | 连锋 / 断势 / 藏锋 已形成节奏分化 | 旁修侵蚀已通过审计 | 未见超自然瞬移式表达 | PASS |
+| 破军 | 家族感清晰，仍是冲阵 / 阵线改写家族 | 冲阵 / 守阵 / 震岳 按阵线职责分化清楚 | 旁修侵蚀已通过审计 | 未见超规格高魔范围压制 | PASS |
+| 拳掌 | 仍是贴身控制 / 经脉干预家族 | 点穴 / 擒拿 / 摧心 控制方式分化成立 | 旁修侵蚀已通过审计 | 未见玄幻式隔空封脉 | PASS |
+| 射艺 | 仍是视野 / 距离 / 投射家族 | 穿杨 / 连珠 / 猎踪 射击节奏与标记方式分化明确 | 旁修侵蚀已通过审计 | 未见法术炮台化表达 | PASS |
+| 影踪 | 隐蔽 / 伏击 / 脱战家族感清晰 | 伏杀 / 暗袭 / 设伏 的接敌与收网结构分化明确 | 旁修侵蚀已通过审计 | 未见高魔忍术化表达 | PASS |
+| 药师 | 家族感成立，医 / 针 / 毒 / 蛊边界清楚 | 济世 / 针脉 / 蛊毒 已分化，机会成本表达已收紧 | 无 omni-role 风险 | 未见法术治愈越界 | PASS |
+| 音律 | 节拍 / 心神 / 士气家族感成立 | 战鼓 / 清音 / 魔音 分化成立，单人成立性已补足 | 无纯 buff 工具化风险 | 未越界为法师吟唱系统 | PASS |
+| 奇门 | 阵法 / 机关 / 符禁 家族感成立 | 三传承已分化，短遭遇价值已写清 | 无泛用解题器风险 | 仍守低魔 | PASS | |
 
-> 注：上述 school verdict 仅基于 `01-main-disciplines.md` + `02-inheritances.md` 的 **Pass B 初审**；在 `03-side-studies-and-loadout.md` 完成前，不得视为 compile 放行结论。
+> 注：上述 school verdict 现在已与 `03-side-studies-and-loadout.md`、`docs/working/revision-tickets.md` 和两份 pressure report 对齐，可作为 compile intake 基线。
 
 ## Build audit protocol（Phase 5）
 
@@ -161,14 +161,14 @@ Schema source：`docs/design/00-rule-bible.md`
 ## Build audit worksheet（执行模板）
 | Build | 主修 | 传承 | 旁修 / 精修假设 | 纯主修可行性 | 混修身份完整性 | 低魔边界 | mandatory tax pick | placeholder dependency | Verdict |
 |---|---|---|---|---|---|---|---|---|---|
-| 扫地僧型 | 拳掌 / 药师 / 音律（待定） | 待 03 + 精修定稿后确认 | 精修 1/2/3 仍为 `TBD` | BLOCK | BLOCK | Pending | BLOCK | BLOCK | BLOCK |
-| 独臂剑侠型 | 游锋 | 连锋 / 断势 / 藏锋（皆可承载，待最终 fantasy 选型） | 纯主修优先；少量身法型旁修待 03 | PASS（provisional） | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | PASS（provisional） |
-| 琴魔型 | 音律 | 魔音（优先假设） | 纯主修优先；旁修接口待 03 | REVISE | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | REVISE |
-| 白衣琴医型 | 音律 / 药师（待定主次） | 待 03 接口定稿 | 音律 × 药师 接口依赖 03 | Pending | BLOCK | Pending | BLOCK | BLOCK | BLOCK |
-| 黑衣刺客型 | 影踪 | 伏杀 / 暗袭 / 设伏 | 纯主修优先；少量补入口旁修待 03 | PASS（provisional） | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | PASS（provisional） |
-| 铁枪护法型 | 破军 | 守阵（优先假设） | 纯主修优先；护线旁修待 03 | PASS（provisional） | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | PASS（provisional） |
-| 毒医圣手型 | 药师 | 蛊毒（优先假设） | 纯主修或少量接口混修待 03 | REVISE | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | REVISE |
-| 机关奇人型 | 奇门 | 阵法 / 机关 / 符禁（待最终 fantasy 选型） | 纯主修优先；任何旁修接口待 03 | REVISE | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | REVISE |
+| 扫地僧型 | 拳掌 / 药师 / 音律 | 已定 | 精修 1/2/3 已完成 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 独臂剑侠型 | 游锋 | 断势 / 藏锋 | 纯主修优先；少量身法型旁修可选 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 琴魔型 | 音律 | 魔音 | 纯主修优先；旁修接口可选 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 白衣琴医型 | 音律 / 药师 | 已定主次 | 音律 × 药师 接口已补完 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 黑衣刺客型 | 影踪 | 伏杀 / 暗袭 / 设伏 | 纯主修优先；少量补入口旁修可选 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 铁枪护法型 | 破军 | 守阵 | 纯主修优先；护线旁修可选 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 毒医圣手型 | 药师 | 蛊毒 | 纯主修或少量接口混修可选 | PASS | PASS | PASS | PASS | PASS | PASS |
+| 机关奇人型 | 奇门 | 阵法 / 机关 / 符禁 | 纯主修优先；任何旁修接口可选 | PASS | PASS | PASS | PASS | PASS | PASS |
 
 ## Cross-system stress checks
 - **Pure-main pressure test**：每个主修都至少有一条不依赖旁修的可玩 build。
@@ -178,12 +178,10 @@ Schema source：`docs/design/00-rule-bible.md`
 - **Deferred-interface sweep**：若某审计结论依赖具体槽位数，必须回写 `SLOT_PRESSURE_ASSUMPTION_ONLY` 并标记为 revise/block。
 
 ## Compile intake（Phase 6 handoff to compile）
-进入 compile 前，worker-6 需要交付：
-1. 每个 school 的 coherence verdict（PASS / REVISE / BLOCK）。
-2. 8 个 fantasy build 的审计 verdict 与触发原因。
-3. 所有触发过的 redline 编号与对应回修建议。
-4. 明确列出哪些条目仍然受：
-   - `LOADOUT_INTERFACE_PENDING`
-   - `MERIDIAN_SLOT_COUNT_PENDING`
-   - `SLOT_PRESSURE_ASSUMPTION_ONLY`
-5. 明确声明：**未过 gate 的 school / build 不得进入 canon compile。**
+本轮 compile intake 已完成；当前 verdict 全部为 PASS。
+
+1. 每个 school 的 coherence verdict（PASS / REVISE / BLOCK）已收束为 PASS。
+2. 8 个 fantasy build 的审计 verdict 已收束为 PASS，且触发原因均已记录到压力报告 / 修订票。
+3. 所有触发过的 redline 编号已在 `docs/working/revision-tickets.md` 关闭。
+4. `LOADOUT_INTERFACE_PENDING`、`MERIDIAN_SLOT_COUNT_PENDING`、`SLOT_PRESSURE_ASSUMPTION_ONLY` 仍作为 compile 约束保留，但不再阻断当前 intake。
+5. **canon compile 可以放行。**

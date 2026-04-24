@@ -1,8 +1,8 @@
-# Agent Queue — Wuxia Systems Iteration Loop
+# Agent Queue — Human-Gated Wuxia Fantasy Iteration Loop
 
 日期：2026-04-24  
-状态：iteration-loop ready after layer hierarchy override
-负责人：leader / 3-agent finish loop
+状态：ready for 1→2→3→2→human cumulative loop
+负责人：leader / 3-agent human-gated loop
 
 ## 全局规则
 - 所有 lane 只写自己拥有的文件 / section。
@@ -11,47 +11,50 @@
 - “职业名”只能作为组合结果，不得作为系统根节点。
 - 不得把 `LOADOUT_INTERFACE_PENDING` / `MERIDIAN_SLOT_COUNT_PENDING` / `SLOT_PRESSURE_ASSUMPTION_ONLY` 升格为最终规则。
 - 共享规则冲突先上报，不得 silent edit。
-- 当前阶段采用 **1 writer + 2 reviewers loop**：一个 canon writer 负责改 canon；两个 reviewer 负责施压、开 ticket、复测。Reviewer 的意见必须转成可执行 ticket，不能直接漂移 canon。
-- 武侠幻想 reviewer 可以不断提出幻想来反压设计，但必须受 loop exit 条件约束，不能无限扩张。
+- 当前阶段采用 **1→2→3→2→human loop**：worker-1 负责新增幻想与累计测试；worker-2 是唯一 canon writer；worker-3 负责资深 CRPG / 游戏设计取舍；最后交给 human gate。
+- worker-1 每轮必须自行新增 **3-5 个幻想**；human 新增幻想不计入这个数量。
+- 每轮都必须全量复测累计幻想测试集，测试集只增不减，除非 human 明确删除。
 
 ## Lane Map
 
-### worker-1 — Canon Systems Designer
+### worker-1 — Senior Wuxia Fan / Fantasy Tester
+**Owned files**
+- `docs/working/fantasy-test-suite.md`
+- `docs/working/wuxia-fantasy-pressure-report.md`
+- append-only ticket entries in `docs/working/revision-tickets.md`
+- fantasy sections in `docs/working/round-report-latest.md`
+
+**Deliverables**
+- 每轮新增 3-5 个 worker-origin 幻想
+- 把 human 上轮新增幻想加入累计测试集
+- 全量测试累计幻想测试集
+- 对 revise/block/P0/P1 创建可执行 ticket
+- 二次返修后再次全量复测
+
+**Non-goals**
+- 不直接改 canon
+- 不把 human 幻想计入 3-5 个新增幻想 quota
+- 不用泛 CRPG 可玩性替代武侠味
+
+### worker-2 — Canon Systems Designer
 **Owned files**
 - `docs/design/01-main-disciplines.md`
 - `docs/design/02-inheritances.md`
 - `docs/design/03-side-studies-and-loadout.md`
 - `docs/design/05-identity-and-archetypes.md`
-- append-only escalation entries in `docs/working/decision-log.md`
+- append-only ticket resolutions in `docs/working/revision-tickets.md`
+- canon sections in `docs/working/round-report-latest.md`
 
 **Deliverables**
-- 根据 reviewer ticket 定向修订主修 / 流派说明、传承、旁修、角色形象
-- 维持流派固定、传承可迭代、低魔边界
-- 保证“武僧 / 琴魔 / 毒医 / 侠盗”等是组合结果，不是职业根节点
-- 维持当前版本保留传承的等深；若要改 24-set，先走 decision escalation
+- 根据 worker-1 ticket 做第一次 canon rewrite
+- 根据 worker-3 设计建议做第二次 canon rewrite
+- 记录接受 / 拒绝 / 推迟的取舍
+- 保持流派固定、传承 / 旁修 / 角色形象可迭代、出身身份 deferred
 
 **Non-goals**
 - 不静默改 schema
 - 不定义最终 loadout / meridian slot 数量
 - 不删除 reviewer 报告或 ticket 证据
-
-### worker-2 — Wuxia Fantasy Reviewer
-**Owned file**
-- `docs/working/wuxia-fantasy-pressure-report.md`
-- append-only ticket entries in `docs/working/revision-tickets.md`
-
-**Deliverables**
-- 经典武侠幻想 build 压测，并持续提出新幻想直到 exit condition 达成
-- 玩家幻想只从角色形象层提出，再反推流派 / 传承 / 旁修缺口
-- ticket 化所有返修要求
-- 复测返修后的幻想可成立性
-- 区分“需要熟悉称谓”和“需要新增职业根节点”；默认用层级组合解决
-
-**Non-goals**
-- 不直接改 canon
-- 不用泛 CRPG 可玩性替代武侠味
-- 不要求高魔或超自然解释
-- 不提出无止境愿望清单；每轮新增幻想必须能产生明确 ticket 或明确判定为重复 / 低优先级
 
 ### worker-3 — Senior CRPG Systems Designer / Reviewer
 **Owned files**
@@ -72,11 +75,12 @@
 - 不接受无 counterplay 的爽感循环
 
 ## Phase gates
-1. **Pass A canon alignment**：worker-1 先对齐流派 / 传承 / 旁修 / 角色形象层级；不得把职业名写成系统根节点；出身 / 身份不参与本轮。
-2. **Pass B dual pressure**：worker-2 / worker-3 并行输出 pressure report 与 revision tickets。
-3. **Pass C targeted rewrite**：worker-1 只按 ticket 定向改 canon。
-4. **Pass D re-test**：两个 reviewer 复测；未通过则回到 Pass C。
-5. **Pass E versioned compile**：worker-3 更新 audit / checklist，leader 最终审阅。
+1. **Step 1 fantasy expansion + full test**：worker-1 新增 3-5 个幻想，合并 human 幻想，全量测试累计 suite。
+2. **Step 2 first canon rewrite**：worker-2 按 fantasy ticket 修改 canon。
+3. **Step 3 senior design review**：worker-3 评审取舍、玩法、counterplay，给 worker-2 可执行建议。
+4. **Step 4 second canon rewrite**：worker-2 按 worker-3 建议二次修改。
+5. **Step 5 full regression retest**：worker-1 全量复测累计 suite。
+6. **Step 6 human gate**：输出 round report，等待 human 接受或新增幻想 / 意见。
 
 ## Shared-file coordination notes
 - `docs/working/decision-log.md` 在 **Phase 0 / 1 由 worker-1 初始化并维护 schema 决策**。
@@ -94,9 +98,9 @@
 6. `git diff --check` 通过。
 
 ## Loop exit condition
-当以下全部成立时停止幻想反压 loop：
+当以下全部成立时建议停止幻想反压 loop：
 1. 无 P0 / P1 层级冲突；
 2. 无 open block ticket；
-3. 最新幻想提案只产生重复项或低优先级润色；
-4. CRPG reviewer 判定没有 mandatory tax、无 counterplay 爆发、角色形象压扁问题；
-5. leader 接受当前版本作为下一开发阶段基线。
+3. 旧幻想没有从 PASS 回退为 revise/block；
+4. worker-3 判定没有 mandatory tax、无 counterplay 爆发、角色形象压扁问题；
+5. human 接受当前版本作为下一开发阶段基线。

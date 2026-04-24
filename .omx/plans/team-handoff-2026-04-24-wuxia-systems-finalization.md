@@ -1,8 +1,8 @@
-# Team Handoff — Wuxia Systems Iteration Loop
+# Team Handoff — Wuxia Human-Gated Fantasy Iteration Loop
 
 Date: 2026-04-24
-Status: iteration-loop handoff after prior finish pass
-Current baseline: previous 3-worker finish loop resolved all known tickets and produced a compile PASS, but the latest user constraint supersedes "inheritances are final".
+Status: human-gated cumulative fantasy loop
+Current baseline: previous 3-worker pass produced a mutable-layer compile packet. The next workflow is no longer a parallel finish pass; it is a sequential creative-design loop with a growing fantasy regression suite and a human gate.
 Scope override from user: **流派 is fixed; 传承 / 旁修 / 角色形象 remain mutable iteration surfaces; 出身 / 身份 is deferred for this round**. The system must not be bound by class names, while still delivering familiar wuxia fantasies.
 
 ## Execution mode
@@ -19,6 +19,8 @@ Scope override from user: **流派 is fixed; 传承 / 旁修 / 角色形象 rema
 - Side-study / refinement scaffold: `docs/design/03-side-studies-and-loadout.md`
 - Build audit framework: `docs/design/04-build-examples-and-audit.md`
 - Identity / archetype layer: `docs/design/05-identity-and-archetypes.md`
+- Cumulative fantasy suite: `docs/working/fantasy-test-suite.md`
+- Round report: `docs/working/round-report-latest.md`
 - Redlines and decisions: `docs/working/conflict-redlines.md`, `docs/working/decision-log.md`
 
 ## Locked layer hierarchy
@@ -34,176 +36,169 @@ Scope override from user: **流派 is fixed; 传承 / 旁修 / 角色形象 rema
 Design rule: familiar names such as “武僧 / 琴魔 / 侠盗” are **outputs of layer composition**, not root classes.
 
 ## Operating model
-This iteration pass uses **one canon writer and two pressure reviewers**.
+This workflow uses a sequential **1 -> 2 -> 3 -> 2 -> Human** loop.
 
-Reviewer output is not just QA. Reviewer output becomes revision tickets that must feed back into canon rewrites before a versioned compile.
+The fantasy test suite is cumulative. Every round must retest all previous fantasies plus new worker-1 fantasies plus any human-added fantasies.
 
 ```text
-Canon Draft
--> Wuxia Fantasy Pressure (including new fantasy proposals)
--> CRPG Systems Pressure
--> Gap Tickets
--> Targeted Canon Rewrite
--> Re-test Fantasy + CRPG
--> repeat until exit condition
--> Versioned Canon Compile
+Round N
+-> worker-1 adds 3-5 new wuxia/player fantasies
+-> worker-1 full-tests cumulative fantasy suite
+-> worker-2 rewrites canon from failing/high-priority tickets
+-> worker-3 reviews CRPG/design tradeoffs and writes actionable advice
+-> worker-2 performs second rewrite from worker-3 advice
+-> worker-1 full-retests cumulative fantasy suite
+-> round report for Human
+-> Human accepts baseline or adds opinions/fantasies for next round
 ```
 
 ## Worker staffing map
 
 | Worker | Primary lane | Owns / produces | Non-goals |
 |---|---|---|---|
-| worker-1 | Canon Systems Designer | Writes canon revisions across `01-main-disciplines.md`, `02-inheritances.md`, `03-side-studies-and-loadout.md`, `05-identity-and-archetypes.md`; resolves tickets without layer drift | Does not silently redefine fixed 流派; does not finalize loadout / slot counts |
-| worker-2 | Wuxia Fantasy Reviewer | Continuously proposes iconic player fantasies at the 角色形象 layer, pressure-tests whether layer composition can build them, and writes revision tickets | Does not directly rewrite canon except by ticket; does not demand class-name roots or identity/background fixes |
-| worker-3 | Senior CRPG Systems Designer / Reviewer | Makes tradeoffs across player fantasy, inheritances, and side-studies; writes CRPG pressure report, encounter / counterplay / party-role tickets, and final compile checklist | Does not flatten wuxia identity into spreadsheet balance; does not directly rewrite canon except by ticket |
+| worker-1 | Senior Wuxia Fan / Fantasy Tester | Adds 3-5 new fantasies each round, maintains `fantasy-test-suite.md`, full-tests cumulative suite, writes fantasy tickets and retest evidence | Does not rewrite canon; does not count human-added fantasies toward its 3-5 new fantasies |
+| worker-2 | Canon Systems Designer | Sole canon writer; applies fantasy tickets, then applies worker-3 design advice; updates canon and ticket resolutions | Does not silently redefine fixed 流派; does not finalize loadout / slot counts; does not bypass reviewer evidence |
+| worker-3 | Senior CRPG / Game Designer | Reviews worker-2 changes for gameplay tradeoffs, mandatory-tax risk, counterplay, 2-4 turn value, and layer placement; writes actionable advice | Does not directly rewrite canon except via ticket/advice; does not flatten wuxia identity into spreadsheet balance |
 
 ## File ownership and write rules
 
-### worker-1 — Canon Systems Designer
+### worker-1 — Senior Wuxia Fan / Fantasy Tester
+May edit:
+- `docs/working/fantasy-test-suite.md`
+- `docs/working/wuxia-fantasy-pressure-report.md`
+- append-only ticket entries in `docs/working/revision-tickets.md`
+- `docs/working/round-report-latest.md` fantasy sections
+
+Primary tasks:
+- add **3-5 new worker-origin fantasies every round**
+- incorporate human-added fantasies from prior round without counting them toward the 3-5 quota
+- full-test the cumulative fantasy suite before and after canon rewrites
+- mark regressions where an old PASS falls to revise/block
+- create targeted tickets with impacted layer, expected revision, pass condition, and priority
+
+### worker-2 — Canon Systems Designer
 May edit:
 - `docs/design/01-main-disciplines.md`
 - `docs/design/02-inheritances.md`
 - `docs/design/03-side-studies-and-loadout.md`
 - `docs/design/05-identity-and-archetypes.md`
-- append-only entries in `docs/working/decision-log.md` when a ticket requires escalation
+- append-only resolution entries in `docs/working/revision-tickets.md`
+- append-only escalation entries in `docs/working/decision-log.md`
+- `docs/working/round-report-latest.md` canon sections
 
 Primary tasks:
-- revise main-discipline, inheritance, side-study, and archetype text where reviewer tickets expose a concrete gap
-- preserve the fixed 流派 layer while treating 传承 as mutable draft content
-- ensure archetypes are composition outputs, not class roots
-- preserve `LOADOUT_INTERFACE_PENDING`, `MERIDIAN_SLOT_COUNT_PENDING`, and `SLOT_PRESSURE_ASSUMPTION_ONLY`
-- keep retained inheritances at equal blueprint depth; if the loop proposes changing the 24-set, escalate via decision-log before rewriting the set
+- resolve P0/P1 tickets first; P2 only when cheap or human-prioritized; P3 usually defer
+- apply canon rewrite after worker-1 fantasy test
+- apply second canon rewrite after worker-3 design review
+- preserve fixed 流派, low-magic boundary, placeholder protocol, and current 24-inheritance equal-depth unless explicitly escalated
 
-### worker-2 — Wuxia Fantasy Reviewer
-May edit:
-- `docs/working/wuxia-fantasy-pressure-report.md`
-- append-only ticket entries in `docs/working/revision-tickets.md`
-
-Primary tasks:
-- continuously propose iconic wuxia fantasies and pressure-test whether they can be built without breaking low-magic rules
-- identify missing fantasy anchors in 流派 / 传承 / 旁修 / 角色形象
-- create targeted tickets that tell worker-1 exactly what to revise
-- re-test tickets after worker-1 rewrites
-- stop proposing new fantasies once loop exit conditions are met
-
-Required fantasy samples:
-- 扫地僧型
-- 独臂剑侠型
-- 琴魔型
-- 白衣琴医型
-- 黑衣刺客型
-- 铁枪护法型
-- 毒医圣手型
-- 机关奇人型
-- 令狐冲型
-- 黄药师型
-- 郭靖型
-- 东方不败型
-- 武僧型
-- 游侠型
-- 侠盗型
-
-### worker-3 — Senior CRPG Systems Designer / Reviewer
+### worker-3 — Senior CRPG / Game Designer
 May edit:
 - `docs/working/crpg-systems-pressure-report.md`
 - `docs/design/04-build-examples-and-audit.md`
 - append-only ticket entries in `docs/working/revision-tickets.md`
 - `docs/working/final-compile-checklist.md`
+- `docs/working/round-report-latest.md` design-review sections
 
 Primary tasks:
-- pressure-test action economy, encounter value, counterplay, party synergy, and readability
-- decide whether each player fantasy demand should land in inheritance, side-study, or presentation-only archetype space
-- reject designs that are flavorful but have no tactical decision point
-- reject designs that create mandatory tax picks or uncounterable burst loops
-- maintain the compile checklist and mark pass / revise / block per loop
+- review worker-2 canon changes for action economy, encounter value, counterplay, party synergy, and readability
+- decide whether each fantasy demand belongs in inheritance, side-study, or presentation-only archetype space
+- reject mandatory tax picks, uncounterable burst loops, or fantasies with no tactical decision point
+- write actionable advice for worker-2 second rewrite
 
 ## Loop protocol
 
-### Pass A — Canon completion
+### Step 1 — worker-1 fantasy expansion and full baseline test
 Lead: worker-1
 
 Tasks:
-- align `00-rule-bible.md`, `03-side-studies-and-loadout.md`, and `05-identity-and-archetypes.md` to the locked layer hierarchy; keep 出身 / 身份 deferred
-- ensure each side-study ladder remains a horizontal tool, not a class
-- ensure refinement rewards pure-main investment without becoming inheritance
-- mark inheritance content as current-version draft, not terminal canon
-- inspect `01-main-disciplines.md` and `02-inheritances.md` for obvious schema or depth mismatches
+- add 3-5 worker-origin fantasies to `docs/working/fantasy-test-suite.md`
+- add any human-origin fantasies from the previous human gate
+- full-test the entire cumulative suite
+- open tickets for revise/block/P0/P1 issues
 
 Gate:
-- no contradiction remains between system hierarchy and canon files
-- `02-inheritances.md` still contains exactly 24 inheritance sections unless an explicit decision-log escalation changes that target
+- suite count is updated
+- every fantasy has pass/revise/block for this round
+- tickets are actionable
 
-### Pass B — Dual pressure review
-Leads: worker-2 and worker-3 in parallel
+### Step 2 — worker-2 first canon rewrite
+Lead: worker-2
 
 Tasks:
-- worker-2 writes wuxia fantasy gap tickets
-- worker-3 writes CRPG systems gap tickets
-- each ticket must name impacted file / section, problem, expected revision, and pass condition
-- worker-2 must distinguish “needs class name” from “needs better layer composition”; the latter is preferred
+- resolve high-priority tickets in canon
+- record tradeoffs and rejected alternatives in ticket resolution
+- update round report
 
 Gate:
-- each required fantasy sample has pass / revise / block verdict
-- each CRPG check has pass / revise / block verdict
+- no silent schema drift
+- canon changes cite tickets
 
-### Pass C — Targeted rewrite
+### Step 3 — worker-3 CRPG/game-design review
+Lead: worker-3
+
+Tasks:
+- review worker-2 changes
+- decide inheritance vs side-study vs presentation-label placement
+- open design-review tickets/advice for worker-2
+- update CRPG report and round report
+
+Gate:
+- no unaddressed P0/P1 design blocker
+- advice is actionable, not generic opinion
+
+### Step 4 — worker-2 second canon rewrite
+Lead: worker-2
+
+Tasks:
+- apply worker-3 advice
+- resolve/reject/escalate CRPG tickets with reasons
+- update canon docs and round report
+
+Gate:
+- every worker-3 P0/P1 item is resolved, rejected with reason, or escalated
+
+### Step 5 — worker-1 full regression retest
 Lead: worker-1
 
 Tasks:
-- resolve tickets in canon files
-- append decision-log entries only if a ticket requires changing locked layer boundaries
-- keep reviewer reports as evidence, not canon
+- retest cumulative fantasy suite after both worker-2 rewrites
+- record regressions and new pass/fail counts
+- update round report
 
 Gate:
-- every ticket is resolved, rejected with reason, or escalated
+- all P0/P1 fantasy regressions are ticketed
+- round report is ready for human review
 
-### Pass D — Re-test
-Leads: worker-2 and worker-3
+### Step 6 — Human gate
+Lead: human / leader
 
-Tasks:
-- re-test the revised sections
-- close tickets only when pass conditions are met
-- if any block remains, return to Pass C
-
-Gate:
-- no open block tickets
-- no unresolved revise tickets that affect final canon
-
-### Pass E — Canon compile
-Lead: worker-3 with leader review
-
-Tasks:
-- update `docs/design/04-build-examples-and-audit.md` with final verdicts
-- update `docs/working/change-log.md`
-- write `docs/working/final-compile-checklist.md`
-
-Gate:
-- canon docs are internally consistent
-- `git diff --check` passes
-- final checklist confirms main discipline, side-study, inheritance, fantasy, and CRPG checks
+Human response options:
+- accept current version as the next baseline and stop loop
+- add human fantasies / objections / taste corrections for the next round
+- require another round on specific failure areas
 
 ## Loop exit conditions
 
-The Wuxia Fantasy Reviewer should keep generating fantasies only until the loop has useful pressure. Stop the loop when all conditions are true:
+Stop only when Human accepts the current version. The agents may recommend stopping when:
 
 1. No P0 / P1 layer-boundary conflict remains.
 2. No open block ticket remains.
-3. No unresolved revise ticket affects 流派 / 传承 / 旁修 / 角色形象 coherence.
-4. The latest fantasy-proposal round only creates low-priority polish items or duplicate requests.
-5. CRPG reviewer confirms no mandatory side-study tax, no uncounterable burst loop, and no spreadsheet flattening of wuxia identity.
-6. Leader accepts the version as the next development baseline.
+3. No old fantasy regresses from PASS to revise/block.
+4. Latest worker-1 fantasies do not expose new system-layer gaps.
+5. worker-3 confirms no mandatory side-study tax, no uncounterable burst loop, and no spreadsheet flattening of wuxia identity.
+6. Human explicitly accepts the version.
 
 ## Launch hint
 
 Recommended launch target:
 
 ```bash
-omx team 3:executor "Execute .omx/plans/team-handoff-2026-04-24-wuxia-systems-finalization.md. Use the iteration loop: worker-1 is Canon Systems Designer, worker-2 is Wuxia Fantasy Reviewer focused on player fantasy at the 角色形象 layer, worker-3 is Senior CRPG Systems Designer balancing player fantasy, inheritance, and side-study tradeoffs. Treat 流派 as fixed; treat 传承/旁修/角色形象 as mutable; defer 出身/身份. Let wuxia fantasy proposals create tickets that反向修改 canon, CRPG-review each rewrite, stop only when loop exit conditions pass, then compile versioned canon evidence."
+OMX_TEAM_WORKER_LAUNCH_ARGS='--model gpt-5.5 -c model_reasoning_effort=medium' omx team 3:executor "Run one human-gated wuxia fantasy iteration round from .omx/plans/team-handoff-2026-04-24-wuxia-systems-finalization.md. Follow sequence worker1 fantasy suite then worker2 canon rewrite then worker3 CRPG review then worker2 second rewrite then worker1 full retest then human report. Use cumulative fantasy-test-suite. Worker1 adds 3-5 new fantasies excluding human additions. Fixed liupai. Mutable inheritance side-study role-image. Defer origin identity."
 ```
 
 ## Residual execution risks
-1. Reviewers must produce tickets, not free-form opinions; otherwise the loop cannot converge.
-2. Wuxia fantasy pressure can expand without bound; enforce the exit conditions.
-3. CRPG pressure must improve tactical design without erasing low-magic wuxia identity.
-4. Wuxia fantasy pressure must create playable builds without forcing mandatory side-study taxes.
-5. GPT-5.5 medium workers previously hit ChatGPT backend 403 / TLS errors; do not relaunch under that model until connectivity / quota is stable.
+1. worker-1 must add 3-5 new worker-origin fantasies every round; human fantasies do not count toward that quota.
+2. Cumulative suite growth can become expensive; still retest all prior fantasies each round.
+3. worker-2 is the only canon writer; worker-1/3 must use tickets/advice.
+4. GPT-5.5 may hit quota/backend limits; if so, preserve state and report exact pane evidence.

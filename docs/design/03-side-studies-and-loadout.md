@@ -1,7 +1,7 @@
 # 03 Side Studies and Loadout Boundary
 
-状态：Pass A canon complete，待 Pass B / D 压测复核  
-Owner：worker-3（phase scaffold） / worker-1（finish-loop canon rewrite）  
+状态：iteration-loop canon baseline（side-study remains horizontal）
+Owner：canon systems designer（current loop: worker-1；保留 phase scaffold credits）
 Schema source：`docs/design/00-rule-bible.md`
 
 ## Deferred boundary notice
@@ -10,6 +10,8 @@ Schema source：`docs/design/00-rule-bible.md`
 - `SLOT_PRESSURE_ASSUMPTION_ONLY`
 
 下列精修 / 旁修文本只定义**接入深度、结构接口与副循环边界**，不定义最终经脉槽、运功位或装配矩阵。凡涉及未来装配负担，统一理解为：表达需要经过 `LOADOUT_INTERFACE_PENDING` 落地，并且当前只在 `SLOT_PRESSURE_ASSUMPTION_ONLY` 下验证不崩；若某 build 只有在具体 `MERIDIAN_SLOT_COUNT_PENDING` 数值成立时才自洽，则应在审计阶段判为 revise / block，而不是在本文件偷渡定数。
+
+精修始终表达“练深主修”，旁修始终表达“横向工具”。两者都不能升级为职业根节点，也不能直接定义角色形象；任何熟悉武侠幻想都必须先由流派主轴与传承倾向成立，再由这里的接口 / 小循环补出手感与表达。
 
 ## 精修统一梯度
 - 精修 1：提高主资源上限、回收稳定性或起手顺滑度，让纯主修更早、更稳进入本门循环；它只强化主修资源经营，不引入第二套动作逻辑，服务的是“返璞归真、越练越稳”的宗师底盘。

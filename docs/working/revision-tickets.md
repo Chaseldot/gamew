@@ -1,6 +1,6 @@
-# Revision Tickets — Wuxia Systems Finish Loop
+# Revision Tickets — Wuxia Systems Iteration Loop
 
-状态：open queue for finish-loop tickets
+状态：open queue for layer-hierarchy iteration tickets
 
 ## Ticket format
 - ID:
@@ -14,7 +14,15 @@
 
 ## Open tickets
 
-暂无。当前 finish-loop 票据已全部回修或关闭。
+暂无。此前 finish-loop 票据已全部回修或关闭；下一轮只接受围绕“流派固定、传承 / 旁修 / 出身身份 / 角色形象可迭代”的新 ticket。
+
+新 ticket 必须说明它反压的是哪一层：
+- 流派边界；
+- 传承专精；
+- 旁修横向工具；
+- 出身 / 身份；
+- 角色形象；
+- CRPG 玩法 / counterplay。
 
 ## Resolved tickets
 

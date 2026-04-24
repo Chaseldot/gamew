@@ -47,6 +47,28 @@
 - 任何下游 lane 如需修改 Phase 0 / 1 冻结的术语、模板、占位符协议，必须先按上面的 escalation format 追加记录。
 - 允许追加，不允许删除或静默改写既有 accepted / rejected 结论。
 
+## 2026-04-24 — Layer hierarchy override
+
+### Accepted
+1. **流派 is the fixed primary layer; inheritance content is iterative**
+   - Reason: 最新用户约束明确“除了流派是确定的，其他层级都可以按需修改”，因此此前“传承最终定版”的语言必须降级为“当前版本草案 / 可迭代基线”。
+   - Downstream impact: `docs/design/02-inheritances.md` 的 24 传承仍需保持当前版本等深，但可以被 pressure ticket 修改、合并、拆分或重命名；若改动传承集合，先记录 escalation。
+
+2. **职业名 becomes an output label, not a system root**
+   - Reason: 玩家需要熟悉武侠幻想，但系统不能被“武僧 / 琴魔 / 侠盗”等职业名绑死。
+   - Downstream impact: 新增 `docs/design/05-identity-and-archetypes.md` 承载出身 / 身份与角色形象。所有幻想样例必须反推到流派、传承、旁修、出身身份、角色形象的组合。
+
+3. **Wuxia fantasy pressure remains a loop with explicit exit conditions**
+   - Reason: 武侠迷 agent 需要不断提出幻想来反向指导设计，但无出口会导致 scope creep。
+   - Downstream impact: reviewer 每轮新幻想必须转成 ticket / duplicate / low-priority polish，并在无 P0/P1 冲突、无 block ticket、CRPG 通过、leader 接受版本时停止。
+
+### Rejected / superseded
+1. **Treat the current inheritance set as terminal final canon**
+   - Reason: superseded by the latest user constraint.
+
+2. **Introduce class-name roots for familiar wuxia archetypes**
+   - Reason: would bind the system to occupations and collapse build freedom.
+
 ## 2026-04-24 — Final compile closure
 
 ### Accepted

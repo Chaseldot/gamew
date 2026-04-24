@@ -56,7 +56,7 @@
 
 2. **职业名 becomes an output label, not a system root**
    - Reason: 玩家需要熟悉武侠幻想，但系统不能被“武僧 / 琴魔 / 侠盗”等职业名绑死。
-   - Downstream impact: 新增 `docs/design/05-identity-and-archetypes.md` 承载出身 / 身份与角色形象。所有幻想样例必须反推到流派、传承、旁修、出身身份、角色形象的组合。
+   - Downstream impact: `docs/design/05-identity-and-archetypes.md` 本轮只承载角色形象。所有幻想样例必须从角色形象反推到流派、传承、旁修的组合。
 
 3. **Wuxia fantasy pressure remains a loop with explicit exit conditions**
    - Reason: 武侠迷 agent 需要不断提出幻想来反向指导设计，但无出口会导致 scope creep。
@@ -68,6 +68,9 @@
 
 2. **Introduce class-name roots for familiar wuxia archetypes**
    - Reason: would bind the system to occupations and collapse build freedom.
+
+3. **Use 出身 / 身份 to solve current player fantasy pressure**
+   - Reason: latest user correction defers this layer; current fantasy pressure belongs to 角色形象.
 
 ## 2026-04-24 — Final compile closure
 

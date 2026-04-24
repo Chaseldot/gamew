@@ -13,7 +13,7 @@ Owner：worker-3 + leader
 最新用户约束已把“传承最终定版”改为“传承当前版本可迭代”。因此本 checklist 只证明上一轮 3-agent finish loop 在当时约束下闭环通过；它不是最终游戏 canon 的永久冻结证明。
 
 下一轮版本 compile 还必须验证：
-- 流派固定，传承 / 旁修 / 出身身份 / 角色形象可迭代；
+- 流派固定，传承 / 旁修 / 角色形象可迭代，出身 / 身份 deferred；
 - 职业名是组合结果，不是系统根节点；
 - 武侠幻想 reviewer 的新增幻想通过 ticket loop 反向修改 canon；
 - loop 在无 P0/P1、无 block ticket、CRPG 通过、leader 接受时停止。

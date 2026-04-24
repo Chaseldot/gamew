@@ -7,7 +7,7 @@
 ## 全局规则
 - 所有 lane 只写自己拥有的文件 / section。
 - 下游不得重定义已锁定的层级边界；若需要改规则，只能先记入 `docs/working/decision-log.md`。
-- **流派固定；传承、旁修、出身 / 身份、角色形象可迭代。**
+- **流派固定；传承、旁修、角色形象可迭代；出身 / 身份本轮 deferred。**
 - “职业名”只能作为组合结果，不得作为系统根节点。
 - 不得把 `LOADOUT_INTERFACE_PENDING` / `MERIDIAN_SLOT_COUNT_PENDING` / `SLOT_PRESSURE_ASSUMPTION_ONLY` 升格为最终规则。
 - 共享规则冲突先上报，不得 silent edit。
@@ -25,7 +25,7 @@
 - append-only escalation entries in `docs/working/decision-log.md`
 
 **Deliverables**
-- 根据 reviewer ticket 定向修订主修 / 流派说明、传承、旁修、出身 / 身份、角色形象
+- 根据 reviewer ticket 定向修订主修 / 流派说明、传承、旁修、角色形象
 - 维持流派固定、传承可迭代、低魔边界
 - 保证“武僧 / 琴魔 / 毒医 / 侠盗”等是组合结果，不是职业根节点
 - 维持当前版本保留传承的等深；若要改 24-set，先走 decision escalation
@@ -42,7 +42,7 @@
 
 **Deliverables**
 - 经典武侠幻想 build 压测，并持续提出新幻想直到 exit condition 达成
-- 反推流派 / 传承 / 旁修 / 出身身份 / 角色形象缺口
+- 玩家幻想只从角色形象层提出，再反推流派 / 传承 / 旁修缺口
 - ticket 化所有返修要求
 - 复测返修后的幻想可成立性
 - 区分“需要熟悉称谓”和“需要新增职业根节点”；默认用层级组合解决
@@ -53,7 +53,7 @@
 - 不要求高魔或超自然解释
 - 不提出无止境愿望清单；每轮新增幻想必须能产生明确 ticket 或明确判定为重复 / 低优先级
 
-### worker-3 — CRPG Systems Reviewer
+### worker-3 — Senior CRPG Systems Designer / Reviewer
 **Owned files**
 - `docs/working/crpg-systems-pressure-report.md`
 - `docs/design/04-build-examples-and-audit.md`
@@ -62,6 +62,7 @@
 
 **Deliverables**
 - CRPG 战术、资源、encounter、counterplay、队伍协同压测
+- 对玩家幻想、传承、旁修做综合取舍，判断幻想应落在哪一层
 - 将系统性问题写成 revision ticket
 - 更新 build audit 与 final compile checklist
 
@@ -71,7 +72,7 @@
 - 不接受无 counterplay 的爽感循环
 
 ## Phase gates
-1. **Pass A canon alignment**：worker-1 先对齐流派 / 传承 / 旁修 / 出身身份 / 角色形象层级；不得把职业名写成系统根节点。
+1. **Pass A canon alignment**：worker-1 先对齐流派 / 传承 / 旁修 / 角色形象层级；不得把职业名写成系统根节点；出身 / 身份不参与本轮。
 2. **Pass B dual pressure**：worker-2 / worker-3 并行输出 pressure report 与 revision tickets。
 3. **Pass C targeted rewrite**：worker-1 只按 ticket 定向改 canon。
 4. **Pass D re-test**：两个 reviewer 复测；未通过则回到 Pass C。
@@ -85,7 +86,7 @@
 
 ## Ready signal for versioned compile
 满足以下条件才可进入版本 compile：
-1. `docs/design/00-rule-bible.md` 与 `docs/design/05-identity-and-archetypes.md` 对层级边界一致；
+1. `docs/design/00-rule-bible.md` 与 `docs/design/05-identity-and-archetypes.md` 对层级边界一致，且出身 / 身份保持 deferred；
 2. `docs/design/02-inheritances.md` 保持当前版本传承 section 等深；若修改 24-set，必须有 decision-log 记录；
 3. `docs/working/revision-tickets.md` 无 open block / revise ticket；
 4. 武侠幻想与 CRPG systems 两类压力测试均有 pass 证据；
@@ -97,5 +98,5 @@
 1. 无 P0 / P1 层级冲突；
 2. 无 open block ticket；
 3. 最新幻想提案只产生重复项或低优先级润色；
-4. CRPG reviewer 判定没有 mandatory tax、无 counterplay 爆发、身份压扁问题；
+4. CRPG reviewer 判定没有 mandatory tax、无 counterplay 爆发、角色形象压扁问题；
 5. leader 接受当前版本作为下一开发阶段基线。

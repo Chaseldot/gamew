@@ -20,8 +20,8 @@
   Problem: `武僧 / 游侠 / 侠盗` 三个 archetype 示例仍混入未定义系统词（`心法`、`轻功`、`暗器`、`轻身主轴`），并把可成立的底层组合写得过于含糊，容易让读者误以为角色形象仍依赖隐藏职业 / 子系统。
   Expected revision: 用当前 canon 已存在的层级词重写相关示例，明确这些 archetype 由现有流派 / 传承 / 旁修 / 表现标签组合得出；至少把 `武僧`、`游侠`、`侠盗` 改写成可直接映射到现有系统文档的组合方向。
   Pass condition: 读者只读当前 canon，就能在不诉诸 `出身 / 身份`、不假设额外 `心法 / 轻功 / 暗器` 子系统的前提下，解释 `武僧 / 游侠 / 侠盗` 如何成立。
-  Status: open
-  Resolution note: Added during 2026-04-24 Pass B role-image pressure review on worker HEAD `e164aa9`.
+  Status: resolved
+  Resolution note: 已将武僧 / 游侠 / 侠盗示例改为现有流派、传承、旁修接口与表现标签组合，移除 `心法`、`轻功`、`暗器`、`轻身主轴` 等未定义子系统依赖；见 `docs/design/05-identity-and-archetypes.md`。
 
 新 ticket 必须说明它反压的是哪一层：
 - 流派边界；

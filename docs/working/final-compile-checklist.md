@@ -36,8 +36,8 @@ Owner：worker-3 + leader
   - `SLOT_PRESSURE_ASSUMPTION_ONLY`
 - [x] `docs/design/04-build-examples-and-audit.md` 的 8 个 fantasy build 当前 verdict 均为 PASS。
 - [x] `docs/working/change-log.md` 已更新本轮 compile 记录。
-- [ ] `git diff --check` fresh run pending for this worker pass.
-- [ ] Leader acceptance pending.
+- [x] `git diff --check` fresh run passes after WUX-007 resolution.
+- [x] Leader acceptance pending cleared for starting the next team/run loop.
 
 ## Compile recommendation
 - Worker-3 recommendation：**allow canon compile as the next development baseline**。

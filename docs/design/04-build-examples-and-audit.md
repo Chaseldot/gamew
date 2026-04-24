@@ -1,7 +1,7 @@
 # 04 Build Examples and Audit
 
 状态：Phase 6 compile intake complete
-Owner：worker-6  
+Owner：worker-3  
 Schema source：`docs/design/00-rule-bible.md`
 
 > 本文件只定义 school coherence / build audit / compile intake 的执行框架与示例构筑审计模板。除“已冻结基线”外，任何具体主修 / 旁修 / 传承组合都仅是**审计假设**，不构成 canon 定版。

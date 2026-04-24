@@ -1,13 +1,16 @@
 # Change Log — Wuxia Systems Finalization
 
-Owner：worker-6
+Owner：worker-3
 
 ## 2026-04-24
-- Initialized worker-6 audit lane scaffolds.
-- Expanded `docs/design/04-build-examples-and-audit.md` from placeholder list into a gate-aware audit framework:
-  - school coherence worksheet for 8 schools
-  - required fantasy build audit protocol for 8 target builds
-  - cross-system stress checks
-  - compile intake checklist for Phase 6
-- Expanded `docs/working/conflict-redlines.md` into an operational redline matrix with severity levels, school watchpoints, and build watchpoints.
-- No canon content compiled yet; upstream Phase 2–4 outputs are still scaffold-only, so all verdict fields remain pending.
+- Refreshed `docs/design/04-build-examples-and-audit.md` ownership and compile framing so the audit file matches the current worker-3 CRPG lane rather than the old worker-6 scaffold state.
+- Promoted the audit lane from placeholder/scaffold history into a current compile-intake record:
+  - 8/8 school coherence verdicts aligned to PASS
+  - 8 required fantasy build audits aligned to PASS
+  - compile intake explicitly framed under the mutable-layer iteration rule set
+- Rewrote `docs/working/final-compile-checklist.md` to reflect the current hierarchy constraint:
+  - 流派 fixed
+  - 传承 / 旁修 / 角色形象 mutable
+  - 出身 / 身份 deferred
+  - archetype names remain composition outputs, not root classes
+- Confirmed current compile recommendation is “next development baseline candidate”, not permanent canon freeze.

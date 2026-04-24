@@ -1,7 +1,7 @@
 # 01 Main Disciplines
 
 状态：iteration-loop canon baseline（流派固定）
-Owner：canon systems designer（current loop: worker-1）
+Owner：canon systems designer（current loop: worker-2）
 Schema source：`docs/design/00-rule-bible.md`
 
 > 按 5 字段主修模板填写；本文件只定八大主修本体，不重定义 schema，不偷渡 loadout / meridian 定数，也不把“武僧 / 琴魔 / 侠盗”等熟悉称谓反向提升为职业根节点。

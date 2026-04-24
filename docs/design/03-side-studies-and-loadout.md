@@ -1,7 +1,7 @@
 # 03 Side Studies and Loadout Boundary
 
 状态：iteration-loop canon baseline（side-study remains horizontal）
-Owner：canon systems designer（current loop: worker-1；保留 phase scaffold credits）
+Owner：canon systems designer（current loop: worker-2；保留 phase scaffold credits）
 Schema source：`docs/design/00-rule-bible.md`
 
 ## Deferred boundary notice

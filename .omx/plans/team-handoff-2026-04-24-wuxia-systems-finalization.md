@@ -1,149 +1,76 @@
-# Team Handoff — Wuxia Systems Finalization (24 inheritances at equal depth)
+# Team Handoff — Wuxia Systems Finalization Loop
 
 Date: 2026-04-24
-Status: execution-ready handoff
+Status: finish-loop handoff
+Current baseline: Phase 0 / 1 are frozen; main disciplines and inheritance draft content exist; side-study / refinement remains the largest open design gap.
 Scope override from user: **all 24 inheritances must be finalized at equal blueprint depth**; do not retain the earlier 16-core / 8-reserve split.
 
 ## Execution mode
 - Recommended runtime: `omx team`
 - Recommended worker role prompt: `executor`
-- Recommended headcount: **6 workers**
+- Recommended headcount: **3 workers**
 - Leader: human/orchestrator in current pane
 
-## Phase order
-1. Phase 0 — Baseline Freeze
-2. Phase 1 — Schema Lock
-3. Parallel Window A:
-   - Phase 2 — Main Discipline Pass
-   - Phase 3 — Side-Study / Refinement Pass
-4. Parallel Window B:
-   - Phase 4 — Inheritance Cluster Pass (2 cluster lanes)
-5. Phase 4.5 — School-Coherence Checkpoint
-6. Phase 5 — Build Audit & Cross-System Stress Test
-7. Phase 6 — Canon Compile
+## Current resource map
+- Schema and authority: `docs/design/00-rule-bible.md`
+- Baseline snapshot: `docs/working/baseline-snapshot.md`
+- Main disciplines draft: `docs/design/01-main-disciplines.md`
+- Inheritance draft: `docs/design/02-inheritances.md`
+- Side-study / refinement scaffold: `docs/design/03-side-studies-and-loadout.md`
+- Build audit framework: `docs/design/04-build-examples-and-audit.md`
+- Redlines and decisions: `docs/working/conflict-redlines.md`, `docs/working/decision-log.md`
+
+## Operating model
+This finish pass uses **one canon writer and two pressure reviewers**.
+
+Reviewer output is not just QA. Reviewer output becomes revision tickets that must feed back into canon rewrites before final compile.
+
+```text
+Canon Draft
+-> Wuxia Fantasy Pressure
+-> CRPG Systems Pressure
+-> Gap Tickets
+-> Targeted Canon Rewrite
+-> Re-test Fantasy + CRPG
+-> repeat until pass
+-> Final Canon Compile
+```
 
 ## Worker staffing map
 
-| Worker | Primary lane | Reasoning | Owns / produces | Depends on |
-|---|---|---:|---|---|
-| worker-1 | Baseline + queue + schema support | high | `docs/working/baseline-snapshot.md`, `docs/working/agent-queue.md`, schema draft support, drift reconciliation notes | source docs only |
-| worker-2 | Main discipline lane | high | `docs/design/01-main-disciplines.md` | Phase 1 |
-| worker-3 | Side-study / refinement lane | high | `docs/design/03-side-studies-and-loadout.md` (loadout kept deferred by placeholders) | Phase 1 + Phase 2 interfaces |
-| worker-4 | Inheritance cluster A | high | `docs/design/02-inheritances.md` sections for 游锋 / 破军 / 拳掌 / 射艺 | Phase 2 + 3 |
-| worker-5 | Inheritance cluster B + coherence assist | high | `docs/design/02-inheritances.md` sections for 影踪 / 药师 / 音律 / 奇门; later `school-coherence` memos | Phase 2 + 3 |
-| worker-6 | Audit / examples / compile prep | high | `docs/design/04-build-examples-and-audit.md`, `docs/working/conflict-redlines.md`, `docs/working/decision-log.md`, later compile prep notes | Phases 2–5 |
+| Worker | Primary lane | Owns / produces | Non-goals |
+|---|---|---|---|
+| worker-1 | Canon Systems Designer | Writes canon revisions across `01-main-disciplines.md`, `02-inheritances.md`, `03-side-studies-and-loadout.md`; resolves tickets without schema drift | Does not silently redefine schema; does not finalize loadout / slot counts |
+| worker-2 | Wuxia Fantasy Reviewer | Writes fantasy pressure report and revision tickets for classic wuxia builds | Does not directly rewrite canon except by ticket; does not accept generic CRPG viability as a substitute for wuxia flavor |
+| worker-3 | CRPG Systems Reviewer | Writes CRPG pressure report, encounter / counterplay / party-role tickets, and final compile checklist | Does not flatten wuxia identity into spreadsheet balance; does not directly rewrite canon except by ticket |
 
-## File scaffold to create in Phase 0
+## File ownership and write rules
 
-### Canon docs
-- `docs/design/00-rule-bible.md`
+### worker-1 — Canon Systems Designer
+May edit:
 - `docs/design/01-main-disciplines.md`
 - `docs/design/02-inheritances.md`
 - `docs/design/03-side-studies-and-loadout.md`
-- `docs/design/04-build-examples-and-audit.md`
+- append-only entries in `docs/working/decision-log.md` when a ticket requires escalation
 
-### Working docs
-- `docs/working/baseline-snapshot.md`
-- `docs/working/agent-queue.md`
-- `docs/working/decision-log.md`
-- `docs/working/conflict-redlines.md`
-- `docs/working/change-log.md`
+Primary tasks:
+- complete all `TBD` content in `docs/design/03-side-studies-and-loadout.md`
+- revise main-discipline and inheritance text only where reviewer tickets expose a concrete gap
+- preserve `LOADOUT_INTERFACE_PENDING`, `MERIDIAN_SLOT_COUNT_PENDING`, and `SLOT_PRESSURE_ASSUMPTION_ONLY`
+- keep all 24 inheritances at equal blueprint depth
 
-## Phase-by-phase assignments
+### worker-2 — Wuxia Fantasy Reviewer
+May edit:
+- `docs/working/wuxia-fantasy-pressure-report.md`
+- append-only ticket entries in `docs/working/revision-tickets.md`
 
-### Phase 0 — Baseline Freeze
-**Lead:** worker-1  
-**Support:** worker-6  
-**Tasks:**
-- reconcile source-of-truth drift across:
-  - `docs/plans/2026-04-24-wuxia-crpg-flow-paths-summary.md`
-  - `findings.md`
-  - `progress.md`
-- explicitly carry forward the user override: **24 inheritances, equal depth**
-- explicitly preserve deferred boundary:
-  - `LOADOUT_INTERFACE_PENDING`
-  - `MERIDIAN_SLOT_COUNT_PENDING`
-  - `SLOT_PRESSURE_ASSUMPTION_ONLY`
-- scaffold `docs/design/*` and `docs/working/*`
-- initialize queue + decision log + redlines
+Primary tasks:
+- pressure-test whether iconic wuxia fantasies can be built without breaking low-magic rules
+- identify missing fantasy anchors in 主修 / 旁修 / 精修 / 传承
+- create targeted tickets that tell worker-1 exactly what to revise
+- re-test tickets after worker-1 rewrites
 
-**Gate:** no other lane writes canon content before baseline snapshot exists.
-
-### Phase 1 — Schema Lock
-**Lead:** worker-1  
-**Review pressure:** worker-6  
-**Tasks:**
-- lock definitions for 主修 / 精修 / 旁修 / 传承
-- freeze 5-field main-discipline template
-- freeze 7-field inheritance template
-- freeze 1/2/3-point side-study grammar
-- record deferred loadout contract and forbidden edits
-
-**Gate:** downstream workers may fill templates, but may not redefine terms.
-
-### Phase 2 — Main Discipline Pass
-**Lead:** worker-2  
-**Tasks:**
-- fill 8 discipline entries
-- ensure each discipline has:
-  - core role
-  - resource loop
-  - 3-stage combat skeleton
-  - pure-main endpoint
-  - allowed side-study influence range
-  - explicit non-goals
-
-**Gate:** all 8 entries complete; no hidden dependency on slot counts.
-
-### Phase 3 — Side-Study / Refinement Pass
-**Lead:** worker-3  
-**Tasks:**
-- fill 8 side-study ladders (1/2/3)
-- define refinement returns for pure-main investment
-- use placeholders only for loadout/slot boundary
-- write side-study redlines: what may influence vs may not replace
-
-**Gate:** side-study cannot replace main-loop closure; refinement cannot act like disguised inheritance.
-
-### Phase 4 — Inheritance Cluster Pass
-#### Cluster A — worker-4
-- 游锋 / 破军 / 拳掌 / 射艺
-
-#### Cluster B — worker-5
-- 影踪 / 药师 / 音律 / 奇门
-
-**Tasks for both lanes:**
-- finalize all assigned inheritances at **equal depth**
-- each inheritance must include:
-  - one-line role
-  - core combat fantasy
-  - core loop
-  - resource relation
-  - representative mechanics/actions
-  - boundary definition
-  - side-study influence envelope
-- preserve at least 2/3 anchors:
-  - resource relation
-  - action structure
-  - signature mechanic
-
-**Gate:** no inheritance may depend on unresolved slot/loadout specifics.
-
-### Phase 4.5 — School-Coherence Checkpoint
-**Lead:** worker-5 + worker-6 with leader review  
-**Tasks:**
-- review one school at a time:
-  - does it read like one martial family?
-  - are the inheritances internally differentiated?
-  - does side-study expression reinforce rather than erase identity?
-- verdict per school: pass / revise / block
-
-**Gate:** blocked schools do not enter build audit.
-
-### Phase 5 — Build Audit & Cross-System Stress Test
-**Lead:** worker-6  
-**Support:** worker-2 / 3 / 4 / 5 for fixes  
-**Required fantasy build checks:**
+Required fantasy samples:
 - 扫地僧型
 - 独臂剑侠型
 - 琴魔型
@@ -152,40 +79,97 @@ Scope override from user: **all 24 inheritances must be finalized at equal bluep
 - 铁枪护法型
 - 毒医圣手型
 - 机关奇人型
+- 令狐冲型
+- 黄药师型
+- 郭靖型
+- 东方不败型
 
-**Tasks:**
-- check pure-main viability
-- check mixed-build identity
-- check low-magic boundary
-- check no side-study tax pick becomes mandatory
-- check no placeholder-based hidden dependency exists
+### worker-3 — CRPG Systems Reviewer
+May edit:
+- `docs/working/crpg-systems-pressure-report.md`
+- `docs/design/04-build-examples-and-audit.md`
+- append-only ticket entries in `docs/working/revision-tickets.md`
+- `docs/working/final-compile-checklist.md`
 
-### Phase 6 — Canon Compile
-**Lead:** worker-6 + leader  
-**Tasks:**
-- compile only gate-passed material into canon docs
-- update `change-log.md`
-- freeze next baseline snapshot
+Primary tasks:
+- pressure-test action economy, encounter value, counterplay, party synergy, and readability
+- reject designs that are flavorful but have no tactical decision point
+- reject designs that create mandatory tax picks or uncounterable burst loops
+- maintain the compile checklist and mark pass / revise / block per loop
 
-## Required worker instructions
-Each worker assignment must explicitly include:
-- owned files only
-- non-goals
-- no redefining schema in downstream phases
-- if a shared rule must change, escalate via decision log instead of silent edit
-- do not upgrade deferred loadout placeholders into final rules
+## Loop protocol
 
-## Recommended serial/parallel structure
-- Serial: Phase 0 -> Phase 1
-- Parallel: Phase 2 + Phase 3
-- Parallel: Phase 4 cluster lanes
-- Serial: Phase 4.5 -> Phase 5 -> Phase 6
+### Pass A — Canon completion
+Lead: worker-1
+
+Tasks:
+- finish `03-side-studies-and-loadout.md`
+- ensure each side-study ladder has 1-point entry, 2-point interface, and 3-point small loop
+- ensure refinement rewards pure-main investment without becoming inheritance
+- inspect `01-main-disciplines.md` and `02-inheritances.md` for obvious schema or depth mismatches
+
+Gate:
+- no `TBD` remains in `docs/design/03-side-studies-and-loadout.md`
+- `02-inheritances.md` still contains exactly 24 inheritance sections
+
+### Pass B — Dual pressure review
+Leads: worker-2 and worker-3 in parallel
+
+Tasks:
+- worker-2 writes wuxia fantasy gap tickets
+- worker-3 writes CRPG systems gap tickets
+- each ticket must name impacted file / section, problem, expected revision, and pass condition
+
+Gate:
+- each required fantasy sample has pass / revise / block verdict
+- each CRPG check has pass / revise / block verdict
+
+### Pass C — Targeted rewrite
+Lead: worker-1
+
+Tasks:
+- resolve tickets in canon files
+- append decision-log entries only if a ticket requires changing frozen schema
+- keep reviewer reports as evidence, not canon
+
+Gate:
+- every ticket is resolved, rejected with reason, or escalated
+
+### Pass D — Re-test
+Leads: worker-2 and worker-3
+
+Tasks:
+- re-test the revised sections
+- close tickets only when pass conditions are met
+- if any block remains, return to Pass C
+
+Gate:
+- no open block tickets
+- no unresolved revise tickets that affect final canon
+
+### Pass E — Canon compile
+Lead: worker-3 with leader review
+
+Tasks:
+- update `docs/design/04-build-examples-and-audit.md` with final verdicts
+- update `docs/working/change-log.md`
+- write `docs/working/final-compile-checklist.md`
+
+Gate:
+- canon docs are internally consistent
+- `git diff --check` passes
+- final checklist confirms main discipline, side-study, inheritance, fantasy, and CRPG checks
 
 ## Launch hint
+
 Recommended launch target:
-- `omx team 6:executor "Finalize the low-magic wuxia CRPG systems canon: freeze baseline, lock schema, finalize 8 main disciplines, finalize side-study/refinement, finalize all 24 inheritances at equal depth, run school coherence review, run build audit, then compile canon docs."`
+
+```bash
+omx team 3:executor "Execute .omx/plans/team-handoff-2026-04-24-wuxia-systems-finalization.md. Use the 1-writer + 2-reviewer finish loop: worker-1 is Canon Systems Designer, worker-2 is Wuxia Fantasy Reviewer, worker-3 is CRPG Systems Reviewer. Complete side-study/refinement, pressure-test wuxia fantasy builds and CRPG systems, create revision tickets, rewrite canon, re-test, and compile final canon evidence."
+```
 
 ## Residual execution risks
-1. Baseline drift must be reconciled before drafting.
-2. Deferred slot/loadout rules make some audit outcomes conditional.
-3. Because worker role prompt is shared, reviewer behavior must be enforced by assignment text and gates.
+1. `docs/design/03-side-studies-and-loadout.md` is still scaffold-level and must be completed before meaningful pressure review.
+2. Reviewers must produce tickets, not free-form opinions; otherwise the loop cannot converge.
+3. CRPG pressure must improve tactical design without erasing low-magic wuxia identity.
+4. Wuxia fantasy pressure must create playable builds without forcing mandatory side-study taxes.

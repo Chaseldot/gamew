@@ -42,10 +42,10 @@ Owner：worker-1 / Senior Wuxia Fan
 | F-013 | 武僧型 | worker-1 | 0 | pass | 0 | 拳掌 + 旁修接口 + 清修表现标签。 |
 | F-014 | 游侠型 | worker-1 | 0 | pass | 0 | 游锋 + 影踪/射艺接口 + 江湖表现。 |
 | F-015 | 侠盗型 | worker-1 | 0 | pass | 1 | 影踪或游锋 + 夜行/义盗表现。 |
-| F-016 | 丐帮帮主型 | worker-1 | 1 | revise | 1 | 草莽领袖、棍棒 / 掌法 / 呼喝压场可由战斗层部分解释，但“帮主 / 丐帮”身份与棍法称谓需要回收到角色形象，不得要求新增流派。见 WUX-008。 |
+| F-016 | 丐帮帮主型 | worker-1 | 1 | pass | 1 post-rewrite | 草莽领袖、掌棒 / 呼喝护众已由拳掌、破军、音律、游锋与角色形象边界解释；帮派称谓暂存为表现 / future identity 包装。 |
 | F-017 | 飞刀浪子型 | worker-1 | 1 | pass | 1 | 射艺穿杨 / 连珠 + 影踪或游锋旁修可解释“一镖定线、例不虚发”的低魔投射幻想。 |
-| F-018 | 驭鹰孤侠型 | worker-1 | 1 | block | 1 | 若玩家期待战斗兽伴协同，当前层级没有 companion 主循环；只能作为表现标签 / 剧情陪伴暂存。见 WUX-009。 |
-| F-019 | 红绫软兵女侠型 | worker-1 | 1 | revise | 1 | 游锋 / 奇门可解释换位与牵制，但软兵的缠、卷、牵、夺械动作语汇不足，需传承或旁修口径补强。见 WUX-010。 |
+| F-018 | 驭鹰孤侠型 | worker-1 | 1 | block / deferred | 1 post-rewrite | 非战斗鹰伴可作为表现标签 / 侦查氛围 pass；独立参战、夹击、承伤或触发资源的 combat companion 版本仍 deferred / block。见 WUX-009。 |
+| F-019 | 红绫软兵女侠型 | worker-1 | 1 | pass | 1 post-rewrite | 游锋与旁修文本已补软兵缠卷、牵拉、夺械、换位、显锋 / 断势窗口；低魔边界和 counterplay 清楚。 |
 | F-020 | 铁面缉凶型 | worker-1 | 1 | pass | 1 | 拳掌擒拿 + 射艺猎踪 / 影踪追迹可解释缉凶、追捕、制伏；不借捕快身份权限作为战斗 pass 条件。 |
 
 ## Round 1 full baseline test — worker-1
@@ -65,6 +65,27 @@ Owner：worker-1 / Senior Wuxia Fan
 - F-019 红绫软兵女侠型 — **revise**：游锋能给步法与显锋，奇门能给牵引和局部规则，拳掌可给擒拿；但“红绫 / 软鞭 / 绳索”的缠卷、夺械、牵拉、借力回收不够可读，容易被误判为奇门法术或普通近战换皮。
 - F-020 铁面缉凶型 — **pass**：拳掌擒拿负责制伏，射艺猎踪负责标迹追捕，影踪旁修负责潜查接敌；“铁面 / 缉凶”作为角色形象和行为标签成立，不依赖捕快身份权限。
 
+
+## Round 1 post-rewrite full regression retest — worker-1
+
+- Baseline tested: current canon after worker-2 first rewrite, worker-3 CRPG review, and worker-2 post-review resolution packet visible in this worktree.
+- Coverage: F-001 ~ F-020 cumulative suite, including all prior pass items plus the five worker-origin Round 1 additions.
+- Result: 19 pass / 0 revise / 1 block-deferred.
+- Regressions from prior PASS: none. F-001 ~ F-015 and F-017 / F-020 remain pass; no old pass fell to revise/block.
+- Fixed from baseline revise: F-016 and F-019 moved from revise to pass after WUX-008 and WUX-010 canon resolutions.
+- Remaining block/defer: F-018 only, and only for the player expectation that the eagle is an independently acting combat companion. The non-combat eagle presentation / scouting atmosphere version is supported as a role-image tag.
+- New worker-origin fantasies this round: F-016 ~ F-020 (5 items; no human-origin additions found in the handoff).
+- New post-rewrite tickets opened: none. WUX-009 remains the intentional future companion escalation rather than a current-round canon rewrite request.
+
+### Round 1 post-rewrite item notes
+
+- F-016 丐帮帮主型 — **pass**：现 canon 明确帮派称谓、帮主外号与打狗棒式表现不能倒逼身份 / 职业根；战斗层可由拳掌摧心、破军守阵、音律战鼓、游锋兵刃表现与草莽 / 号令 / 护众标签组成。
+- F-017 飞刀浪子型 — **pass**：射艺投射、穿杨 / 连珠、一发高价值窗口与影踪 / 游锋切入仍完整成立。
+- F-018 驭鹰孤侠型 — **block / deferred for combat companion**：角色形象层已允许鹰作为外观、侦查氛围、剧情陪伴或 NPC 叙事；但独立战斗单位仍会引入行动经济、承伤、夹击、资源触发与 counterplay 新系统，不能由本轮传承 / 旁修偷渡。
+- F-019 红绫软兵女侠型 — **pass**：游锋主修、连锋 / 断势代表动作与游锋旁修梯度都已补出软兵缠卷、牵拉、夺械、借力回收、换位与短控入口，并明确不变成奇门法术或远程硬控。
+- F-020 铁面缉凶型 — **pass**：仍可由拳掌擒拿、射艺猎踪、影踪追迹和铁面 / 缉凶标签成立，不借捕快身份权限。
+
 ## Round history
 - Round 0：seed suite from previous archetype compile packet; 15/15 pass.
 - Round 1 baseline pre-rewrite：20 cumulative fantasies; 17 pass / 2 revise / 1 block; no prior PASS regressions; opened WUX-008~WUX-010 for worker-2 canon rewrite.
+- Round 1 post-rewrite retest：20 cumulative fantasies; 19 pass / 0 revise / 1 block-deferred; F-016 and F-019 fixed; F-018 combat companion remains future-system deferred; no regressions and no new tickets.

@@ -1,26 +1,32 @@
 # CRPG Systems Pressure Report
 
-状态：Pass E compile intake packaged，全部 CRPG 票已关闭
+状态：Round 1 worker-3 CRPG review complete，no P0/P1 blocker
 Owner：worker-3
 
 ## Review rule
 本文件不直接改 canon。所有问题必须转成 `docs/working/revision-tickets.md` 中的 ticket，并在 worker-1 返修后复测。
 
-## Review basis
+## Current round review basis
+- Review date：2026-04-24
+- Review scope：human-gated fantasy iteration loop after current canon/fantasy packet in this worktree
+- 已审阅：`docs/working/fantasy-test-suite.md`
+- 已审阅：`docs/working/wuxia-fantasy-pressure-report.md`
+- 已审阅：`docs/working/revision-tickets.md`
 - 已审阅：`docs/working/baseline-snapshot.md`
 - 已审阅：`docs/design/00-rule-bible.md`
 - 已审阅：`docs/design/01-main-disciplines.md`
 - 已审阅：`docs/design/02-inheritances.md`
 - 已审阅：`docs/design/03-side-studies-and-loadout.md`
 - 已审阅：`docs/design/04-build-examples-and-audit.md`
-- Pass D 复测目标：worker-1 canon rewrite（task-3 packaging review baseline `d749db5`；rewrite 结果已并入当前 worktree）
+- Round 1 复测目标：确认 fixed 流派下的 传承 / 旁修 / 角色形象改写没有制造 CRPG mandatory tax、无反制 burst 或 2-4 回合空转。
 
 ## Gate snapshot
+- `docs/working/fantasy-test-suite.md`：当前 worktree 为 15 个累计样例，全部 pass；若 worker-1 后续新增 3-5 个幻想，本报告需追加复测段。
 - `docs/design/01-main-disciplines.md`：8/8 主修维持完整 5 字段。
 - `docs/design/02-inheritances.md`：24/24 传承 section 仍齐，且药师 / 音律 / 奇门已按 ticket 方向做定向返修。
 - `docs/design/03-side-studies-and-loadout.md`：八门旁修 1/2/3 与精修 1/2/3 已补完，`TBD = 0`。
 - 占位符协议仍在：`LOADOUT_INTERFACE_PENDING`、`MERIDIAN_SLOT_COUNT_PENDING`、`SLOT_PRESSURE_ASSUMPTION_ONLY`。
-- 结论：`CRPG-01` ~ `CRPG-04` 全部已关闭；当前 canon 已满足 compile intake。
+- 结论：当前已审样例未发现新的 CRPG P0/P1；`CRPG-01` ~ `CRPG-04` 继续保持关闭。worker-2 二次 rewrite 可走 no-op / polish 路线，除非 worker-1 新增幻想产生新票。
 
 ## Required checks
 - action economy
@@ -71,6 +77,13 @@ Owner：worker-3
 | 毒医圣手型 | PASS | 药师 fantasy 已通过复测；三传承职责分化与机会成本已足够清楚。 |
 | 机关奇人型 | PASS | 奇门局部改场 fantasy、首回合收益与敌方 counterplay 已补齐。 |
 
+## Round 1 actionable advice for worker-2 second rewrite
+- **No P0/P1 mandatory canon rewrite is required from the currently visible packet.** Do not churn fixed `流派` names or re-open resolved CRPG tickets without a new fantasy failure.
+- If worker-1 adds new fantasies before the final retest, map each demand to exactly one primary layer first：传承 for main-loop differentiation, 旁修 for horizontal interface / small loop, 角色形象 for presentation-only labels.
+- Preserve explicit counterplay windows already added for 音律 and 奇门（断拍、抢拍、绕阵、拆阵、破器具、脱离听闻范围）; do not turn them into always-on aura/control.
+- Keep 药师 opportunity cost visible：济世 / 针脉 / 蛊毒 can cooperate through 药性 but must not collapse into top healing + top control + top DOT at no tradeoff.
+- Keep every mixed-build statement under `LOADOUT_INTERFACE_PENDING` / `SLOT_PRESSURE_ASSUMPTION_ONLY`; do not imply a concrete slot budget or mandatory side-study pick.
+
 ## Pass D retest focus to carry into next rewrite
 - 音律三传承与奇门三传承的 CRPG 复测已通过。
 - 后续 compile 仍需保留 `SLOT_PRESSURE_ASSUMPTION_ONLY` 作为约束，但它已不再是当前 blocker。
@@ -78,5 +91,5 @@ Owner：worker-3
 
 ## Version evidence
 - task-3 文档整理基线：`d749db5`（worker-3 当前 worktree review 起点）。
-- 本轮结论边界：worker-3 已完成 CRPG compile packet，结论是“可提交 leader review”，不是在此文件内代替 leader 做最终接受。
+- 本轮结论边界：worker-3 已完成当前可见 packet 的 CRPG review；若 worker-1/worker-2 后续提交新幻想或 canon rewrite，需要在同一累计 suite 上追加复测，不由本段提前代替 leader / human 接受。
 - fresh evidence 约束：占位符协议仍保留，且 compile 结论继续受 `LOADOUT_INTERFACE_PENDING`、`MERIDIAN_SLOT_COUNT_PENDING`、`SLOT_PRESSURE_ASSUMPTION_ONLY` 限制。

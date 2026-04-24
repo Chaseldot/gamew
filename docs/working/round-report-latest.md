@@ -41,12 +41,12 @@ Owner：all workers; final reader = human / leader
 - Rejected / deferred changes: 继续拒绝用出身 / 身份补当前幻想；继续 defer final loadout matrix 与 slot counts。
 
 ## 5. worker-3 senior design review
-- Verdict: pending worker-3
-- Mandatory-tax risks: pending worker-3
-- Counterplay risks: pending worker-3
-- 2-4 turn value risks: pending worker-3
-- Layer-placement advice: pending worker-3
-- Actionable advice for worker-2: pending worker-3
+- Verdict: PASS for the currently visible cumulative packet; no new CRPG P0/P1 blocker found. This is not human acceptance and must be refreshed if worker-1/worker-2 land additional fantasies or canon rewrites after this note.
+- Mandatory-tax risks: No single side-study is currently required to make a core fantasy playable. Continue keeping mixed builds under `LOADOUT_INTERFACE_PENDING` / `SLOT_PRESSURE_ASSUMPTION_ONLY`; do not imply concrete slot counts.
+- Counterplay risks: 音律 and 奇门 are acceptable because their counterplay remains explicit（断拍 / 抢拍 / 脱离听闻 / 绕阵 / 拆阵 / 破器具）. Do not convert these into always-on aura, hard control, or unanswerable battlefield rewrite.
+- 2-4 turn value risks: Current 音律, 奇门, 药师, 影踪 samples have visible first action, mid-loop, and payoff. Watch future fantasies for long setup tax or one-shot burst with no decision point.
+- Layer-placement advice: Put main-loop differentiation in 传承, horizontal access and small loops in 旁修, and names like 武僧 / 琴魔 / 侠盗 in 角色形象 only. 出身 / 身份 remains deferred and cannot be used as a pass condition.
+- Actionable advice for worker-2: No mandatory second rewrite from the currently visible CRPG packet. If new fantasy tickets arrive, resolve them narrowly; preserve fixed 流派, explicit counterplay, 药师 opportunity costs, and placeholder boundaries.
 
 ## 6. worker-2 second canon rewrite
 - Advice accepted: Pending worker-3 CRPG review in the full 1 -> 2 -> 3 -> 2 -> Human sequence.

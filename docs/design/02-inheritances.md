@@ -1,10 +1,10 @@
 # 02 Inheritances
 
-状态：Phase 4 scaffold only  
+状态：Pass A / Phase 4 canon draft complete，待 Pass B / D 压测复核  
 Schema source：`docs/design/00-rule-bible.md`  
-Ownership：worker-4 owns 游锋 / 破军 / 拳掌 / 射艺；worker-5 owns 影踪 / 药师 / 音律 / 奇门。
+Ownership：worker-4 / worker-5（phase draft） ；worker-1（finish-loop canon writer）。
 
-> 24 个传承全部按同一 7 字段模板填写；当前仅建立 section scaffold。
+> 24 个传承全部按同一 7 字段模板填写；本轮按 equal-depth blueprint 维持同深度完成，后续只接受 reviewer ticket 驱动的定向返修。
 
 ## 游锋
 ### 连锋

@@ -19,6 +19,10 @@
    - Reason: downstream lanes 需要单一规则入口。
    - Downstream impact: 若任何 lane 需要改 schema，先记 decision request，再由 leader 决断。
 
+5. **This round writes directly into owned `docs/design/*` targets after Phase 0 / 1 gates**
+   - Reason: 当前 team handoff 已为 Phase 2–5 明确分配 canon 文件 / section ownership；旧 workflow 草案中的“先 candidate、后 compile”仅保留为审计思想，不再作为写入路径。
+   - Downstream impact: downstream workers 在各自拥有的 canon 文件内按冻结模板直写；worker-6 / leader 负责审计、compile intake 与 gate verdict，而不是再建并行草稿树。
+
 ### Rejected / superseded
 1. **Keep 16 core inheritances + 8 reserve split**
    - Reason: superseded by current round override.

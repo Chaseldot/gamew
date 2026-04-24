@@ -9,6 +9,7 @@
 - 下游不得重定义 schema；若需要改规则，只能先记入 `docs/working/decision-log.md`。
 - 不得把 `LOADOUT_INTERFACE_PENDING` / `MERIDIAN_SLOT_COUNT_PENDING` / `SLOT_PRESSURE_ASSUMPTION_ONLY` 升格为最终规则。
 - 共享规则冲突先上报，不得 silent edit。
+- 本轮采用**owned canon doc direct-write**：Phase 2–4 的 worker 直接写入自己拥有的 `docs/design/*` 文件 / section；audit 负责判定与返修，不再额外维护一套平行 candidate 文档。
 
 ## Lane Map
 

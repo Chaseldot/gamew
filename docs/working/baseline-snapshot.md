@@ -82,6 +82,7 @@
 2. **主修模板项数**：访谈阶段已冻结为 5 字段；Phase 2 需要的 explicit non-goals 不另起新字段，统一写入第 5 字段“旁修影响范围 / 主修核心保留区 / 非目标”。
 3. **经脉槽 / 运功位**：仍为待定边界，只能以占位接口表达，不能在任何下游文档中偷渡为正式规则。
 4. **Loadout / Meridian boundary**：后续所有引用必须保留占位符，不得假定最终槽位数量。
+5. **Workflow-plan compile path**：`docs/plans/2026-04-24-game-setting-multi-agent-workflow.md` 中“no output goes directly into `docs/design/*.md` / audit before compile”的旧流程，在本轮 team handoff 中被**文件直写 + gate 审核**取代；Phase 2–4 由各 worker 直接写入其拥有的 `docs/design/*` 目标文件或 section，audit 负责判定 pass / revise / block，而不是再创建一层平行 candidate 文稿。
 
 ## 本轮强制占位符（必须原样使用）
 - `LOADOUT_INTERFACE_PENDING`

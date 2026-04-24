@@ -30,6 +30,7 @@
 - 不代写 8 个主修定稿
 - 不代写 24 个传承定稿
 - 不推进 build audit 内容
+- Phase 1 结束后不继续扩写其他 lane 的 canon 正文
 
 ### worker-2 — Main Discipline Lane
 **Owned file**
@@ -106,3 +107,14 @@
 3. **Phase 2 / 3 parallel**：主修与旁修可并行，但必须引用同一套 schema。
 4. **Phase 4 parallel**：inheritance clusters 分 section 并行，不得交叉改对方 section。
 5. **Phase 4.5+**：school coherence / build audit / compile 必须串行。
+
+## Shared-file coordination notes
+- `docs/working/decision-log.md` 在 **Phase 0 / 1 由 worker-1 初始化并维护 schema 决策**。
+- 自 Phase 2 起，decision log 采用“**阶段拥有者追加、不得重写既有结论**”模式；如需推翻 Phase 0 / 1 规则，只能新增 escalation entry。
+- `docs/working/conflict-redlines.md` 与 `docs/working/change-log.md` 由 worker-6 主维护；其他 lane 不直接改写其主结构。
+
+## Ready signal for downstream lanes
+满足以下条件即可视为 Phase 0 / 1 开门：
+1. `baseline-snapshot.md` 明确写出 **24 inheritances / equal depth** 覆盖关系；
+2. `00-rule-bible.md` 冻结 5 字段 / 7 字段 / 1-2-3 语法；
+3. `agent-queue.md` 明确 section/file ownership 与 non-goals。

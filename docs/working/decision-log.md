@@ -31,3 +31,7 @@
 - Why current schema is insufficient:
 - Impacted files / lanes:
 - Safe fallback if rejected:
+
+## Coordination rule
+- 任何下游 lane 如需修改 Phase 0 / 1 冻结的术语、模板、占位符协议，必须先按上面的 escalation format 追加记录。
+- 允许追加，不允许删除或静默改写既有 accepted / rejected 结论。

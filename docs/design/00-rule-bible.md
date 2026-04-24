@@ -7,6 +7,14 @@
 ## Scope
 本文件是本轮下游写作的 schema authority。若与旧摘要冲突，以本文件 + `docs/working/baseline-snapshot.md` 为准。
 
+## Authority order
+当多个文档同时涉及规则解释时，以下顺序高于其他设计草稿：
+1. `docs/working/baseline-snapshot.md`
+2. 本文件
+3. `docs/working/agent-queue.md`
+
+旧摘要、访谈记录、个人草稿只能补背景，不得反向改写本文件已经冻结的 schema。
+
 ## Canonical definitions
 
 ### 主修
@@ -110,3 +118,6 @@
 - `02-inheritances.md`：worker-4 / worker-5 分 section
 - `03-side-studies-and-loadout.md`：worker-3
 - `04-build-examples-and-audit.md`：worker-6
+
+## Phase 1 exit note
+从本文件锁定起，下游 worker 的职责是**填模板，不是改模板**。若发现模板不足以表达内容，先在 `docs/working/decision-log.md` 追加 escalation，再等待 leader / phase owner 决断。

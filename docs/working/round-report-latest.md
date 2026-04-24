@@ -1,6 +1,6 @@
 # Round Report — Latest Human-Gated Fantasy Iteration
 
-状态：Round 1 in progress — worker-1 baseline fantasy test complete; waiting for worker-2 first canon rewrite
+状态：Round 1 ready for human gate — worker-1 post-rewrite regression retest complete
 Owner：all workers; final reader = human / leader
 
 ## Round metadata
@@ -23,16 +23,17 @@ Owner：all workers; final reader = human / leader
 - Total fantasies: 20
 - Worker-origin fantasies added this round: 5
 - Human-origin fantasies added this round: 0
-- Pass: 17
-- Revise: 2
-- Block: 1
+- Pass: 19
+- Revise: 0
+- Block / deferred: 1
 - Regressions from prior PASS: 0
-- Fixed from prior revise/block: not applicable before worker-2 rewrite
+- Fixed from prior revise/block: F-016 丐帮帮主型 and F-019 红绫软兵女侠型 moved from revise to pass after canon rewrite; F-018 combat companion remains deferred/block by design.
 
 ## 3. worker-1 full-test findings
-- New tickets: WUX-008, WUX-009, WUX-010
-- Regressions: none; F-001 ~ F-015 remain pass
-- Duplicates / low-priority polish: none separated; all new failures are actionable P1 boundary / expression issues
+- Baseline new tickets: WUX-008, WUX-009, WUX-010
+- Post-rewrite retest: WUX-008 and WUX-010 pass; WUX-009 remains future companion escalation.
+- Regressions: none; F-001 ~ F-015 remain pass, and no Round 1 pass item regressed.
+- Duplicates / low-priority polish: none separated; no new post-rewrite tickets opened.
 
 ## 4. worker-2 first canon rewrite
 - Tickets accepted: W2-R1-001（current round 角色形象分流规则与累计 suite 样例补强）；continued WUX-007 resolution stance（职业名不得回升为职业根）。
@@ -49,22 +50,23 @@ Owner：all workers; final reader = human / leader
 - Actionable advice for worker-2: No mandatory second rewrite from the currently visible CRPG packet. If new fantasy tickets arrive, resolve them narrowly; preserve fixed 流派, explicit counterplay, 药师 opportunity costs, and placeholder boundaries.
 
 ## 6. worker-2 second canon rewrite
-- Advice accepted: Pending worker-3 CRPG review in the full 1 -> 2 -> 3 -> 2 -> Human sequence.
-- Files changed: Pending post-review rewrite.
-- Rejected / escalated advice: None yet; no worker-3 P0/P1 advice visible in this worktree at rewrite time.
+- Advice accepted: worker-3 found no mandatory second rewrite from the visible CRPG packet; worker-2 canon resolutions for WUX-008 / WUX-010 and WUX-009 escalation remain the active post-review packet.
+- Files changed: no additional canon delta required after worker-3 PASS advice in this worktree.
+- Rejected / escalated advice: WUX-009 combat companion remains escalated / deferred rather than solved inside current 流派 / 传承 / 旁修 layers.
 
 ## 7. worker-1 full regression retest
-- Total pass / revise / block: pending after both worker-2 rewrites
-- Remaining blockers: pending after both worker-2 rewrites
-- New regressions: pending after both worker-2 rewrites
+- Total pass / revise / block: 19 pass / 0 revise / 1 block-deferred across F-001 ~ F-020.
+- Remaining blockers: F-018 only when interpreted as an independently acting combat companion; non-combat eagle presentation / scouting atmosphere is supported as a role-image tag.
+- New regressions: none. F-001 ~ F-015 remain pass, F-017 / F-020 remain pass, and F-016 / F-019 improved from revise to pass.
+- New tickets after retest: none.
 
 ## 8. Human review packet
-- What changed this round: worker-1 expanded the cumulative fantasy suite and opened targeted canon tickets.
-- Why it changed: new fantasies pressure-test deferred identity, mutable side-study / inheritance expression, and role-image boundaries without changing fixed 流派.
-- Current unresolved risks: WUX-009 combat companion remains deferred / escalated if the player expects an independently acting beast companion; WUX-008 and WUX-010 have canon text resolutions ready for worker-1 retest.
-- Recommendation: worker-1 should full-retest F-001 ~ F-020 after the second rewrite; likely expected movement is F-016 and F-019 from revise to pass, while F-018 should split into non-combat eagle-label pass vs combat companion deferred/block.
+- What changed this round: worker-1 expanded the cumulative fantasy suite, worker-2 resolved role-image / soft-weapon boundary tickets, worker-3 passed the visible packet, and worker-1 completed the full post-rewrite regression retest.
+- Why it changed: new fantasies pressure-tested deferred identity, mutable side-study / inheritance expression, and role-image boundaries without changing fixed 流派.
+- Current unresolved risks: WUX-009 combat companion remains deferred / escalated if the player expects an independently acting beast companion; this is an intentional boundary, not a missed current-round rewrite.
+- Recommendation: ready for human gate. Human can accept this as next baseline or add next-round fantasies / objections, with the explicit note that combat companion requires a future companion-system design lane.
 
 ## 9. Human decision
-- Accept current version as next baseline: pending
-- Continue next round: pending
-- Human-added fantasies / objections for next round: pending
+- Accept current version as next baseline: pending human decision
+- Continue next round: pending human decision
+- Human-added fantasies / objections for next round: pending human decision

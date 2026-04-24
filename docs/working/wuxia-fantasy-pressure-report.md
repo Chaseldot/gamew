@@ -1,6 +1,6 @@
 # Wuxia Fantasy Pressure Report
 
-状态：Round 1 baseline fantasy pressure test（pre worker-2 rewrite）
+状态：Round 1 post-rewrite fantasy regression retest
 Owner：worker-1 / Senior Wuxia Fan
 
 ## Review rule
@@ -9,10 +9,10 @@ Owner：worker-1 / Senior Wuxia Fan
 ## Current loop status
 - 本轮执行约束：`流派固定；传承 / 旁修 / 角色形象可迭代；出身 / 身份 deferred`。
 - worker-1 已新增 5 个 worker-origin 幻想：`F-016` ~ `F-020`；未发现本轮 human-origin 新增幻想。
-- 已按当前 canon 全量复测累计 suite：`F-001` ~ `F-020`。
-- 结果：**17 pass / 2 revise / 1 block**。
+- 已按 worker-2 canon resolution 与 worker-3 CRPG review 后的当前 canon 全量复测累计 suite：`F-001` ~ `F-020`。
+- 结果：**19 pass / 0 revise / 1 block-deferred**。
 - 旧样例 `F-001` ~ `F-015` 无回归：仍能解释成“流派主轴 + 传承倾向 + 旁修工具 + 表现标签”的结果。
-- 新增 revise / block 已转为 `WUX-008`、`WUX-009`、`WUX-010`，等待 worker-2 canon rewrite。
+- `WUX-008` 与 `WUX-010` 已让 F-016 / F-019 从 revise 转为 pass；`WUX-009` 被正确保留为 future companion escalation，因此 F-018 的非战斗鹰伴 pass、战斗兽伴版本 block/deferred。
 
 ## Verdict rule
 - **Pass** = 现有主修 / 传承 / 旁修 / 表现标签已足以解释该 fantasy，且不需要回到职业根节点或出身/身份层。
@@ -45,25 +45,27 @@ Owner：worker-1 / Senior Wuxia Fan
 | 武僧型 | 清修、持戒、拳掌为骨、医理 / 护心为辅 | 角色形象层已写明由拳掌 + 传承倾向 + 药师/音律旁修 + 清修标签组合 | 无新回归 | WUX-007（closed） | Pass |
 | 游侠型 | 行走江湖、机动应变、义气与探索感并重 | 游锋 + 断势/藏锋 + 影踪/射艺接口 + 江湖表现标签成立 | 无新回归 | WUX-007（closed） | Pass |
 | 侠盗型 | 夜行劫富、出手利落又保有侠义标签 | 影踪或游锋 + 暗袭/设伏/藏锋 + 奇门/射艺接口 + 义盗/夜行标签成立 | 无新回归 | WUX-007（closed） | Pass |
-| 丐帮帮主型 | 草莽领袖、掌棒并用、呼喝护众、正面压场 | 拳掌摧心 / 破军守阵 / 音律战鼓可支撑核心战斗感 | “丐帮 / 帮主 / 打狗棒”容易被误读成出身身份或新增棍法流派，需要 archetype 边界 | WUX-008 | Revise |
+| 丐帮帮主型 | 草莽领袖、掌棒并用、呼喝护众、正面压场 | 拳掌摧心 / 破军守阵 / 音律战鼓 / 游锋兵刃表现 + 草莽号令标签可支撑核心战斗感 | canon 已明确帮派称谓和打狗棒式包装不得倒逼身份或新增棍法流派 | WUX-008（resolved） | Pass |
 | 飞刀浪子型 | 一柄飞刀、一瞬定线、例不虚发又带浪子气 | 射艺穿杨 / 连珠支撑飞刀投射；影踪或游锋旁修补袖中出手、贴步转角 | 无 | — | Pass |
-| 驭鹰孤侠型 | 孤侠与鹰同行，侦查、夹击、牵制或共同追猎 | 非战斗陪伴可作为表现标签；射艺猎踪可支撑“人自身追迹” | 若要求战斗兽伴行动经济，当前无 companion 资源 / counterplay / 主循环 | WUX-009 | Block |
-| 红绫软兵女侠型 | 以红绫 / 软鞭缠卷牵拉、夺械换位、柔中带杀 | 游锋可支撑兵刃步法，奇门可支撑牵引表达，拳掌可支撑近身擒拿 | 软兵低魔动作语汇不足，容易滑向新职业或奇门法术 | WUX-010 | Revise |
+| 驭鹰孤侠型 | 孤侠与鹰同行，侦查氛围或共同追猎想象 | 非战斗鹰伴、侦查氛围、剧情陪伴与 NPC 叙事可作为表现标签；射艺猎踪支撑“人自身追迹” | 若要求独立战斗兽伴行动经济、夹击、承伤或资源触发，当前无 companion 主循环，需 future system | WUX-009（escalated） | Block / Deferred |
+| 红绫软兵女侠型 | 以红绫 / 软鞭缠卷牵拉、夺械换位、柔中带杀 | 游锋主修、连锋 / 断势动作与游锋旁修已支撑缠卷、牵拉、夺械、借力回收、换位和短控入口 | 边界已写明不新增软兵职业、不滑向奇门法术或无反制远程硬控 | WUX-010（resolved） | Pass |
 | 铁面缉凶型 | 冷面追捕、查迹、制伏、以规则感压住恶徒 | 拳掌擒拿 + 射艺猎踪 / 影踪追迹可解释追捕制伏 | 不依赖捕快身份权限即可 pass | — | Pass |
 
 ## Ticket summary
-- New open fantasy tickets: `WUX-008`, `WUX-009`, `WUX-010`.
+- Baseline fantasy tickets: `WUX-008`, `WUX-009`, `WUX-010`.
+- Post-rewrite status: `WUX-008` resolved/pass, `WUX-010` resolved/pass, `WUX-009` intentionally escalated as future companion system.
 - No old pass regression found.
-- Highest-risk blocker: `WUX-009` companion boundary; recommendation is not to solve with current inheritance/side-study content, but to mark combat companion as deferred/future-system and preserve only presentation-level eagle fantasy this round.
+- Highest-risk blocker remains `WUX-009` combat companion boundary; recommendation is still not to solve it with current inheritance/side-study content, but to mark combat companion as deferred/future-system and preserve only presentation-level eagle fantasy this round.
 
 ## Round 1 fantasy checklist
-- 20 个累计样例已全量复测。
+- 20 个累计样例已在 post-rewrite canon 上全量复测。
 - worker-1 本轮新增 5 个幻想，满足 3-5 quota。
 - 未使用出身 / 身份作为 pass 条件。
 - 未要求推翻固定流派。
-- 新增问题均已转成可执行 ticket，并标注反压层级。
+- F-016 / F-019 已由 canon resolution 转为 pass；F-018 combat companion 版本保持 deferred/block，未偷渡进射艺 / 影踪 / 奇门。
+- 无新增 post-rewrite ticket；无旧 PASS 回归。
 
 ## Reviewer notes
-1. 当前 canon 对“经典人型武侠幻想”覆盖较强；新缺口主要出现在帮派/称号误读、软兵器动作语汇、以及兽伴战斗系统边界。
-2. `WUX-008` 与 `WUX-010` 适合 worker-2 通过角色形象示例、游锋/旁修文案边界补强解决。
-3. `WUX-009` 不建议硬解；应清楚区分“鹰作为表现标签”与“鹰作为战斗单位”。后者需要未来 companion / party / action-economy 设计，不应污染本轮固定流派框架。
+1. 当前 canon 对“经典人型武侠幻想”覆盖较强；帮派/称号误读和软兵器动作语汇已经转为 pass。
+2. `WUX-008` 与 `WUX-010` 的补强没有引发 mandatory side-study tax，也没有推翻固定流派。
+3. `WUX-009` 不建议硬解；应继续清楚区分“鹰作为表现标签”与“鹰作为战斗单位”。后者需要未来 companion / party / action-economy 设计，不应污染本轮固定流派框架。

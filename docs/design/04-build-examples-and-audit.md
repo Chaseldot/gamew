@@ -17,10 +17,19 @@ Schema source：`docs/design/00-rule-bible.md`
 5. 任一 school 若拿不出“主修 + 旁修/精修 + 3 个传承”的完整组合视图，不得进入 Phase 4.5 / 5。
 
 ## Current upstream status
-- `01-main-disciplines.md`：scaffold only
-- `03-side-studies-and-loadout.md`：scaffold only
-- `02-inheritances.md`：scaffold only
-- 结论：**当前仅可完成审计框架与红线预埋；不可提前宣告任何 school / build 通过。**
+- `01-main-disciplines.md`：8/8 主修已按 5 字段填写，可做主修级 CRPG / school coherence 初审。
+- `02-inheritances.md`：24/24 传承 section 已建立并补全 7 字段，可做同门分化与战斗结构初审。
+- `03-side-studies-and-loadout.md`：仍为 scaffold，当前仍有 27 个 `TBD`。
+- 结论：**当前可做 school / inheritance 级初审与 provisional fantasy verdict；不可在 `03-side-studies-and-loadout.md` 未完成前放行 mixed-build / compile。**
+
+## Current review snapshot（Pass B / worker-3）
+- 当前 compile gate：**BLOCK**
+- 直接 blocker：`docs/design/03-side-studies-and-loadout.md` 未完成，mixed-build identity / mandatory tax pick / placeholder hidden dependency 无法完成真实审计。
+- 已开 CRPG tickets：`CRPG-01`、`CRPG-02`、`CRPG-03`、`CRPG-04`
+- 证据文件：
+  - `docs/working/crpg-systems-pressure-report.md`
+  - `docs/working/revision-tickets.md`
+  - `docs/working/final-compile-checklist.md`
 
 ## Audit assumptions（冻结前提）
 - 审计以“低魔武侠 CRPG”边界为最高约束。
@@ -50,14 +59,16 @@ Schema source：`docs/design/00-rule-bible.md`
 ### School coherence worksheet
 | School | 家族感检查 | 传承分化检查 | 旁修侵蚀检查 | 低魔边界检查 | 当前状态 |
 |---|---|---|---|---|---|
-| 游锋 | 是否仍是近身兵刃节奏 / 游斗 / 反击家族 | 连锋 / 断势 / 藏锋 是否通过节奏与破绽处理分化 | 是否吞掉破军或影踪 | 是否出现超自然瞬移式表达 | Pending upstream |
-| 破军 | 是否仍是冲阵 / 阵线改写家族 | 冲阵 / 守阵 / 震岳 是否按阵线职责分化 | 是否被旁修改写成纯单挑爆发 | 是否出现超规格范围压制 | Pending upstream |
-| 拳掌 | 是否仍是贴身控制 / 经脉干预家族 | 点穴 / 擒拿 / 摧心 是否按控制方式分化 | 是否被旁修补成万能近战 | 是否出现玄幻式隔空封脉 | Pending upstream |
-| 射艺 | 是否仍是视野 / 距离 / 投射家族 | 穿杨 / 连珠 / 猎踪 是否按射击节奏与标记方式分化 | 是否被旁修改成远程法术炮台 | 是否出现离谱制导 / 法术弹幕 | Pending upstream |
-| 影踪 | 是否仍是隐蔽 / 伏击 / 脱战家族 | 伏杀 / 暗袭 / 设伏 是否按潜入与杀机结构分化 | 是否沦为纯工具人或万能位移 | 是否出现忍法式高魔忍术 | Pending upstream |
-| 药师 | 是否仍是药 / 针 / 毒 / 蛊家族 | 济世 / 针脉 / 蛊毒 是否按治 / 调 / 蚀分化 | 是否被旁修推成万能奶妈 | 是否出现瞬发大复活 / 法术治愈 | Pending upstream |
-| 音律 | 是否仍是节拍 / 心神 / 士气家族 | 战鼓 / 清音 / 魔音 是否按节奏施压方向分化 | 是否只剩 buff 工具功能 | 是否出现法术吟唱职业化 | Pending upstream |
-| 奇门 | 是否仍是阵法 / 机关 / 符禁 / 香术家族 | 阵法 / 机关 / 符禁 是否按局部战场改写手段分化 | 是否被旁修改成泛用解题器 | 是否滑向西幻法师 | Pending upstream |
+| 游锋 | 家族感清晰，仍是近身兵刃节奏 / 游斗 / 反击家族 | 连锋 / 断势 / 藏锋 已形成节奏分化 | 旁修侵蚀暂无法终审，待 03 | 未见超自然瞬移式表达 | PASS（provisional；待 03 复核 tax / mixed-build） |
+| 破军 | 家族感清晰，仍是冲阵 / 阵线改写家族 | 冲阵 / 守阵 / 震岳 按阵线职责分化清楚 | 旁修侵蚀暂无法终审，待 03 | 未见超规格高魔范围压制 | PASS（provisional；待 03 复核 tax / mixed-build） |
+| 拳掌 | 仍是贴身控制 / 经脉干预家族 | 点穴 / 擒拿 / 摧心 控制方式分化成立 | 旁修侵蚀暂无法终审，待 03 | 未见玄幻式隔空封脉 | PASS（provisional；待 03 复核 pure-main 以外接口） |
+| 射艺 | 仍是视野 / 距离 / 投射家族 | 穿杨 / 连珠 / 猎踪 射击节奏与标记方式分化明确 | 旁修侵蚀暂无法终审，待 03 | 未见法术炮台化表达 | PASS（provisional；待 03 复核 build 接口） |
+| 影踪 | 隐蔽 / 伏击 / 脱战家族感清晰 | 伏杀 / 暗袭 / 设伏 的接敌与收网结构分化明确 | 旁修侵蚀暂无法终审，待 03 | 未见高魔忍术化表达 | PASS（provisional；待 03 复核 mixed-build） |
+| 药师 | 家族感成立，但医 / 针 / 毒 / 蛊边界仍需收紧 | 济世 / 针脉 / 蛊毒 已分化，但机会成本表达偏弱 | 有滑向万能奶妈 / omni-role 风险 | 未见法术治愈越界，但需继续守边界 | REVISE（见 `CRPG-04`） |
+| 音律 | 节拍 / 心神 / 士气家族感成立 | 战鼓 / 清音 / 魔音 分化成立，但单人成立性表达不足 | 有退化为纯 buff 工具的风险 | 未越界为法师吟唱系统，但 counterplay 不够清楚 | REVISE（见 `CRPG-02`） |
+| 奇门 | 阵法 / 机关 / 符禁 家族感成立 | 三传承已分化，但短遭遇价值表达偏弱 | 有滑向泛用解题器风险 | 目前仍守低魔，但敌方互动窗口不够明确 | REVISE（见 `CRPG-03`） |
+
+> 注：上述 school verdict 仅基于 `01-main-disciplines.md` + `02-inheritances.md` 的 **Pass B 初审**；在 `03-side-studies-and-loadout.md` 完成前，不得视为 compile 放行结论。
 
 ## Build audit protocol（Phase 5）
 
@@ -150,14 +161,14 @@ Schema source：`docs/design/00-rule-bible.md`
 ## Build audit worksheet（执行模板）
 | Build | 主修 | 传承 | 旁修 / 精修假设 | 纯主修可行性 | 混修身份完整性 | 低魔边界 | mandatory tax pick | placeholder dependency | Verdict |
 |---|---|---|---|---|---|---|---|---|---|
-| 扫地僧型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 独臂剑侠型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 琴魔型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 白衣琴医型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 黑衣刺客型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 铁枪护法型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 毒医圣手型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
-| 机关奇人型 | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending |
+| 扫地僧型 | 拳掌 / 药师 / 音律（待定） | 待 03 + 精修定稿后确认 | 精修 1/2/3 仍为 `TBD` | BLOCK | BLOCK | Pending | BLOCK | BLOCK | BLOCK |
+| 独臂剑侠型 | 游锋 | 连锋 / 断势 / 藏锋（皆可承载，待最终 fantasy 选型） | 纯主修优先；少量身法型旁修待 03 | PASS（provisional） | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | PASS（provisional） |
+| 琴魔型 | 音律 | 魔音（优先假设） | 纯主修优先；旁修接口待 03 | REVISE | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | REVISE |
+| 白衣琴医型 | 音律 / 药师（待定主次） | 待 03 接口定稿 | 音律 × 药师 接口依赖 03 | Pending | BLOCK | Pending | BLOCK | BLOCK | BLOCK |
+| 黑衣刺客型 | 影踪 | 伏杀 / 暗袭 / 设伏 | 纯主修优先；少量补入口旁修待 03 | PASS（provisional） | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | PASS（provisional） |
+| 铁枪护法型 | 破军 | 守阵（优先假设） | 纯主修优先；护线旁修待 03 | PASS（provisional） | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | PASS（provisional） |
+| 毒医圣手型 | 药师 | 蛊毒（优先假设） | 纯主修或少量接口混修待 03 | REVISE | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | REVISE |
+| 机关奇人型 | 奇门 | 阵法 / 机关 / 符禁（待最终 fantasy 选型） | 纯主修优先；任何旁修接口待 03 | REVISE | Pending（待 03） | PASS | Pending（待 03） | Pending（待 03） | REVISE |
 
 ## Cross-system stress checks
 - **Pure-main pressure test**：每个主修都至少有一条不依赖旁修的可玩 build。

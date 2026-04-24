@@ -23,6 +23,37 @@
   Status: resolved
   Resolution note: 已将武僧 / 游侠 / 侠盗示例改为现有流派、传承、旁修接口与表现标签组合，移除 `心法`、`轻功`、`暗器`、`轻身主轴` 等未定义子系统依赖；见 `docs/design/05-identity-and-archetypes.md`。
 
+
+- ID: WUX-008
+  Source reviewer: worker-1 / Senior Wuxia Fan
+  Impacted canon file / section: `docs/design/05-identity-and-archetypes.md` / `## Archetype build grammar`
+  Problem: `丐帮帮主型` 能由拳掌、破军、音律和角色形象拼出“草莽领袖、掌棒并用、呼喝护众”的幻想，但“丐帮 / 帮主 / 打狗棒”极易被读成出身 / 身份、帮派权限或新增棍法流派；当前 archetype 示例没有明确这类帮派称谓如何在 deferred 身份下暂存。
+  Expected revision: 增加或改写 archetype 口径，说明草莽帮主 / 丐帮式幻想应先由拳掌或破军主轴、摧心 / 守阵 / 战鼓等倾向、音律或游锋旁修接口、草莽 / 号令 / 护众表现标签成立；帮派身份与具体江湖称号仅作为 deferred 包装，不可倒逼新增流派。
+  Pass condition: 读者不借 `出身 / 身份`、不新增 `棍法` 流派，也能解释丐帮帮主型的战斗层；同时不会把“帮主”当作职业根节点。
+  Priority: P1
+  Status: open
+  Resolution note:
+
+- ID: WUX-009
+  Source reviewer: worker-1 / Senior Wuxia Fan
+  Impacted canon file / section: `docs/design/05-identity-and-archetypes.md` / 角色形象边界；possible future companion escalation
+  Problem: `驭鹰孤侠型` 暴露 companion 边界：射艺猎踪明确“不默认携带兽伴”，但角色形象层尚未说明“鹰 / 犬 / 灵兽”等同伴何时只是外观叙事，何时会要求独立战斗系统。若把战斗兽伴硬塞进射艺、影踪或奇门，会制造隐藏行动经济、不可读 counterplay 和新职业根。
+  Expected revision: 在角色形象层增加边界说明：非战斗陪伴、侦查氛围、NPC 叙事可作为表现标签暂存；任何能在战斗中独立侦查、夹击、承伤、触发资源或占用行动经济的兽伴都必须 deferred / escalated 到 future companion system，不能由本轮传承或旁修偷渡解决。
+  Pass condition: `驭鹰孤侠型` 被明确判为“表现标签可 pass，战斗 companion 版本 block/defer”，且不会污染射艺猎踪或影踪主循环。
+  Priority: P1
+  Status: open
+  Resolution note:
+
+- ID: WUX-010
+  Source reviewer: worker-1 / Senior Wuxia Fan
+  Impacted canon file / section: `docs/design/01-main-disciplines.md` / `## 游锋`; `docs/design/02-inheritances.md` / 游锋相关传承; `docs/design/03-side-studies-and-loadout.md` / 游锋或奇门旁修接口
+  Problem: `红绫软兵女侠型` 需要软兵 / 绳索 / 红绫的缠、卷、牵、夺械、借力回收手感。当前游锋强调兵刃贴身与锋势，奇门强调布置 / 符器，但两者都没有足够明确的低魔软兵动作语汇；玩家可能误以为必须新增“软兵职业”或把红绫写成高魔法术。
+  Expected revision: 在不新增流派、不定义最终 loadout 槽位的前提下，为游锋或相关旁修补充“软兵作为兵刃表现”的口径：可用于换位、牵拉、夺械、短控入口或显锋 / 断势窗口，但不能变成奇门法术、远程硬控或 mandatory side-study tax。
+  Pass condition: 读者能用现有流派层级解释红绫 / 软鞭 / 绳索女侠，并清楚其战术作用、边界和 counterplay，而不需要新职业根或高魔解释。
+  Priority: P1
+  Status: open
+  Resolution note:
+
 新 ticket 必须说明它反压的是哪一层：
 - 流派边界；
 - 传承专精；

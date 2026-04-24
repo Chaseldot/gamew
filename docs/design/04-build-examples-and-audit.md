@@ -1,6 +1,6 @@
 # 04 Build Examples and Audit
 
-状态：Phase 6 compile intake complete
+状态：Round 1 CRPG audit refreshed for human-gated loop
 Owner：worker-3
 Schema source：`docs/design/00-rule-bible.md`
 
@@ -22,10 +22,11 @@ Schema source：`docs/design/00-rule-bible.md`
 - `03-side-studies-and-loadout.md`：八门旁修 1/2/3 与精修 1/2/3 已补完，`TBD = 0`。
 - 结论：**school / inheritance / build audit 现在都已可读，mixed-build / compile 可以放行。**
 
-## Current review snapshot（Pass B / worker-3）
-- 当前 compile gate：**PASS**
+## Current review snapshot（Round 1 / worker-3）
+- 当前 CRPG gate：**PASS for currently visible cumulative suite**
 - 直接 blocker：无；`docs/design/03-side-studies-and-loadout.md`、`docs/design/01-main-disciplines.md`、`docs/design/02-inheritances.md` 与 working 侧 tickets 已互相对齐。
-- 已开 CRPG tickets：无（全部 resolved）
+- 已开 CRPG tickets：无新增；既有 `CRPG-01` ~ `CRPG-04` 保持 resolved。
+- 二次 rewrite 建议：不做无票据的大改；仅在 worker-1 新增幻想或复测票据出现时，按“传承 / 旁修 / 角色形象”归位后再改 canon。
 - 证据文件：
   - `docs/working/crpg-systems-pressure-report.md`
   - `docs/working/revision-tickets.md`
@@ -178,7 +179,7 @@ Schema source：`docs/design/00-rule-bible.md`
 - **Deferred-interface sweep**：若某审计结论依赖具体槽位数，必须回写 `SLOT_PRESSURE_ASSUMPTION_ONLY` 并标记为 revise/block。
 
 ## Compile intake（Phase 6 handoff to compile）
-本轮 compile intake 已完成；当前 verdict 全部为 PASS。
+本轮 compile intake 已完成；当前 verdict 全部为 PASS。Round 1 worker-3 refresh 未发现新的 P0/P1 CRPG blocker。
 
 1. 每个 school 的 coherence verdict（PASS / REVISE / BLOCK）已收束为 PASS。
 2. 8 个 fantasy build 的审计 verdict 已收束为 PASS，且触发原因均已记录到压力报告 / 修订票。

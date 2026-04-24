@@ -1,10 +1,10 @@
 # 02 Inheritances
 
-状态：Pass A / Phase 4 canon draft complete，待 Pass B / D 压测复核
+状态：iteration-loop canon baseline（24 current-version drafts，reviewer-ticket mutable）
 Schema source：`docs/design/00-rule-bible.md`
-Ownership：worker-4 / worker-5（phase draft） ；worker-1（finish-loop canon writer）。
+Ownership：canon systems designer（current loop: worker-1；保留 phase draft credits）。
 
-> 24 个传承全部按同一 7 字段模板填写；本轮按 equal-depth blueprint 维持同深度完成，后续只接受 reviewer ticket 驱动的定向返修。
+> 24 个传承全部按同一 7 字段模板填写；本轮按 equal-depth blueprint 维持同深度完成，作为 current-version baseline 持续接受 reviewer ticket 驱动的定向返修，而不是终局冻结 canon。
 
 ## 游锋
 ### 连锋

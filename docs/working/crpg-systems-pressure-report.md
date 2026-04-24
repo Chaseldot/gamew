@@ -48,13 +48,13 @@ Owner：worker-3
 | placeholder hidden dependency risk | 01 / 02 目前仍遵守占位符边界 | 若在 03 未完成时提前放行 audit，就会把 slot / loadout 假设偷渡进 build 结论 | CRPG-01 | BLOCK |
 
 ## Key findings
-1. **P0 gate blocker — side-study / refinement 仍是空架子**  
+1. **P0 gate blocker — side-study / refinement 仍是空架子**
    `docs/design/03-side-studies-and-loadout.md` 还未提供八门旁修的 1 点入口 / 2 点接口 / 3 点小循环，也未提供精修 1/2/3。任何 mixed-build、tax-pick、placeholder dependency 结论现在都不可信。
-2. **P1 revise — 音律需要更清楚的单人成立与反制窗口**  
+2. **P1 revise — 音律需要更清楚的单人成立与反制窗口**
    `战鼓 / 清音 / 魔音` 目前有强烈团队幻想，但 CRPG 文本还应写明：没有队友立即跟拍时，本流派在回合 2-4 依然能靠自身节拍做出稳定收益，同时敌方可以通过哪些可读手段打断或拖拍。
-3. **P1 revise — 奇门需要更强的首回合价值与敌方读解性**  
+3. **P1 revise — 奇门需要更强的首回合价值与敌方读解性**
    `阵法 / 机关 / 符禁` 的中盘想象已经存在，但短战与遭遇战中“先布后赚”的成本偏高；需要把“首回合就能提供什么”和“敌人如何识别 / 绕开 / 拆解”写得更落地。
-4. **P1 revise — 药师需要更硬的机会成本来守住队伍职责边界**  
+4. **P1 revise — 药师需要更硬的机会成本来守住队伍职责边界**
    `济世 / 针脉 / 蛊毒` 已经有方向差异，但仍要进一步写清：各分支最擅长什么、明确不包办什么，否则容易在队伍生态里同时抢治疗、控制、侵蚀三个高价值位。
 
 ## Required fantasy builds — CRPG snapshot

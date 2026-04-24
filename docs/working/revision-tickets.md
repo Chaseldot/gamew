@@ -152,3 +152,14 @@
   Pass condition: 可明确区分各自队伍职责与主动放弃面。
   Status: resolved
   Resolution note: 已在药师主修与三传承中写硬角色边界与 2-4 回合价值；见 `docs/design/01-main-disciplines.md:48-49`、`docs/design/02-inheritances.md:149-175`。
+
+## Worker-2 canon resolution entries — Round 1
+
+- ID: W2-R1-001
+  Source reviewer: worker-2 / Canon Systems Designer
+  Impacted canon file / section: `docs/design/05-identity-and-archetypes.md` / `## Archetype build grammar` 示例表与当前 round guardrails
+  Problem: 当前 loop 要求“流派固定，传承 / 旁修 / 角色形象可变，出身 / 身份 deferred”，但角色形象页缺少一段直接指导 canon rewrite 如何在三种可变层之间分流幻想压力的规则。
+  Expected revision: 增加当前 round rewrite guardrails，并补充能覆盖累计幻想 suite 中扫地僧、黄药师、东方不败的角色形象组合样例。
+  Pass condition: 读者可以不用出身 / 身份、不新增职业根节点，就把这些幻想映射到主修、传承、旁修和表现标签。
+  Status: resolved
+  Resolution note: 已新增三类可变层分流规则，并补充扫地僧 / 黄药师 / 东方不败示例；同时更正 canon 文档 stale owner metadata 为 worker-2。

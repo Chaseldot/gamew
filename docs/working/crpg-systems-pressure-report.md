@@ -1,6 +1,6 @@
 # CRPG Systems Pressure Report
 
-状态：Pass D 复测完成，全部 CRPG 票已关闭
+状态：Pass E compile intake packaged，全部 CRPG 票已关闭
 Owner：worker-3
 
 ## Review rule
@@ -13,7 +13,7 @@ Owner：worker-3
 - 已审阅：`docs/design/02-inheritances.md`
 - 已审阅：`docs/design/03-side-studies-and-loadout.md`
 - 已审阅：`docs/design/04-build-examples-and-audit.md`
-- Pass D 复测目标：worker-1 canon rewrite（worktree HEAD `fa446c5`；leader mailbox 指向 rewrite 已落地）
+- Pass D 复测目标：worker-1 canon rewrite（task-3 packaging review baseline `d749db5`；rewrite 结果已并入当前 worktree）
 
 ## Gate snapshot
 - `docs/design/01-main-disciplines.md`：8/8 主修维持完整 5 字段。
@@ -75,3 +75,8 @@ Owner：worker-3
 - 音律三传承与奇门三传承的 CRPG 复测已通过。
 - 后续 compile 仍需保留 `SLOT_PRESSURE_ASSUMPTION_ONLY` 作为约束，但它已不再是当前 blocker。
 - 如再开新构筑轮，优先复用本轮的接口语法，不再回到 open ticket 状态。
+
+## Version evidence
+- task-3 文档整理基线：`d749db5`（worker-3 当前 worktree review 起点）。
+- 本轮结论边界：worker-3 已完成 CRPG compile packet，结论是“可提交 leader review”，不是在此文件内代替 leader 做最终接受。
+- fresh evidence 约束：占位符协议仍保留，且 compile 结论继续受 `LOADOUT_INTERFACE_PENDING`、`MERIDIAN_SLOT_COUNT_PENDING`、`SLOT_PRESSURE_ASSUMPTION_ONLY` 限制。

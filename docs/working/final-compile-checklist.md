@@ -1,6 +1,6 @@
 # Final Compile Checklist
 
-状态：current mutable-layer iteration compile candidate
+状态：current mutable-layer iteration compile packet
 Owner：worker-3 + leader
 
 ## Current loop snapshot
@@ -37,7 +37,13 @@ Owner：worker-3 + leader
 - [x] `docs/design/04-build-examples-and-audit.md` 的 8 个 fantasy build 当前 verdict 均为 PASS。
 - [x] `docs/working/change-log.md` 已更新本轮 compile 记录。
 - [x] `git diff --check` fresh run passes after WUX-007 resolution.
-- [x] Leader acceptance pending cleared for starting the next team/run loop.
+- [ ] Leader acceptance（external to worker-3）尚待 leader 明确确认；当前仅确认 compile packet 已可提交。
+
+## Version evidence
+- Worker-3 compile packet refresh：2026-04-24。
+- task-3 review baseline：`d749db5`。
+- 当前 packet 依据文件：`docs/design/04-build-examples-and-audit.md`、`docs/working/crpg-systems-pressure-report.md`、`docs/working/revision-tickets.md`、`docs/working/final-compile-checklist.md`。
+- 本清单的职责是给出 compile recommendation 与证据边界，不提前替代 leader acceptance。
 
 ## Compile recommendation
 - Worker-3 recommendation：**allow canon compile as the next development baseline**。

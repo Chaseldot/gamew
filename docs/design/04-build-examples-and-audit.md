@@ -185,3 +185,5 @@ Schema source：`docs/design/00-rule-bible.md`
 3. 所有触发过的 redline 编号已在 `docs/working/revision-tickets.md` 关闭。
 4. `LOADOUT_INTERFACE_PENDING`、`MERIDIAN_SLOT_COUNT_PENDING`、`SLOT_PRESSURE_ASSUMPTION_ONLY` 仍作为 compile 约束保留，但不再阻断当前 intake。
 5. **canon compile 可以放行。**
+
+> 注：此处“可以放行”表示 worker-3 的 compile intake verdict 已整理完毕，可进入 leader review；最终是否接受为下一开发基线，仍由 leader 在 compile handoff 外层确认。

@@ -14,7 +14,41 @@
 
 ## Open tickets
 
-暂无。worker-2 / worker-3 在 Pass B 后追加。
+- ID: CRPG-01
+- Source reviewer: worker-3
+- Impacted canon file / section: `docs/design/03-side-studies-and-loadout.md`（精修统一梯度；八门旁修 1 点 / 2 点 / 3 点）
+- Problem: 当前仍有 27 个 `TBD`。在没有精修 1/2/3 与旁修 1/2/3 明确定义前，无法做 mixed-build identity、mandatory tax pick、placeholder hidden dependency 的真实 CRPG 审计。
+- Expected revision: 按 `docs/design/00-rule-bible.md` 的统一语法补完精修与八门旁修全部梯度；每条只写入口 / 接口 / 小循环，不偷渡具体槽位数，并保留 `LOADOUT_INTERFACE_PENDING`、`MERIDIAN_SLOT_COUNT_PENDING`、`SLOT_PRESSURE_ASSUMPTION_ONLY`。
+- Pass condition: `docs/design/03-side-studies-and-loadout.md` 不再出现 `TBD`；任一旁修 2 点都只影响主修资源流速、不改写资源规则；任一 3 点都没有越过主修主体权重。
+- Status: open
+- Resolution note:
+
+- ID: CRPG-02
+- Source reviewer: worker-3
+- Impacted canon file / section: `docs/design/01-main-disciplines.md`（音律）；`docs/design/02-inheritances.md`（战鼓 / 清音 / 魔音）
+- Problem: 音律主修在 01 中承诺“单人和组队两种语境下都独立成立”，但 02 的三传承目前更偏向队友呼应与群体节奏。缺少“没有队友即时跟拍时，本流派在回合 2-4 仍能如何自足成立”的明确表达，也缺少敌方可读的打断 / 拖拍 / 断拍窗口。
+- Expected revision: 保留低魔音律 fantasy，不转成法师吟唱系统；但要在主修与三传承文本里补上单人成立的自足收益、短遭遇中的明确战术价值，以及敌方可互动的 counterplay 窗口。
+- Pass condition: 读完 01 + 02 后，审计者能够明确说出音律在无队友即时配合时的起手、推进、收束与敌方反制点；且不需要新增 schema 或越界到高魔精神控制。
+- Status: open
+- Resolution note:
+
+- ID: CRPG-03
+- Source reviewer: worker-3
+- Impacted canon file / section: `docs/design/01-main-disciplines.md`（奇门）；`docs/design/02-inheritances.md`（阵法 / 机关 / 符禁）
+- Problem: 奇门现有文本已经立住“布置 → 诱发 → 改场”的 fantasy，但 CRPG 短遭遇里首回合价值与 setup tax 仍偏虚，且敌方如何识别、绕开、拆解其布置的 counterplay 表达不够具体，容易被读成模糊而强的场控总类。
+- Expected revision: 为奇门主修与三传承补写“首回合就能提供的直接价值”“2-4 回合内的可验证收益”“敌方可读的互动 / 拆解窗口”；维持低魔、器具 / 阵眼 / 符印媒介，不滑向法术轰炸。
+- Pass condition: 审计者能从文本直接看出奇门不是纯长 setup 税，也不是无解控场；每个分支都有自己的首回合价值与被针对方式。
+- Status: open
+- Resolution note:
+
+- ID: CRPG-04
+- Source reviewer: worker-3
+- Impacted canon file / section: `docs/design/01-main-disciplines.md`（药师）；`docs/design/02-inheritances.md`（济世 / 针脉 / 蛊毒）
+- Problem: 药师主修已经声明“不成为万能奶妈 / 万能控制 / 万能持续伤害”，但三传承目前仍缺少足够硬的机会成本表达，容易在 CRPG 队伍职责里同时占走救场、控制、侵蚀多个高价值位置。
+- Expected revision: 强化三传承各自最擅长的 encounter role，并明确各自不包办什么；保留医毒双向 fantasy，但把队伍职责边界写得更硬，避免 omni-role 观感。
+- Pass condition: 读完 01 + 02 后，审计者能明确区分济世 / 针脉 / 蛊毒各自最强的队伍职责、最核心的 2-4 回合价值，以及各自主动放弃的能力面；不再出现“一个传承同时包办治疗、控制、持续伤害顶配”的阅读结果。
+- Status: open
+- Resolution note:
 
 
 - ID: WUX-001

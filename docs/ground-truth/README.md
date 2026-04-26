@@ -7,7 +7,9 @@
 | 文件 | 权威范围 |
 |---|---|
 | `01-build-system-milestone.md` | 等级上限、八大流派、九级构筑规则、当前传承名单、旁修限制。 |
-| `02-political-faction-restructure.md` | 《山水照影录》的政治阵营结构、三章政治问题、照影局暗线规则。 |
+| `02-world-setting.md` | 《山水照影录》的黑线、照影牒针、稳心验脉、引脉和显影归档客观机制。 |
+| `03-political-faction-restructure.md` | 《山水照影录》的政治阵营结构、机构认知边界、三章政治问题、照影局暗线规则。 |
+| `04-mainline-quest-skeleton.md` | 《山水照影录》的主线任务骨架层级、统一战役目标、牒针持续压力、三章章级结构和后续区域 / 任务设计约束。 |
 
 ## Non-Canon Reference
 

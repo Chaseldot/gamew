@@ -1,0 +1,9 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GameW mark</title>
+  <desc id="desc">A square seal mark with a needle, wave, and mountain line.</desc>
+  <rect x="10" y="10" width="108" height="108" rx="12" fill="#11100d"/>
+  <path d="M25 82c14-18 25-18 39 0s25 18 39 0" fill="none" stroke="#7fae98" stroke-width="6" stroke-linecap="round"/>
+  <path d="M31 58 52 34l17 20 12-12 20 27" fill="none" stroke="#d49a45" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64 24v80" stroke="#c9513f" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="11" fill="none" stroke="#e8dfcb" stroke-width="5"/>
+</svg>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GameW Art Asset Generation"
+  short_description: "Generate, log, and file GameW art assets from story and ground truth."
+  default_prompt: "Use this skill to mine GameW scripts and ground truth for visual motifs, generate high-quality images with imagegen, log prompts and references, and save them into art-assets."

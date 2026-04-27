@@ -1,0 +1,7 @@
+interface:
+  display_name: "武侠幻想库"
+  short_description: "提炼并维护武侠幻想测试集"
+  default_prompt: "Use $wuxia-fantasy-suite to extract wuxia fantasy cards and maintain the ID/形象/参考人物 index."
+
+policy:
+  allow_implicit_invocation: true

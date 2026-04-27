@@ -8,8 +8,10 @@
 |---|---|
 | `docs/ground-truth/01-build-system-milestone.md` | 已确定的游戏设计 milestone：等级、流派、传承、拍板点和不处理内容。 |
 | `docs/ground-truth/02-world-setting.md` | 已确定的世界设定：黑线、照影牒针、稳心验脉、引脉和显影归档客观机制。 |
-| `docs/ground-truth/03-political-faction-restructure.md` | 已确定的政治阵营结构：核心政治轴、机构认知边界、照影局暗线、三章政治问题。 |
-| `docs/ground-truth/04-mainline-quest-skeleton.md` | 已确定的主线任务骨架：核心命题、战役目标、持续压力、三章章级结构和后续区域 / 任务设计约束。 |
+| `docs/ground-truth/03-map-design.md` | 已确定的地图设计：三章大区、地点清单和地点气质。 |
+| `docs/ground-truth/04-political-faction-restructure.md` | 已确定的政治阵营结构：核心政治轴、机构认知边界、照影局暗线、三章政治问题。 |
+| `docs/ground-truth/05-mainline-quest-skeleton.md` | 已确定的主线任务骨架：核心命题、战役目标、持续压力、三章章级结构和后续区域 / 任务设计约束。 |
+| `docs/ground-truth/06-origin-character-baseline.md` | 已确定的主角与起源基线：Tav、无名煞、普通起源、非起源队友和关键 NPC。 |
 
 ## Reference
 

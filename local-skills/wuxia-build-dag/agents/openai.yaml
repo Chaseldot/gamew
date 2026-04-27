@@ -1,0 +1,7 @@
+interface:
+  display_name: "武侠传承设计"
+  short_description: "用八流派团队设计并审计 24 传承"
+  default_prompt: "Use $wuxia-build-dag to design or revise GameW's 24 inheritance blueprints by dispatching one design agent per fixed discipline, then audit the merged matrix against CRPG health and the wuxia fantasy suite."
+
+policy:
+  allow_implicit_invocation: true

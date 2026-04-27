@@ -22,19 +22,9 @@
       "page": "world"
     },
     {
-      "href": "regions.html",
-      "label": "地区",
-      "page": "regions"
-    },
-    {
-      "href": "factions.html",
-      "label": "阵营",
-      "page": "factions"
-    },
-    {
-      "href": "characters.html",
-      "label": "人物",
-      "page": "characters"
+      "href": "factions-characters.html",
+      "label": "帮派及人物",
+      "page": "factions-characters"
     },
     {
       "href": "stories.html",
@@ -42,29 +32,14 @@
       "page": "stories"
     },
     {
-      "href": "quests.html",
-      "label": "任务",
-      "page": "quests"
-    },
-    {
-      "href": "branches.html",
-      "label": "分支",
-      "page": "branches"
-    },
-    {
-      "href": "codex.html",
-      "label": "图鉴",
-      "page": "codex"
+      "href": "initial-script.html",
+      "label": "完整剧本",
+      "page": "initial-script"
     },
     {
       "href": "systems.html",
       "label": "系统",
       "page": "systems"
-    },
-    {
-      "href": "story-act1.html",
-      "label": "第一章",
-      "page": "story-act1"
     },
     {
       "href": "art.html",
@@ -86,8 +61,8 @@
       "label": "长线阵营"
     },
     {
-      "value": "12",
-      "label": "导航页面"
+      "value": "7",
+      "label": "主导航入口"
     }
   ],
   "levelRules": [
@@ -1949,130 +1924,772 @@
   ],
   "gallery": [
     {
-      "type": "concept",
+      "type": "map",
+      "title": "山水县境封境总览",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/00-章节地图/第一章-章节地图-山水县境封境总览.jpg",
+      "mood": "章节地图｜00-章节地图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "key-art",
       "title": "山水县境远景",
       "chapter": "第一章",
-      "src": "assets/art/第一章-主视觉-山水县封境.jpg",
-      "mood": "雨后水乡、明快危机感"
+      "src": "assets/art/art-assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png",
+      "mood": "章节主视觉｜01-章节主视觉｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "location",
+      "title": "废书院",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-废书院.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "旧镖道",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-旧镖道.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "龙王庙水闸",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-龙王庙水闸.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "清河渡",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-清河渡.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "清河黑市",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-清河黑市.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "山神寨",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-山神寨.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "山水县城",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-山水县城.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "疫村",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/02-地点概念图/第一章-地点概念-疫村.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
     },
     {
       "type": "scene",
-      "title": "清河渡码头仓库",
+      "title": "荒废破庙义庄",
       "chapter": "第一章",
-      "src": "assets/art/第一章-场景-清河渡码头仓库.jpg",
-      "mood": "湿润木构、码头帮派"
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-荒废破庙义庄-风格.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "scene",
-      "title": "雨后县城客栈",
+      "title": "码头仓库区-实机镜头",
       "chapter": "第一章",
-      "src": "assets/art/第一章-场景-雨后县城客栈.jpg",
-      "mood": "暖灯与冷雨交叠"
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-码头仓库区-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "scene",
-      "title": "药谷医庐",
+      "title": "清河渡岸边",
       "chapter": "第一章",
-      "src": "assets/art/第一章-场景-药谷医庐.jpg",
-      "mood": "明快青绿、医毒两面"
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-清河渡岸边-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "清河渡码头仓库-实机镜头",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-清河渡码头仓库-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "山神寨山门练武场",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-山神寨山门练武场-风格.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "山神寨山门练武场-实机镜头",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-山神寨山门练武场-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "山水县城雨后客栈",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-山水县城雨后客栈-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "山水县城雨后客栈-实机镜头",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-山水县城雨后客栈-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "药谷医庐-实机镜头",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-药谷医庐-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "疫村医棚",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-疫村医棚-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "疫村医棚-实机镜头",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-疫村医棚-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "雨夜县城客栈",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-雨夜县城客栈-风格.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "combat",
-      "title": "林间山道伏击点",
+      "title": "旧镖道林间伏击点",
       "chapter": "第一章",
-      "src": "assets/art/第一章-战斗-林间山道伏击点.jpg",
-      "mood": "山雾、伏击、短兵接触"
+      "src": "assets/art/art-assets/01-第一章-山水县境/04-战斗图/第一章-战斗-旧镖道林间伏击点.png",
+      "mood": "战斗图｜04-战斗图｜1672x941",
+      "resolution": "1672x941"
     },
     {
-      "type": "concept",
-      "title": "黄沙边关远景",
+      "type": "combat",
+      "title": "旧镖道林间山道-战斗",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/03-场景图/第一章-场景-旧镖道林间山道-战斗.jpg",
+      "mood": "战斗图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "reference",
+      "title": "山水县城雨后客栈-风格参考",
+      "chapter": "第一章",
+      "src": "assets/art/art-assets/01-第一章-山水县境/99-高质量参考/第一章-场景-山水县城雨后客栈-风格.jpg",
+      "mood": "风格参考｜99-高质量参考｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "map",
+      "title": "槐安古道黄沙边关总览",
       "chapter": "第二章",
-      "src": "assets/art/第二章-主视觉-黄沙边关远景.jpg",
-      "mood": "高反差风沙与边塞"
+      "src": "assets/art/art-assets/02-第二章-槐安古道/00-章节地图/第二章-章节地图-槐安古道黄沙边关总览.jpg",
+      "mood": "章节地图｜00-章节地图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "key-art",
+      "title": "槐安古道黄沙边关远景",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png",
+      "mood": "章节主视觉｜01-章节主视觉｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "location",
+      "title": "百工坞",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-百工坞.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "鬼市",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-鬼市.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "黄沙客栈",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-黄沙客栈.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "镜湖书院",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-镜湖书院.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "龙门驿",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-龙门驿.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "千佛石窟",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-千佛石窟.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "武林盟会",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-武林盟会.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "照影楼坞",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/02-地点概念图/第二章-地点概念-照影楼坞.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
     },
     {
       "type": "scene",
-      "title": "龙门边关驿站",
+      "title": "边境要塞外城",
       "chapter": "第二章",
-      "src": "assets/art/第二章-场景-龙门边关驿站.jpg",
-      "mood": "商队、边军、阵营聚首"
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-边境要塞外城-风格.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
-      "type": "combat",
-      "title": "风蚀峡谷古道",
+      "type": "scene",
+      "title": "军营牢狱与粮仓-实机镜头",
       "chapter": "第二章",
-      "src": "assets/art/第二章-战斗-风蚀峡谷古道.jpg",
-      "mood": "开阔地形与追击"
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-军营牢狱与粮仓-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
-      "type": "combat",
-      "title": "废弃烽燧台",
+      "type": "scene",
+      "title": "龙门驿边关驿站",
       "chapter": "第二章",
-      "src": "assets/art/第二章-战斗-废弃烽燧台.jpg",
-      "mood": "残垣、弓线、伏兵"
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-龙门驿边关驿站-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "龙门驿边关驿站-实机镜头",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-龙门驿边关驿站-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "scene",
       "title": "千佛石窟古阵",
       "chapter": "第二章",
-      "src": "assets/art/第二章-场景-千佛石窟古阵.jpg",
-      "mood": "石窟回音、古老照壁"
-    },
-    {
-      "type": "concept",
-      "title": "照影城下城远景",
-      "chapter": "第三章",
-      "src": "assets/art/第三章-主视觉-照影城下城远景.jpg",
-      "mood": "朱墙压城、万家灯火"
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-千佛石窟古阵-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
     },
     {
       "type": "scene",
-      "title": "外城长街茶楼戏台",
-      "chapter": "第三章",
-      "src": "assets/art/第三章-场景-外城长街茶楼戏台.jpg",
-      "mood": "热闹市井下的审查"
+      "title": "千佛石窟荒漠古阵",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-千佛石窟荒漠古阵-风格.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "scene",
-      "title": "雨夜黑市暗巷",
+      "title": "千佛石窟荒漠古阵-实机镜头",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-千佛石窟荒漠古阵-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "沙下水渠暗道-实机镜头",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/03-场景图/第二章-场景-沙下水渠暗道-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "combat",
+      "title": "废弃烽燧台",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/04-战斗图/第二章-战斗-废弃烽燧台.jpg",
+      "mood": "战斗图｜04-战斗图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "combat",
+      "title": "废弃烽燧台",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/04-战斗图/第二章-战斗-废弃烽燧台.png",
+      "mood": "战斗图｜04-战斗图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "combat",
+      "title": "风蚀峡谷古道",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/04-战斗图/第二章-战斗-风蚀峡谷古道.jpg",
+      "mood": "战斗图｜04-战斗图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "combat",
+      "title": "风蚀峡谷古道",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/04-战斗图/第二章-战斗-风蚀峡谷古道.png",
+      "mood": "战斗图｜04-战斗图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "镜湖书院",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/99-高质量参考/第二章-地点概念-镜湖书院.png",
+      "mood": "风格参考｜99-高质量参考｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "reference",
+      "title": "千佛石窟荒漠古阵-风格参考",
+      "chapter": "第二章",
+      "src": "assets/art/art-assets/02-第二章-槐安古道/99-高质量参考/第二章-场景-千佛石窟荒漠古阵-风格.png",
+      "mood": "风格参考｜99-高质量参考｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "map",
+      "title": "照影城下城总览",
       "chapter": "第三章",
-      "src": "assets/art/第三章-场景-雨夜黑市暗巷.jpg",
-      "mood": "偏暗、湿巷、交易"
+      "src": "assets/art/art-assets/03-第三章-照影城/00-章节地图/第三章-章节地图-照影城下城总览.jpg",
+      "mood": "章节地图｜00-章节地图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "key-art",
+      "title": "照影城宫城下城远景",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png",
+      "mood": "章节主视觉｜01-章节主视觉｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "location",
+      "title": "百工坊",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-百工坊.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "慈心总馆",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-慈心总馆.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "地下照影母局",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-地下照影母局.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "断因房",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-断因房.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "官署",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-官署.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "皇城外朝",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-皇城外朝.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "九门",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-九门.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "水巷",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-水巷.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "外郭",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-外郭.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "武籍区",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-武籍区.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "下坊",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-下坊.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "location",
+      "title": "摘星楼",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/02-地点概念图/第三章-地点概念-摘星楼.png",
+      "mood": "地点概念｜02-地点概念图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "慈心总馆秘药库-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆秘药库-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "scene",
       "title": "官署审案堂与档案房",
       "chapter": "第三章",
-      "src": "assets/art/第三章-场景-官署审案堂与档案房.jpg",
-      "mood": "武籍审判、档案压迫"
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-官署审案堂与档案房-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "官署审案堂与档案房-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-官署审案堂与档案房-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "皇城外朝禁苑大殿门前",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-皇城外朝禁苑大殿门前-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "皇城外朝禁苑大殿门前",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-皇城外朝禁苑大殿门前-风格.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "旧皇陵密道-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-旧皇陵密道-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "水巷下城水道秘司暗门-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-水巷下城水道秘司暗门-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "水巷雨夜黑市暗巷",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-水巷雨夜黑市暗巷-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "水巷雨夜黑市暗巷-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-水巷雨夜黑市暗巷-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "王府别院将军府外宅-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-王府别院将军府外宅-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "scene",
+      "title": "下坊外城长街茶楼戏台",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-下坊外城长街茶楼戏台-风格.jpg",
+      "mood": "场景图｜03-场景图｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "scene",
+      "title": "下坊外城长街茶楼戏台-实机镜头",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/03-场景图/第三章-场景-下坊外城长街茶楼戏台-实机.png",
+      "mood": "场景图｜03-场景图｜1672x941",
+      "resolution": "1672x941"
     },
     {
       "type": "combat",
-      "title": "下城水道秘司暗门",
+      "title": "水巷下城水道秘司暗门",
       "chapter": "第三章",
-      "src": "assets/art/第三章-战斗-下城水道秘司暗门.jpg",
-      "mood": "潜入、机关、冷光"
+      "src": "assets/art/art-assets/03-第三章-照影城/04-战斗图/第三章-战斗-水巷下城水道秘司暗门.jpg",
+      "mood": "战斗图｜04-战斗图｜3840x2160",
+      "resolution": "3840x2160"
     },
     {
-      "type": "combat",
-      "title": "皇城禁苑大殿门前",
+      "type": "reference",
+      "title": "官署审案堂与档案房-风格参考",
       "chapter": "第三章",
-      "src": "assets/art/第三章-战斗-皇城禁苑大殿门前.jpg",
-      "mood": "终局压迫、暗金火光"
+      "src": "assets/art/art-assets/03-第三章-照影城/99-高质量参考/第三章-场景-官署审案堂与档案房-风格.jpg",
+      "mood": "风格参考｜99-高质量参考｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "reference",
+      "title": "皇城外朝禁苑大殿门前-风格参考",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/99-高质量参考/第三章-场景-皇城外朝禁苑大殿门前-风格.jpg",
+      "mood": "风格参考｜99-高质量参考｜3840x2160",
+      "resolution": "3840x2160"
+    },
+    {
+      "type": "reference",
+      "title": "下坊外城长街茶楼戏台-风格参考",
+      "chapter": "第三章",
+      "src": "assets/art/art-assets/03-第三章-照影城/99-高质量参考/第三章-场景-下坊外城长街茶楼戏台-风格.jpg",
+      "mood": "风格参考｜99-高质量参考｜3840x2160",
+      "resolution": "3840x2160"
     },
     {
       "type": "character",
-      "title": "队伍阵容探索",
+      "title": "队伍概念-核心队友阵容",
       "chapter": "人物",
-      "src": "assets/art/人物-核心队友阵容探索.jpg",
-      "mood": "队友起源角色群像"
+      "src": "assets/art/art-assets/00-人物探索/人物-队伍概念-核心队友阵容.jpg",
+      "mood": "人物探索｜00-人物探索｜1920x1053",
+      "resolution": "1920x1053"
     },
     {
       "type": "character",
-      "title": "雨夜客栈队伍镜头",
+      "title": "队伍概念-核心队友阵容-写实探索",
       "chapter": "人物",
-      "src": "assets/art/人物-雨夜客栈队伍镜头.jpg",
-      "mood": "CRPG 队伍视角"
+      "src": "assets/art/art-assets/00-人物探索/人物-队伍概念-核心队友阵容-写实探索.png",
+      "mood": "人物探索｜00-人物探索｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "character",
+      "title": "队伍镜头-明亮林地CRPG视角",
+      "chapter": "人物",
+      "src": "assets/art/art-assets/00-人物探索/人物-队伍镜头-明亮林地CRPG视角.png",
+      "mood": "人物探索｜00-人物探索｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "character",
+      "title": "队伍镜头-雨夜客栈",
+      "chapter": "人物",
+      "src": "assets/art/art-assets/00-人物探索/人物-队伍镜头-雨夜客栈.jpg",
+      "mood": "人物探索｜00-人物探索｜1920x1080",
+      "resolution": "1920x1080"
+    },
+    {
+      "type": "character",
+      "title": "队伍镜头-雨夜客栈后视角",
+      "chapter": "人物",
+      "src": "assets/art/art-assets/00-人物探索/人物-队伍镜头-雨夜客栈后视角.png",
+      "mood": "人物探索｜00-人物探索｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "边关驿站山口",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/世界基调/风格探索-边关驿站山口.png",
+      "mood": "风格参考｜世界基调｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "第二章-边关驿站山口",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/第二章/风格参考-第二章-边关驿站山口.png",
+      "mood": "风格参考｜第二章｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "第一章-码头仓库区",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/第一章/风格参考-第一章-码头仓库区.png",
+      "mood": "风格参考｜第一章｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "第一章-破庙义庄",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/第一章/风格参考-第一章-破庙义庄.png",
+      "mood": "风格参考｜第一章｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "第一章-山门练武场",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/第一章/风格参考-第一章-山门练武场.png",
+      "mood": "风格参考｜第一章｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "第一章-药谷医庐",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/第一章/风格参考-第一章-药谷医庐.png",
+      "mood": "风格参考｜第一章｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "第一章-雨夜县城客栈",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/第一章/风格参考-第一章-雨夜县城客栈.png",
+      "mood": "风格参考｜第一章｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "码头仓库区",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/世界基调/风格探索-码头仓库区.png",
+      "mood": "风格参考｜世界基调｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "破庙义庄",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/世界基调/风格探索-破庙义庄.png",
+      "mood": "风格参考｜世界基调｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "山门练武场",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/世界基调/风格探索-山门练武场.png",
+      "mood": "风格参考｜世界基调｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "药谷医庐",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/世界基调/风格探索-药谷医庐.png",
+      "mood": "风格参考｜世界基调｜1672x941",
+      "resolution": "1672x941"
+    },
+    {
+      "type": "reference",
+      "title": "雨夜县城客栈",
+      "chapter": "风格探索",
+      "src": "assets/art/art-assets/00-风格探索/世界基调/风格探索-雨夜县城客栈.png",
+      "mood": "风格参考｜世界基调｜1672x941",
+      "resolution": "1672x941"
     }
   ]
 }

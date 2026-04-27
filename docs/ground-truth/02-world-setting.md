@@ -18,8 +18,8 @@
 
 本文不处理：
 
-- 具体阵营内部知道多少，相关 ground truth 见 `03-political-faction-restructure.md`；
-- 主线任务骨架和章节结构，相关 ground truth 见 `04-mainline-quest-skeleton.md`；
+- 具体阵营内部知道多少，相关 ground truth 见 `04-political-faction-restructure.md`；
+- 主线任务骨架和章节结构，相关 ground truth 见 `05-mainline-quest-skeleton.md`；
 - 单个任务剧本、对白、场景卡；
 - 具体数值、检定 DC、战斗 encounter；
 - build 系统规则，相关 ground truth 见 `01-build-system-milestone.md`。

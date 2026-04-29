@@ -1,0 +1,4 @@
+interface:
+  display_name: "GameW Official Character Reference"
+  short_description: "Batch-generate GameW character sheets."
+  default_prompt: "Use $gamew-official-character-reference to generate the next two GameW official character reference sheets."

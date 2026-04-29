@@ -36,16 +36,14 @@ description: Use when GameW needs to design or revise the 24 inheritance bluepri
 
 优先读取：
 
-- `docs/design/05-nine-level-training-and-skill-milestone.md`
-- `docs/design/01-disciplines-and-inheritances.md`
-- `docs/design/wuxia-fantasy-suite.md`
+- `canon/01-build-system-milestone.md`
+- `character-production/wuxia-fantasy-suite.md`
 
 按需读取：
 
-- `docs/design/00-build-system-overview.md`
-- `docs/design/03-fantasy-tests-and-boundaries.md`
-- `docs/design/06-inheritance-v0-matrix.md`
-- 最近一份 `docs/reports/*inheritance*report.md`
+- `00-game-introduction.md`
+- `canon/06-origin-character-baseline.md`
+- 最近一份相关历史报告或计划。
 
 不要读取 archive，除非 active 文档缺少必要上下文。
 

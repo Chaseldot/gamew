@@ -87,7 +87,7 @@
 
 输入：
 
-- `docs/design/wuxia-fantasy-suite.md`；
+- `character-production/wuxia-fantasy-suite.md`；
 - 八流派设计师的 3 传承设计；
 - 总控合并后的 24 传承矩阵；
 - 旁修派生参考。

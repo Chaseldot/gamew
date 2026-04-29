@@ -20,7 +20,7 @@ description: Use when extracting, evaluating, or maintaining reusable wuxia fant
 
 收录低魔奇术或独立召物幻想时，只写形象、参考人物、战斗爽点和经典场景；不要擅自定义行动经济、召物属性、回合规则或完整 companion / minion / puppet 系统。
 
-默认维护仓库内 active 库：`docs/design/wuxia-fantasy-suite.md`。
+默认维护仓库内 active 库：`character-production/wuxia-fantasy-suite.md`。
 
 ## 定义
 

@@ -34,14 +34,14 @@ Strict constraints: no readable text, no letters, no labels, no UI, no watermark
 ## 2026-04-27T01:06:42+08:00 - accepted
 
 - Chapter: 人物探索
-- Asset type: 00-人物探索
+- Asset type: 00-人物/03-人物概念探索
 - Generated: /Users/chaselyang/.codex/generated_images/019dca3e-1a26-7da0-a1ae-a7c41f3c90b9/ig_0e1f057178c3e5730169ee456464008191b8f94a963f891ae4.png
-- Asset: assets/00-人物探索/人物-概念-药傀毒师-GameW风格.png
+- Asset: assets/00-人物/03-人物概念探索/人物-概念-药傀毒师-GameW风格.png
 - Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
 - Notes: (none)
 
 References:
-- assets/00-人物探索/人物-队伍概念-核心队友阵容.jpg :: existing character style anchor
+- assets/00-人物/01-队伍概念/人物-队伍概念-核心队友阵容.jpg :: existing character style anchor
 - history/design-blueprints/wuxia-fantasy-suite.md :: wuxia fantasy suite source
 
 Motif sources:
@@ -798,14 +798,14 @@ Strict constraints: no text, no readable names, no letters, no labels, no UI, no
 ## 2026-04-27T01:55:15+08:00 - accepted
 
 - Chapter: 人物探索
-- Asset type: 00-人物探索
+- Asset type: 00-人物/03-人物概念探索
 - Generated: /Users/chaselyang/.codex/generated_images/019dca3e-1a26-7da0-a1ae-a7c41f3c90b9/ig_05463abba43b92e20169ee513ec0ac81918542af28c911d532.png
-- Asset: assets/00-人物探索/人物-概念-狼刀盗侠-GameW风格.png
+- Asset: assets/00-人物/03-人物概念探索/人物-概念-狼刀盗侠-GameW风格.png
 - Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
 - Notes: (none)
 
 References:
-- assets/00-人物探索/人物-队伍概念-核心队友阵容.jpg :: existing GameW character style anchor
+- assets/00-人物/01-队伍概念/人物-队伍概念-核心队友阵容.jpg :: existing GameW character style anchor
 
 Motif sources:
 - history/design-blueprints/wuxia-fantasy-suite.md :: F-020 狼刀盗侠，游斗夺物位，抢物、换位、挑刀拆护卫阵型
@@ -1262,14 +1262,14 @@ Strict constraints: no text, no readable banners, no letters, no labels, no UI, 
 ## 2026-04-27T04:44:38+08:00 - accepted
 
 - Chapter: 人物探索
-- Asset type: 00-人物探索
+- Asset type: 00-人物/03-人物概念探索
 - Generated: /Users/chaselyang/.codex/generated_images/019dca3e-1a26-7da0-a1ae-a7c41f3c90b9/ig_05463abba43b92e20169ee78fd96348191917dda2d48e22d13.png
-- Asset: assets/00-人物探索/人物-概念-影犬夜行客-GameW风格.png
+- Asset: assets/00-人物/03-人物概念探索/人物-概念-影犬夜行客-GameW风格.png
 - Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
 - Notes: (none)
 
 References:
-- assets/00-人物探索/人物-队伍概念-核心队友阵容.jpg :: existing GameW character style anchor
+- assets/00-人物/01-队伍概念/人物-队伍概念-核心队友阵容.jpg :: existing GameW character style anchor
 
 Motif sources:
 - history/design-blueprints/wuxia-fantasy-suite.md :: F-076 影犬夜行客，影犬短时从暗处扑咬牵制，逼出敌人反应窗口
@@ -1319,4 +1319,3 @@ Motifs to preserve: black-line symptoms as faint wrist veins only, wrong-beat au
 Constraints: no text, no readable signs, no calligraphy, no UI, no logo, no watermark, no subtitles, no modern objects, no gore, no western fantasy armor, no oversized spell effects, no floating runes.
 Quality: high quality, production-ready, sharp foreground props, atmospheric depth, 16:9 landscape.
 ```
-

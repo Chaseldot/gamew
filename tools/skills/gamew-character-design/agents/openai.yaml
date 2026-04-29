@@ -1,0 +1,7 @@
+interface:
+  display_name: "GameW 人物设计"
+  short_description: "生产可入库的 GameW 武侠人物原型"
+  default_prompt: "使用 $gamew-character-design，把参考人物、器物、战斗想法、场景片段或 NPC 需求生产成可入库的 GameW 武侠人物幻想条目。"
+
+policy:
+  allow_implicit_invocation: true

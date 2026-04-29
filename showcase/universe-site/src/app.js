@@ -335,6 +335,7 @@ function factionCard(faction) {
     <article class="faction-card">
       <span>${escapeHTML(faction.type)}</span>
       <h2>${escapeHTML(faction.name)}</h2>
+      <p class="faction-motto">“${escapeHTML(faction.motto)}”</p>
       <p class="figure">${escapeHTML(faction.figure)}</p>
       <p>${escapeHTML(faction.promise)}</p>
       <strong>${escapeHTML(faction.shadow)}</strong>

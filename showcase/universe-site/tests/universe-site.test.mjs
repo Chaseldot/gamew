@@ -176,6 +176,8 @@ test('chapter data includes mature chapter art and excludes style exploration', 
 
 test('faction data includes six primary powers and two local powers', async () => {
   const data = await buildAndLoadData();
+  const appSource = readFileSync(resolve(siteRoot, 'src/app.js'), 'utf8');
+  const factions = [...data.primaryFactions, ...data.localFactions];
 
   assert.deepEqual(
     data.primaryFactions.map((faction) => faction.name),
@@ -185,6 +187,17 @@ test('faction data includes six primary powers and two local powers', async () =
     data.localFactions.map((faction) => faction.name),
     ['山神寨', '边地部族'],
   );
+  assert.ok(factions.every((faction) => faction.motto), 'every faction should carry its classic motto');
+  assert.equal(
+    data.primaryFactions.find((faction) => faction.name === '百工坞')?.motto,
+    '机关无善恶，看谁扣机簧。',
+  );
+  assert.equal(
+    data.localFactions.find((faction) => faction.name === '山神寨')?.motto,
+    '官道不容人，山路自有路。',
+  );
+  assert.match(appSource, /class="faction-motto"/);
+  assert.match(appSource, /faction\.motto/);
 });
 
 test('story page mounts the classic route showcase rather than design notes', async () => {

@@ -1319,3 +1319,157 @@ Motifs to preserve: black-line symptoms as faint wrist veins only, wrong-beat au
 Constraints: no text, no readable signs, no calligraphy, no UI, no logo, no watermark, no subtitles, no modern objects, no gore, no western fantasy armor, no oversized spell effects, no floating runes.
 Quality: high quality, production-ready, sharp foreground props, atmospheric depth, 16:9 landscape.
 ```
+## 2026-04-30T09:38:41+08:00 - accepted
+
+- Chapter: 01-第一章-山水县境
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb4d-7114-7833-a7b0-295601de3e50/ig_0c2b48a906e015770169f2b24f2074819184021d325f6238ad.png
+- Asset: assets/01-第一章-山水县境/03-场景图/第一章-场景-山水县医馆安神针暗植.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png :: primary chapter style anchor
+- assets/00-风格探索/世界基调/药谷医庐.png :: medical material and lighting reference
+
+Motif sources:
+- canon/02-world-setting.md :: 暗植种针伪装为稳心治疗、止痛针、安神药、医馆药引
+- canon/04-political-faction-restructure.md :: 慈心医脉治疗接口与医脉罪证
+- canon/03-map-design.md :: 山水县城，县衙、酒楼、医馆与牢城都藏着一份账
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 1 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第一章《封境》场景图「山水县医馆安神针暗植」 inside 山水县城.
+Scene/backdrop: A late-night county clinic during封境: rain leaks from dark eaves into a narrow courtyard, patients wait under reed awnings, sealed medicine drawers and blank case slips line the wall, a healer prepares an ordinary-looking calming needle beside a pulse cushion, and a half-hidden clerk records wrist reactions behind a screen. The scene must imply secret暗植种针 through small details such as abnormal needle trays, drug residue, and mismatched patient ledgers, without explaining the full照影局 system.
+Style/medium: high quality AAA wuxia CRPG scene concept art, painterly realism, grounded low-magic Chinese county-town setting, matching GameW chapter 1 key visual with rain, river fog, muted ink greens, wet stone, warm lantern amber, practical late-Ming/early-Qing materials.
+Composition/framing: cinematic playable-space view, wide 16:9 landscape, foreground wet threshold and medicine baskets, midground pulse table and screen, background clinic rooms and sealed gate; clear investigation paths, tiny scale figures only, no UI.
+Lighting/mood: humane but unsettling; public healing as a believable cover for recording and control.
+Strict constraints: no text, no readable labels, no calligraphy, no UI, no watermark, no logo, no signature, no modern medical equipment, no gore, no oversized magic effects.
+Quality: production-ready, sharp foreground props, atmospheric depth, 3840x2160, 4K landscape, high quality.
+```
+
+## 2026-04-30T09:40:00+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 04-战斗图
+- Generated: /Users/bytedance/.codex/generated_images/019ddbe9-9aa0-7363-baac-e38fb1c87678/ig_060190f3fc4576b90169f2b2a9903c8191b720ea24cc2bd942.png
+- Asset: assets/02-第二章-槐安古道/04-战斗图/第二章-战斗-龙门驿边地商队护证.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary chapter style anchor
+- assets/02-第二章-槐安古道/03-场景图/第二章-场景-龙门驿边关驿站-风格.jpg :: border checkpoint material reference
+
+Motif sources:
+- canon/03-map-design.md :: 龙门驿，风沙入口，各路人马第一次公开争夺山水县真相
+- canon/04-political-faction-restructure.md :: 边地部族、商队和牒针宿主承担审查、商路封锁、误判代价
+- canon/05-mainline-quest-skeleton.md :: 第二章证据网与入城身份争夺
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 battle concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape battle setup image for 第二章《黄沙照影》战斗图「龙门驿边地商队护证」 at 龙门驿.
+Scene/backdrop: The windy entrance to 槐安古道 where a border caravan, displaced families, and mounted escorts are trapped between an official checkpoint, jianghu protectors, and masked evidence hunters. Canvas carts carry blank-sealed testimony bundles, water skins, broken road tablets, and a concealed牒钥 case; dust walls close the horizon while faction scouts circle the ridgeline.
+Style/medium: high quality AAA wuxia CRPG encounter concept art, grounded tactical painterly realism, matching GameW chapter 2 key visual with yellow sand, border-station timber, sun-bleached cloth, bronze bells, practical weapons, and low-magic tension.
+Composition/framing: readable combat arena layout from a cinematic oblique angle, foreground wagon barricade and scattered cargo, midground checkpoint gate and caravan line, background dunes and ruined beacon ridge; cover, choke points, witness escape routes, and noncombatant protection zones must be visually clear; no UI, no damage numbers.
+Lighting/mood: harsh afternoon sandstorm pressure; truth is being protected, stolen, or reinterpreted before it can reach the盟会.
+Strict constraints: no readable banners, no text, no labels, no UI, no watermark, no logo, no signature, no modern objects, no gore focus, no western fantasy armor.
+Quality: production-ready, 3840x2160, 4K landscape, high quality.
+```
+
+## 2026-04-30T09:41:20+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb0b-861f-7443-bd70-3b8d93941ec8/ig_0b0af9295a7c44b90169f2b2ac4de48191a4e10559a40a9de7.png
+- Asset: assets/03-第三章-照影城/03-场景图/第三章-场景-下坊八派藏身演武堂.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-下坊外城长街茶楼戏台-风格.jpg :: 下坊市井空間参考
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 八大流派固定，代表八个能力方向
+- canon/03-map-design.md :: 下坊，武人藏身、帮派串联之处
+- canon/05-mainline-quest-skeleton.md :: 反应式城市沙盒与构筑、队友、阵营共同支撑主线
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第三章《司命》场景图「下坊八派藏身演武堂」 inside 下坊.
+Scene/backdrop: A hidden urban training hall behind a tea house and workshop row in照影城下坊, where fugitives and allies from the eight fixed martial disciplines practice quietly under curfew: blade feints, shield line drills, grappling mats, archery lanes, shadow-entry screens, medicine baskets, zither rhythm markers, and small mechanism boards. The room should feel like a practical resistance hub for builds and party tactics, not a formal sect temple.
+Style/medium: high quality AAA wuxia CRPG environment concept art, painterly realism, grounded low-magic, matching GameW chapter 3 key visual with dense city stone, muted red lanterns, grey roof tiles, worn wood, restrained heroic realism, and civic pressure outside the walls.
+Composition/framing: cinematic playable-space view, wide 16:9 landscape, foreground weapon racks and practice mats, midground eight distinct training stations arranged around a common floor, background shuttered alley exit and lookout balcony; tiny anonymous figures only, no UI.
+Lighting/mood: compressed, disciplined, clandestine; all eight schools are visible through tools and movement silhouettes rather than written labels.
+Strict constraints: no text, no readable signage, no letters, no labels, no UI, no watermark, no logo, no signature, no modern gym equipment, no magical spell spectacle.
+Quality: production-ready, 3840x2160, 4K landscape, high quality.
+```
+
+## 2026-04-30T09:42:48+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddaab-b332-77a0-8104-ff62050c4761/ig_09885ec24d739b910169f2b351d65c8191a2f86be0663ec798.png
+- Asset: assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-慈心总馆药引旧罪病录.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆秘药库-实机.png :: existing medical headquarters reference
+
+Motif sources:
+- canon/02-world-setting.md :: 药引、稳心验脉、暗植种针与显影归档链条
+- canon/04-political-faction-restructure.md :: 慈心医脉救治、误诊、病录、药引和医德压力
+- canon/05-mainline-quest-skeleton.md :: 牒钥是治疗权，决定治疗功能和控制功能能否分开
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 quest / dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第三章《司命》任务图「慈心总馆药引旧罪病录」 inside 慈心总馆.
+Scene/backdrop: The inner archive ward of the medical headquarters: low beds for牒针宿主, herb smoke, pulse cords, sealed medicine jars, hidden needle cabinets, water basins with black-thread reflections, and a private records chamber where old patient ledgers, drug residue samples, and guilty treatment tools are being sorted for confession or destruction. Show the tension between救治, 误诊, 药引旧罪, and separating treatment from control.
+Style/medium: high quality AAA wuxia CRPG quest concept art, painterly realism, grounded low-magic medical environment, matching GameW chapter 3 key visual with imperial-city interiors, grey stone courtyards, pale fabric screens, lacquered medicine shelves, muted red accents, and warm lamplight through smoke.
+Composition/framing: cinematic playable-space view, foreground medicine table and sample trays, midground patient ward and screen shadows, background archive door and emergency exit; clear investigation and moral-choice staging, tiny figures only, no UI.
+Lighting/mood: compassionate but compromised; the room can save lives or erase evidence.
+Strict constraints: no readable documents, no text, no labels, no UI, no watermark, no logo, no signature, no modern medical equipment, no gore, no horror emphasis.
+Quality: production-ready, 3840x2160, 4K landscape, high quality.
+```
+
+## 2026-04-30T09:44:10+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb7d-f690-7c41-a587-85b53023275b/ig_0fe98c0af1b8ba080169f2b3baa1348191a61b9199a7b0bbd8.png
+- Asset: assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-断因房无名煞压煞旧令.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-断因房黑令旧影.png :: existing断因房 mood reference
+
+Motif sources:
+- canon/06-origin-character-baseline.md :: 无名煞的顺煞、压煞、引煞、抵抗和后果
+- canon/02-world-setting.md :: 断因旧令、档案关键词和引脉触发
+- canon/03-map-design.md :: 断因房，无名煞旧影所在，黑令一出，旧债难逃
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 quest / dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第三章《司命》任务图「断因房无名煞压煞旧令」 inside 断因房.
+Scene/backdrop: A sealed judgment chamber for the special无名煞 route: black command tablets without readable writing, old execution cords, extinguished incense, hidden bell teeth, a broken risk ledger, and a single rain-lit doorway leading back to the city. The visual conflict is not a massacre; it is a player-facing choice between顺煞, 压煞, 引煞, and refusing the断因旧令 while the照影 system tries to reduce people to future-risk entries.
+Style/medium: high quality AAA wuxia CRPG quest concept art, painterly realism, grounded low-magic, matching GameW chapter 3 key visual with cold stone, muted red lacquer, bronze mechanisms, dark fabric, restrained symbolic lighting, and no supernatural excess.
+Composition/framing: cinematic playable-space view, wide 16:9 landscape, foreground broken command tablets and restraint cords, midground empty judgment dais and exposed bell mechanism, background rain-lit exit and shadowed archive alcoves; no close-up character portrait, only tiny silhouettes if needed.
+Lighting/mood: austere, dangerous, morally exacting; resisting inherited violence should feel possible but costly.
+Strict constraints: no text, no readable tablets, no calligraphy, no labels, no UI, no watermark, no logo, no signature, no gore focus, no horror monster imagery, no modern objects.
+Quality: production-ready, 3840x2160, 4K landscape, high quality.
+```

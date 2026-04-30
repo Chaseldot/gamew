@@ -1319,3 +1319,163 @@ Motifs to preserve: black-line symptoms as faint wrist veins only, wrong-beat au
 Constraints: no text, no readable signs, no calligraphy, no UI, no logo, no watermark, no subtitles, no modern objects, no gore, no western fantasy armor, no oversized spell effects, no floating runes.
 Quality: high quality, production-ready, sharp foreground props, atmospheric depth, 16:9 landscape.
 ```
+## 2026-04-30T09:35:40+08:00 - accepted
+
+- Chapter: 01-第一章-山水县境
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb7d-f690-7c41-a587-85b53023275b/ig_0fe98c0af1b8ba080169f2b1ac92b48191af938695da8f3491.png
+- Asset: assets/01-第一章-山水县境/03-场景图/第一章-场景-清河渡囚车针孔复核.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: Accepted as new chapter 1 scene image; focuses on concealed needle/pulse-check residue rather than duplicating existing wake-up or bridge-tracking assets.
+
+References:
+- assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png :: primary chapter style anchor
+- assets/00-风格探索/第一章/风格参考-第一章-雨夜县城客栈.png :: rain and county-town lighting reference
+
+Motif sources:
+- canon/02-world-setting.md :: 暗植种针、稳心验脉、黑线显影反应
+- canon/03-map-design.md :: 清河渡，雨夜翻车、河雾、血水与牒针黑线
+- canon/04-political-faction-restructure.md :: 基层封境复核与押送流程认知边界
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 1 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第一章《封境》场景图「清河渡囚车针孔复核」 near 清河渡.
+Scene/backdrop: After a rainy river crossing crash in 山水县境, an overturned prisoner cart lies beside a foggy ferry bank; wet rope, broken yokes, scattered sealing wax, a hidden medicine pouch, tiny needle marks on a detainee wrist, and a half-covered official pulse-check table suggest that “疫检” and押送镇定 concealed something more.
+Style/medium: high quality wuxia CRPG scene concept art, painterly realism, grounded low-magic, matching the chapter 1 key visual: river mist, rain-dark wood, muted ink greens, cold grey water, warm lantern amber, late-Ming/early-Qing county border realism.
+Composition/framing: cinematic playable-space view, foreground overturned cart and muddy wheel rut, midground pulse-check table under a torn awning, background ferry pier and sealed road lanterns; multiple approach paths readable, tiny figures for scale, no UI.
+Lighting/mood: uncertain first-contact mystery, local officials call it disease while props imply牒针暗植,稳心验脉, and封境归档 without fully explaining the mother bureau.
+Motifs to preserve: black-line reaction only as faint wrist veins, no overt magic; medicine, needle, bell tooth, case slips without readable text; pressure between survival, evidence, and official containment.
+Strict constraints: no text, no readable signs, no letters, no calligraphy, no labels, no UI, no watermark, no logo, no signature, no close-up faces, no modern objects, no gore focus, no western fantasy armor.
+Quality: production-ready, sharp foreground props, atmospheric depth, 16:9 landscape, 3840x2160.
+```
+## 2026-04-30T09:37:10+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb7d-f690-7c41-a587-85b53023275b/ig_0fe98c0af1b8ba080169f2b1fd79ec8191a112c02e4f21b8ea.png
+- Asset: assets/02-第二章-槐安古道/03-场景图/第二章-场景-龙门驿边地商队验牒.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: Accepted as new chapter 2 scene; emphasizes border checks and governed people rather than the existing witness-snatch scene.
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary chapter style anchor
+- assets/00-风格探索/第二章/风格参考-第二章-边关驿站山口.png :: frontier relay material and lighting reference
+
+Motif sources:
+- canon/03-map-design.md :: 龙门驿，风沙入口，各路人马公开争夺山水县真相
+- canon/04-political-faction-restructure.md :: 被治理者包括边地部族、商队和牒针宿主，承担通行、审查和证据代价
+- canon/05-mainline-quest-skeleton.md :: 第二章固定入口、证据网、入城身份筹码
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第二章《黄沙照影》场景图「龙门驿边地商队验牒」 at 龙门驿.
+Scene/backdrop: At the wind-scoured entrance to 槐安古道, a fortified desert relay gate checks caravans and border clans under blowing sand; camel carts, pack ropes, sealed travel documents with no readable marks, bronze registry plates, water jars, and improvised shade awnings show a place where证据,身份, and旧债 are inspected before anyone reaches the evidence network.
+Style/medium: high quality wuxia CRPG scene concept art, painterly realism, grounded low-magic, matching the chapter 2 key visual: yellow sand, weathered timber, sun-bleached stone, muted cloth banners without text, harsh side light, frontier dust.
+Composition/framing: cinematic playable-space view, foreground caravan queue and nervous witnesses, midground inspection table and guarded gate lane, background desert road splitting toward客栈,书院,坞堡; tiny figures for scale, no UI.
+Lighting/mood: public order and unofficial negotiation colliding; the scene should make border people, merchants, and牒针宿主 feel like the cost of every political route, not background decoration.
+Motifs to preserve: 缉武司 paperwork pressure, 同尘盟 witness protection, 鬼市 fake identity risk,边地部族 and商队 caught between them; no direct mother bureau reveal.
+Strict constraints: no text, no readable signs, no letters, no calligraphy, no labels, no UI, no watermark, no logo, no signature, no close-up faces, no modern objects, no gore, no fantasy monsters.
+Quality: production-ready, sharp foreground props, atmospheric depth, 16:9 landscape, 3840x2160.
+```
+## 2026-04-30T09:39:44+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb7d-f690-7c41-a587-85b53023275b/ig_0fe98c0af1b8ba080169f2b294b7788191b988aec22b18b8ee.png
+- Asset: assets/02-第二章-槐安古道/05-任务与副本图/第二章-任务图-百工坞假信号闭铃台.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: Accepted as new chapter 2 quest image; extends 百工坞 hardware-rights theme with false-signal closure rather than another test bench.
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary chapter style anchor
+- assets/02-第二章-槐安古道/05-任务与副本图/第二章-任务图-百工坞铃阵试验台.png :: related bell-array hardware motif
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 奇门机括 and 音律错律 provide build-language visual motifs
+- canon/03-map-design.md :: 百工坞，机关匠人的坞堡，铃阵与母局硬件的来处
+- canon/04-political-faction-restructure.md :: 百工坞掌握铃阵硬件、阵钥、反制设备和工匠安全
+- canon/05-mainline-quest-skeleton.md :: 机关权限 can read, delay, or rewrite triggers
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 quest / dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第二章《黄沙照影》任务图「百工坞假信号闭铃台」 inside 百工坞.
+Scene/backdrop: A fortified artisan dock-workshop in 槐安古道 where engineers and infiltrators try to close a bell-array node by feeding it a false signal: bronze bell wheels, wooden gear frames, sand-filtered skylight, hanging calibration weights, blank mechanism plates, broken needle sockets, and a concealed side channel for smuggling hostages out.
+Style/medium: high quality wuxia CRPG quest concept art, painterly realism, grounded low-magic, matching the chapter 2 key visual: yellow desert dust outside, warm bronze machinery, dark timber, practical tools, smoke, and focused craft light.
+Composition/framing: cinematic playable-space view, foreground dismantled bell teeth and tool trays, midground closure platform with operators at separate levers, background workshop gantries and guarded exits; readable tactical routes for stealth, craft, music-rhythm, and direct confrontation; no UI.
+Lighting/mood: technical guilt and urgent repair; the device can read, delay, or amplify human reactions, and the scene asks whether hardware can be repurposed instead of destroyed.
+Motifs to preserve: 奇门机括, 音律错拍, 百工坞阵钥, 铃阵反制, 假信号, 工匠安全, 牒针宿主救出; no direct mother bureau reveal.
+Strict constraints: no text, no readable labels, no letters, no calligraphy, no UI, no watermark, no logo, no signature, no modern machines, no sci-fi screens, no oversized magic, no close-up faces, no gore.
+Quality: production-ready, sharp foreground props, atmospheric depth, 16:9 landscape, 3840x2160.
+```
+
+## 2026-04-30T09:42:47+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb7d-f690-7c41-a587-85b53023275b/ig_0fe98c0af1b8ba080169f2b2f9489481918cb09b84c7c4f587.png
+- Asset: assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆药引罪证问诊厅.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: Accepted as new chapter 3 scene; complements existing救治任务图 with medical-record culpability and diagnosis-space layout.
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+- assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-慈心总馆救治牒针宿主.png :: related treatment-right motif
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 药师调命于伤病
+- canon/02-world-setting.md :: 稳心治疗、止痛针、安神药 and 暗植伪装
+- canon/03-map-design.md :: 慈心总馆，医脉总坛，救治牒针宿主，也背负药引旧罪
+- canon/04-political-faction-restructure.md :: 慈心医脉掌握牒针药理、治疗合法性、医脉罪证
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第三章《司命》场景图「慈心总馆药引罪证问诊厅」 inside 慈心总馆.
+Scene/backdrop: A large imperial-city medical hall where public healing and hidden culpability share the same room: bamboo privacy screens, pulse stools, herb steam, sealed medicine cabinets, needle trays, blank patient ledgers, confiscated travel vials, and a curtained side archive where old treatment records are being compared against牒针 symptoms.
+Style/medium: high quality wuxia CRPG scene concept art, painterly realism, grounded low-magic, matching the chapter 3 key visual: grey stone city, restrained red lacquer, warm medical lamplight, jade-green herb glass, quiet institutional order.
+Composition/framing: cinematic playable-space view, foreground diagnosis table and faint-wrist patient silhouettes, midground healers arguing over medicine evidence, background archive curtain, upper balcony and guarded exits; routes for negotiation, theft, treatment, and public accusation are readable; no UI.
+Lighting/mood: compassionate but compromised; treatment right and control right are visually close together, asking whether救治 can be separated from归档 and暗植.
+Motifs to preserve: 药师调命, 稳心治疗外观, 止痛针, 安神药, 病录罪证, 宿主救治, 医德压力, 牒针药理; no full exposition text.
+Strict constraints: no text, no readable ledgers, no letters, no calligraphy, no labels, no UI, no watermark, no logo, no signature, no modern hospital equipment, no glowing spell effects, no close-up faces, no gore.
+Quality: production-ready, sharp foreground props, atmospheric depth, 16:9 landscape, 3840x2160.
+```
+
+## 2026-04-30T09:44:46+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb7d-f690-7c41-a587-85b53023275b/ig_0fe98c0af1b8ba080169f2b3baa1348191a61b9199a7b0bbd8.png
+- Asset: assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-断因房压煞旧令镜室.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: Accepted as new chapter 3 quest image; visualizes 无名煞 choice pressure without depicting a monster or gore.
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-断因房黑令旧影.png :: related 断因房 mood reference
+
+Motif sources:
+- canon/02-world-setting.md :: 断因诱导、档案关键词、引脉触发
+- canon/03-map-design.md :: 断因房，无名煞旧影所在，黑令一出，旧债难逃
+- canon/05-mainline-quest-skeleton.md :: 断因旧部 identity, mother-bureau裁决 and city pressure
+- canon/06-origin-character-baseline.md :: 无名煞顺煞、压煞、引煞、抵抗和后果
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 quest / dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for 第三章《司命》任务图「断因房压煞旧令镜室」 inside 断因房.
+Scene/backdrop: A sealed interrogation-meditation chamber beneath 照影城, built for old judgment orders: dark lacquer beams, bronze mirror arrays, hanging bell cords, broken command tablets with no readable marks, shallow water on stone, restrained candlelight, hidden side doors, and a central empty mat where a player can resist, exploit, or expose the killing impulse.
+Style/medium: high quality wuxia CRPG quest concept art, painterly realism, grounded low-magic, matching the chapter 3 key visual: imperial undercity stone, cold bronze, restrained red-black lacquer, black water reflections, tense institutional ritual rather than horror.
+Composition/framing: cinematic playable-space view, foreground broken black-order tokens and wet floor reflections, midground empty mat framed by mirror and bell mechanisms, background archive alcoves and escape routes; readable choices for stealth, dialogue, ritual interruption, and direct confrontation; no UI.
+Lighting/mood: quiet pressure before violence; the room should visualize顺煞,压煞,引煞, and resistance as a moral and tactical fork, not a simple evil-button arena.
+Motifs to preserve: 无名煞, 断因旧令, 档案关键词诱导, 杀意压制, 队友恐惧后果, 照影局旧影, 母局裁决资格; low-magic psychological pressure, no full monster depiction.
+Strict constraints: no text, no readable tablets, no letters, no calligraphy, no labels, no UI, no watermark, no logo, no signature, no modern objects, no gore focus, no demonic monster, no oversized magic, no close-up faces.
+Quality: production-ready, sharp foreground props, atmospheric depth, 16:9 landscape, 3840x2160.
+```

@@ -1319,3 +1319,152 @@ Motifs to preserve: black-line symptoms as faint wrist veins only, wrong-beat au
 Constraints: no text, no readable signs, no calligraphy, no UI, no logo, no watermark, no subtitles, no modern objects, no gore, no western fantasy armor, no oversized spell effects, no floating runes.
 Quality: high quality, production-ready, sharp foreground props, atmospheric depth, 16:9 landscape.
 ```
+## 2026-04-30T01:34:47+08:00 - accepted
+
+- Chapter: 01-第一章-山水县境
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019dda12-154e-7a83-a5d9-0389120761b1/ig_00afc4c7577e70c00169f24092e3d48191849f1f296bdaa068.png
+- Asset: assets/01-第一章-山水县境/05-任务与副本图/第一章-任务图-暗植种针医馆药引.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png :: primary Chapter 1 style anchor
+- assets/00-风格探索/世界基调/风格探索-药谷医庐.png :: medical material and lighting reference
+
+Motif sources:
+- canon/02-world-setting.md :: 暗植种针、稳心治疗、安神药、医馆药引
+- canon/04-political-faction-restructure.md :: 慈心医脉治疗接口与暗植痕迹
+- canon/03-map-design.md :: 山水县城，医馆与县衙藏账
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW Chapter 1 task/dungeon image, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for "暗植种针医馆药引" inside 山水县城 / 慈心医馆 during the first chapter封境 crisis.
+Scene/backdrop: A rain-dark county clinic converted into a quarantine treatment room: bamboo screens, medicine drawers, pulse-check table, steaming herb pots, bound patient wrist, tiny needle marks, sealed case files, wet official boots at the threshold, and a hidden brass needle tray partly covered by cloth. The image shows暗植种针 disguised as安神药 and稳心治疗, without making the full truth obvious.
+Style/medium: high quality AAA wuxia CRPG task concept art, painterly realism, grounded low-magic medical suspense, matching Chapter 1 key visual: rainy county, worn timber, gray-green mist, warm lantern pools, subtle black-line skin reaction.
+Composition/framing: 16:9 cinematic playable-space view, foreground medicine tray and pulse cord, midground patient cot and healer silhouette, background yamen clerk and sealed medical records; tiny figures only, no close-up portraits.
+Lighting/mood: secretive, clinical, morally uneasy; rain and lantern light, herb smoke, no gore focus.
+Strict constraints: no readable text, no letters, no labels, no UI, no watermark, no logo, no signature, no modern objects, no guns, no electricity, no fantasy monsters.
+```
+
+## 2026-04-30T03:51:21+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019dda12-154e-7a83-a5d9-0389120761b1/ig_00afc4c7577e70c00169f260ee417c81918c4d7ed10a888551.png
+- Asset: assets/02-第二章-槐安古道/03-场景图/第二章-场景-边地部族商路验牒.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary Chapter 2 style anchor
+- assets/00-风格探索/世界基调/风格探索-边关驿站山口.png :: frontier checkpoint material reference
+
+Motif sources:
+- canon/04-political-faction-restructure.md :: 边地部族、商队、被治理者承担身份审查与商路封锁代价
+- canon/03-map-design.md :: 龙门驿，风沙入口，各路人马公开争夺山水县真相
+- canon/05-mainline-quest-skeleton.md :: 第二章证据网与入城身份
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW Chapter 2 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for "边地部族商路验牒" at 龙门驿 on 槐安古道.
+Scene/backdrop: At the wind-sand entrance to the ancient road, a border tribe caravan, merchants, witnesses from 山水县, and armed checkpoint clerks are stopped under tattered awnings. Wooden pass tablets, sealed travel bundles, camel bells, water skins, confiscated evidence chests, and worried host families show how border people and caravans bear the cost of identity review and truth争夺.
+Style/medium: high quality wuxia CRPG scene concept art, painterly realism, grounded frontier politics, matching Chapter 2 key visual: ochre sand, weathered timber, cloth banners, cold morning haze, brass bell accents.
+Composition/framing: wide exterior establishing scene with readable checkpoint geometry, caravan line in foreground, officials and tribe elders in midground, 龙门驿 gate and desert road in background; no UI.
+Lighting/mood: tense but human, windblown, procedural pressure rather than open combat.
+Strict constraints: no readable text, no letters, no labels, no UI, no watermark, no logo, no signature, no modern objects, no guns, no fantasy creatures.
+```
+## 2026-04-30T09:37:18+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 04-战斗图
+- Generated: /Users/bytedance/.codex/generated_images/019dda12-154e-7a83-a5d9-0389120761b1/ig_00afc4c7577e70c00169f2b1c5da0c81918d79587e95642f6e.png
+- Asset: assets/02-第二章-槐安古道/04-战斗图/第二章-战斗-八流派破局演武.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary Chapter 2 style anchor
+- assets/02-第二章-槐安古道/03-场景图/第二章-场景-武林盟会证据旗台公议.png :: existing盟会 spatial reference
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 八大流派能力方向
+- canon/04-political-faction-restructure.md :: 武林盟会与公开政治轴争夺真相解释权
+- canon/05-mainline-quest-skeleton.md :: 第二章盟会中后段高潮与证据筹码
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW Chapter 2 battle concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape battle setup image for "八流派破局演武" at 武林盟会.
+Scene/backdrop: A tactical盟会 courtyard encounter where the eight GameW ability schools are visible through diegetic action, not labels: 游锋 duelist reading a blade line, 破军 shield bearer holding a chokepoint, 拳掌 grappler controlling posture, 射艺 archer marking a distant line, 影踪 infiltrator emerging from screen shadow, 药师 healer-poisoner managing smoke and triage, 音律 musician disrupting bell rhythm, 奇门 artificer setting field talismans and simple mechanisms. Evidence flags, witness benches, and a half-triggered照影铃 array make the fight a political test rather than a tournament.
+Style/medium: high quality wuxia CRPG encounter concept art, grounded and tactical, painterly realism, matching Chapter 2 frontier palette with muted sand, dark wood, cloth canopies, bronze bells, no superhero fantasy.
+Composition/framing: readable combat arena layout from a cinematic oblique angle, foreground cover and hazard objects, midground eight small role silhouettes around the courtyard, background盟会 platform and evidence bundles; no UI, no damage numbers.
+Lighting/mood: public tension, martial clarity, controlled chaos, no gore focus.
+Strict constraints: no readable text, no letters, no labels, no UI, no watermark, no logo, no signature, no modern objects, no guns, no lightning magic, no fantasy monsters.
+```
+
+## 2026-04-30T09:40:17+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019dda12-154e-7a83-a5d9-0389120761b1/ig_00afc4c7577e70c00169f2b26563dc81918509098f12be06f4.png
+- Asset: assets/03-第三章-照影城/03-场景图/第三章-场景-照影局外勤灭证巷.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary Chapter 3 style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-水巷雨夜黑市暗巷-风格.jpg :: canal night material reference
+
+Motif sources:
+- canon/02-world-setting.md :: 引脉、显影归档、案牍与病录
+- canon/04-political-faction-restructure.md :: 照影局外勤、灭证流程、鬼市与水巷暗线
+- canon/03-map-design.md :: 水巷，船影、暗门与欠债人藏在水声里
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW Chapter 3 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for "照影局外勤灭证巷" in 照影城水巷.
+Scene/backdrop: A narrow night water-alley where hidden Zhaoying field agents erase evidence after a failed引脉 operation: wet stone steps, moored black boats, archive slips being burned in a brazier, a concealed bell cord under bridge planks, false identity tablets, medicine residue, one rescued host hidden behind hanging laundry, and distant patrol lanterns from 缉武司. The organization is present through actions, not through signage.
+Style/medium: high quality wuxia CRPG scene concept art, painterly realism, grounded low-magic espionage, matching Chapter 3 key visual: imperial stone, canal darkness, cold blue moonlight, red lantern reflections, bronze details.
+Composition/framing: cinematic playable-space view, foreground damp evidence and half-burned slips, midground masked field agents and hidden host, background canal bridge, patrol lights, and layered city walls; no close-up portraits.
+Lighting/mood: covert, dangerous, institutional corruption exposed through residue and cleanup.
+Strict constraints: no readable text, no letters, no labels, no UI, no watermark, no logo, no signature, no modern objects, no guns, no electricity, no fantasy monsters.
+```
+
+## 2026-04-30T09:42:16+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019dda12-154e-7a83-a5d9-0389120761b1/ig_00afc4c7577e70c00169f2b320c0848191b216eff4681133cf.png
+- Asset: assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-无名煞断因诱导.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary Chapter 3 style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-断因房黑令旧影.png :: existing断因房 mood reference
+
+Motif sources:
+- canon/06-origin-character-baseline.md :: 无名煞特殊规则层，顺煞、压煞、引煞与后果
+- canon/02-world-setting.md :: 断因诱导、档案关键词与引脉触发
+- canon/03-map-design.md :: 断因房，无名煞旧影所在
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW Chapter 3 task/dungeon image, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for "无名煞断因诱导" inside 断因房 in 照影城.
+Scene/backdrop: An austere hidden chamber where the special origin 无名煞 faces断因诱导: black command tokens on a stone table, old case chains, shadowed old-order silhouettes, a bell and archive mechanism trying to turn future risk into immediate execution, while companions and witnesses stand at the edge as moral anchors. The visual must show three possible impulses through the environment: 顺煞 to erase a witness, 压煞 to preserve evidence, 引煞 to trace the old order back to its source.
+Style/medium: high quality AAA wuxia CRPG narrative task concept art, painterly realism, grounded psychological low-magic, matching Chapter 3 key visual: dark official interiors, bronze registry machinery, cold stone, restrained red seal accents.
+Composition/framing: 16:9 cinematic landscape, foreground black tokens and restraint cord, midground lone player silhouette before the table, side groups of witness and companions, background archive machinery and sealed inner door; tiny figures only, no close-up portraits.
+Lighting/mood: severe, intimate, tempting, a moral crisis without gore.
+Strict constraints: no readable text, no letters, no labels, no UI, no watermark, no logo, no signature, no modern objects, no guns, no fantasy monsters, no gore focus.
+```
+

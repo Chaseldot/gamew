@@ -1319,3 +1319,226 @@ Motifs to preserve: black-line symptoms as faint wrist veins only, wrong-beat au
 Constraints: no text, no readable signs, no calligraphy, no UI, no logo, no watermark, no subtitles, no modern objects, no gore, no western fantasy armor, no oversized spell effects, no floating runes.
 Quality: high quality, production-ready, sharp foreground props, atmospheric depth, 16:9 landscape.
 ```
+## 2026-04-30T09:36:46+08:00 - accepted
+
+- Chapter: 01-第一章-山水县境
+- Asset type: 04-战斗图
+- Generated: /Users/bytedance/.codex/generated_images/019ddaab-b332-77a0-8104-ff62050c4761/ig_09885ec24d739b910169f2b1a354d081918201d2d273953642.png
+- Asset: assets/01-第一章-山水县境/04-战斗图/第一章-战斗-龙王庙水闸救城断铃.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Accepted for watergate battle composition and chapter-one flood stakes.
+
+References:
+- assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png :: primary style anchor
+
+Motif sources:
+- canon/03-map-design.md :: 龙王庙水闸、水患、铃阵、牒钥
+- canon/05-mainline-quest-skeleton.md :: 第一章终局救人 vs 追凶
+- canon/02-world-setting.md :: 照影铃、引脉、显影归档
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 1 battle concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape battle setup image for "龙王庙水闸救城断铃" at "龙王庙水闸" in 山水县境.
+Scene/backdrop: A flooded river temple watergate at night, bronze sluice wheels half-submerged, broken bell-array pylons, talisman nails, wet stone steps, villagers and host carriers trapped on one side while tiny martial figures fight to sever the ringing mechanism; the image must express the first chapter choice between saving the county and chasing the key bearer.
+Style/medium: high quality AAA wuxia CRPG encounter concept art, painterly realism, grounded low-magic atmosphere, matching the chapter key visual palette of rain-washed green mountains, cold river fog, lantern amber, wet wood, dark tiled roofs, and muted iron.
+Composition/framing: wide 16:9 cinematic oblique angle with readable tactical spaces: foreground flooded steps, midground sluice bridge and bell frame, background Dragon King temple silhouette and rising water; tiny scale figures only, no hero close-up.
+Lighting/mood: storm rain, lanterns fighting blue-grey mist, urgent but tragic, water and metal reflections.
+Source motifs: canon/03-map-design.md 龙王庙水闸; canon/05-mainline-quest-skeleton.md 第一章救人 vs 追凶; canon/02-world-setting.md 照影铃, 引脉, 显影归档; canon/04-political-faction-restructure.md 被治理者代价.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no text, no letters, no readable signage, no UI, no watermark, no logo, no signature, no gore focus.
+```
+
+## 2026-04-30T09:38:08+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb0b-861f-7443-bd70-3b8d93941ec8/ig_0b0af9295a7c44b90169f2b23788ec81919d314a6c1c211674.png
+- Asset: assets/02-第二章-槐安古道/03-场景图/第二章-场景-龙门驿边地商队证词.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Accepted for border relay composition and contested testimony staging.
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary style anchor
+- assets/00-风格探索/第二章/风格参考-第二章-边关驿站山口.png :: frontier relay material and lighting reference
+
+Motif sources:
+- canon/03-map-design.md :: 龙门驿风沙入口
+- canon/04-political-faction-restructure.md :: 边地部族、商队、证词和被治理者代价
+- canon/05-mainline-quest-skeleton.md :: 第二章证据网和入城身份
+- canon/01-build-system-milestone.md :: 八流派作为人群剪影语言
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape image for "龙门驿边地商队证词" at "龙门驿" in 槐安古道.
+Scene/backdrop: Wind-blasted frontier relay station at the entrance to the sand road; border tribe riders, mule caravans, displaced Shan水县 witnesses, bureau runners, and Jianghu scouts gather around carts and sealed document chests, with sand screens, hanging prayer strips, water skins, travel passes, and hidden evidence bundles; the moment is public testimony being contested before it can enter the evidence network.
+Style/medium: high quality AAA wuxia CRPG environment scene concept art, painterly realism, matching the chapter key visual palette of ochre sand, pale stone, worn leather, dark lacquered wood, copper bells, sun-bleached cloth, and hard frontier light.
+Composition/framing: wide exterior establishing shot, 16:9 cinematic landscape, playable-space view with foreground caravan debris, midground testimony circle under the inn gate, background pass walls and dunes; tiny scale figures only.
+Lighting/mood: late afternoon dust storm light, tense negotiation, truth about to be traded or seized.
+Source motifs: canon/03-map-design.md 龙门驿; canon/04-political-faction-restructure.md 边地部族, 商队, 缉武司, 同尘盟, 鬼市; canon/05-mainline-quest-skeleton.md 第二章证据网和入城身份; canon/01-build-system-milestone.md 游锋, 破军, 影踪, 音律, 奇门 as visual role silhouettes only.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no text, no letters, no readable signage, no UI, no watermark, no logo, no signature, no close-up portraits.
+```
+
+## 2026-04-30T09:40:02+08:00 - rejected
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddbe9-9aa0-7363-baac-e38fb1c87678/ig_060190f3fc4576b90169f2b2a9903c8191b720ea24cc2bd942.png
+- Asset: not used; replaced by later accepted v2 for assets/02-第二章-槐安古道/05-任务与副本图/第二章-任务图-照影楼坞外围救宿主.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Rejected after visual QA; composition read too much like a public armed assembly and not enough like host rescue / bell calibration.
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary style anchor
+- assets/02-第二章-槐安古道/03-场景图/第二章-场景-千佛石窟荒漠古阵-风格.png :: desert cliff and ancient machinery atmosphere
+
+Motif sources:
+- canon/03-map-design.md :: 照影楼坞
+- canon/02-world-setting.md :: 暗植种针、稳心验脉、引脉、显影归档
+- canon/04-political-faction-restructure.md :: 百工坞硬件、慈心医脉治疗接口、照影局外勤
+- canon/05-mainline-quest-skeleton.md :: 提前侦查、救宿主、破坏设备
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 quest and dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape quest image for "照影楼坞外围救宿主" at "照影楼坞" in 槐安古道.
+Scene/backdrop: Outer works of a hidden verification fortress built into sandstone cliffs, with gantries, bronze bell conduits, calibration tables, bamboo scaffolds, sealed archive racks, and host carriers wrapped in pale medical cloth; a stealth rescue route crosses under suspended bells while distant guards prepare to burn records.
+Style/medium: high quality wuxia CRPG set-piece concept art, painterly realism, grounded low-magic machinery, matching chapter 2 desert palette while adding cold bronze, ink-black archive lacquer, and sickly medicine smoke.
+Composition/framing: wide 16:9 cinematic playable dungeon exterior/interior threshold, foreground shadowed rescue path, midground host holding area and bell-calibration rigs, background tower-fort silhouette and cliff machinery; tactical clarity, no UI.
+Lighting/mood: moonlit sand, brazier orange, medicine haze, tense infiltration and moral urgency.
+Source motifs: canon/03-map-design.md 照影楼坞; canon/02-world-setting.md 暗植种针, 稳心验脉, 引脉, 显影归档; canon/04-political-faction-restructure.md 百工坞硬件, 慈心医脉治疗接口, 照影局外勤; canon/05-mainline-quest-skeleton.md 提前侦查, 救宿主, 破坏设备.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no text, no readable labels, no UI, no watermark, no logo, no signature, no gore focus.
+```
+
+## 2026-04-30T09:41:27+08:00 - rejected
+
+- Chapter: 03-第三章-照影城
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddb0b-861f-7443-bd70-3b8d93941ec8/ig_0b0af9295a7c44b90169f2b2ac4de48191a4e10559a40a9de7.png
+- Asset: not used; replaced by later accepted v2 for assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆药引旧罪病录库.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Rejected after visual QA; result did not read as an interior medical archive / herb-vault scene.
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆秘药库-实机.png :: medical interior and herb-vault reference
+
+Motif sources:
+- canon/03-map-design.md :: 慈心总馆
+- canon/02-world-setting.md :: 稳心治疗、药引、暗植种针、医馆病录
+- canon/04-political-faction-restructure.md :: 慈心医脉守医者、赎罪者、投机者
+- canon/05-mainline-quest-skeleton.md :: 牒钥治疗权
+- canon/06-origin-character-baseline.md :: 桑芷医脉内视压力
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape scene image for "慈心总馆药引旧罪病录库" inside "慈心总馆" in 照影城.
+Scene/backdrop: A grand medical archive and herb vault where treatment records, pulse charts, medicine jars, needle trays, sealed patient ledgers, and hidden old implant evidence coexist; healers tend host carriers behind gauze screens while investigators uncover that compassionate medicine was used as a disguise for control.
+Style/medium: high quality AAA wuxia CRPG interior environment concept art, painterly realism, restrained historical fantasy, matching chapter 3 city palette of slate roof shadows, lacquered cabinets, jade-green medicine glass, pale paper, brass instruments, and cool bureaucratic light.
+Composition/framing: wide interior playable-space view, 16:9 cinematic landscape, foreground medicine table and broken seal boxes, midground archive aisles and screened treatment beds, background high windows and hanging pulse instruments; tiny scale figures only.
+Lighting/mood: quiet, ethical tension, shafts of morning light through dust and herbal smoke, human cost visible but not melodramatic.
+Source motifs: canon/03-map-design.md 慈心总馆; canon/02-world-setting.md 稳心治疗, 药引, 暗植种针, 医馆病录; canon/04-political-faction-restructure.md 慈心医脉守医者, 赎罪者, 投机者; canon/05-mainline-quest-skeleton.md 牒钥 is treatment right; canon/06-origin-character-baseline.md 桑芷医脉内视 pressure.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no text, no readable labels, no UI, no watermark, no logo, no signature, no close-up portraits.
+```
+
+## 2026-04-30T09:42:51+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 04-战斗图
+- Generated: /Users/bytedance/.codex/generated_images/019ddaab-b332-77a0-8104-ff62050c4761/ig_09885ec24d739b910169f2b351d65c8191a2f86be0663ec798.png
+- Asset: assets/03-第三章-照影城/04-战斗图/第三章-战斗-摘星楼外阵铃塔夺钥.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Accepted for strong rooftop combat readability, bell hazards, and central hardware-control objective.
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary style anchor
+- assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-摘星楼外阵登楼.png :: tower ascent and outer array reference
+
+Motif sources:
+- canon/03-map-design.md :: 摘星楼
+- canon/05-mainline-quest-skeleton.md :: 阵钥、三钥、城市压力
+- canon/04-political-faction-restructure.md :: 百工坊阵钥和照影局母局接口
+- canon/01-build-system-milestone.md :: 奇门、影踪、破军、射艺战术剪影
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 battle concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape battle setup image for "摘星楼外阵铃塔夺钥" at "摘星楼" in 照影城.
+Scene/backdrop: A high city tower exterior array where sky bridges, bronze bell towers, rotating astrolabe rings, cable pulleys, and mother-bureau conduits surround the route toward the underground system; fighters from bureau, Jianghu, craftsmen, and infiltrators contest the 阵钥 without turning the scene into a superhero duel.
+Style/medium: high quality AAA wuxia CRPG tactical encounter concept art, painterly realism, grounded machine-fantasy, matching chapter 3 key visual palette of imperial stone, wet black tile, muted gold, cold blue night, red signal lanterns, and polished bronze.
+Composition/framing: wide 16:9 oblique rooftop battlefield with clear lanes, cover, height changes, bell hazards, and a central key mechanism; distant city layers and palace silhouette below, tiny scale figures only.
+Lighting/mood: pre-dawn city haze, ringing tension, decisive hardware-control conflict before the mother bureau finale.
+Source motifs: canon/03-map-design.md 摘星楼; canon/05-mainline-quest-skeleton.md 阵钥 is hardware right, 三钥, 城市压力; canon/04-political-faction-restructure.md 百工坊阵钥, 照影局母局接口; canon/01-build-system-milestone.md 奇门, 影踪, 破军, 射艺 tactical silhouettes.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no text, no readable labels, no UI, no damage numbers, no watermark, no logo, no signature, no gore focus.
+```
+
+## 2026-04-30T09:50:59+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddaab-b332-77a0-8104-ff62050c4761/ig_09885ec24d739b910169f2b4f6a51c81918a785e4106303322.png
+- Asset: assets/02-第二章-槐安古道/05-任务与副本图/第二章-任务图-照影楼坞外围救宿主.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Accepted v2 after visual QA: clear host rescue facility, hanging bell calibration rigs, and stealth route.
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary style anchor
+- assets/02-第二章-槐安古道/03-场景图/第二章-场景-千佛石窟荒漠古阵-风格.png :: desert cliff and ancient machinery atmosphere
+
+Motif sources:
+- canon/03-map-design.md :: 照影楼坞
+- canon/02-world-setting.md :: 暗植种针、稳心验脉、引脉、显影归档
+- canon/04-political-faction-restructure.md :: 百工坞硬件、慈心医脉治疗接口、照影局外勤
+- canon/05-mainline-quest-skeleton.md :: 提前侦查、救宿主、破坏设备
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 quest and dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape quest image for "照影楼坞外围救宿主" at "照影楼坞" in 槐安古道.
+Scene/backdrop: INTERIOR-EXTERIOR THRESHOLD OF A HIDDEN MEDICAL-MECHANICAL FORTRESS, not a public arena. Sandstone cliff walls enclose a guarded host-rescue facility: rows of low stretchers and pale cloth screens, weak host carriers being moved quietly, bronze bell calibration rigs hanging overhead, pulse-reading tables, needle trays, sealed archive shelves, bamboo scaffolds, and one distant brazier where guards are burning records. A narrow stealth path crosses below the suspended bells toward the host holding area.
+Style/medium: high quality AAA wuxia CRPG dungeon set-piece concept art, painterly realism, grounded low-magic machinery, desert fortress materials, cold bronze, black lacquer archives, pale medical cloth, sickly herb smoke.
+Composition/framing: wide 16:9 cinematic playable-space view, foreground shadowed infiltration route and medical tools, midground host holding screens and bell-calibration machinery, background cliff gate and watch balcony; tactical layout readable, tiny scale figures only.
+Lighting/mood: moonlit sand through cracks, brazier orange, green-grey medicine haze, urgent rescue and quiet horror.
+Source motifs: canon/03-map-design.md 照影楼坞; canon/02-world-setting.md 暗植种针, 稳心验脉, 引脉, 显影归档; canon/04-political-faction-restructure.md 百工坞硬件, 慈心医脉治疗接口, 照影局外勤; canon/05-mainline-quest-skeleton.md 提前侦查, 救宿主, 破坏设备.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no outdoor tournament, no public assembly, no duel stage, no desert camp market, no text, no readable labels, no UI, no watermark, no logo, no signature, no gore focus.
+```
+
+## 2026-04-30T09:56:43+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddaab-b332-77a0-8104-ff62050c4761/ig_09885ec24d739b910169f2b624b738819181206c7a9b81394a.png
+- Asset: assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆药引旧罪病录库.png
+- Settings: built-in imagegen, requested 3840x2160 4K landscape, high quality stylized-concept
+- Notes: Accepted v2 after visual QA: clearly interior medical archive with treatment beds, records, herb storage, and implant evidence.
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary style anchor
+- assets/03-第三章-照影城/03-场景图/第三章-场景-慈心总馆秘药库-实机.png :: medical interior and herb-vault reference
+
+Motif sources:
+- canon/03-map-design.md :: 慈心总馆
+- canon/02-world-setting.md :: 稳心治疗、药引、暗植种针、医馆病录
+- canon/04-political-faction-restructure.md :: 慈心医脉守医者、赎罪者、投机者
+- canon/05-mainline-quest-skeleton.md :: 牒钥治疗权
+- canon/06-origin-character-baseline.md :: 桑芷医脉内视压力
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape INTERIOR scene image for "慈心总馆药引旧罪病录库" inside "慈心总馆" in 照影城.
+Scene/backdrop: INTERIOR ONLY, a grand Chinese medical archive and herb vault, no desert and no battlefield. Tall lacquered medicine cabinets, hanging herb bundles, jade-green glass jars, brass pulse instruments, folded gauze screens, low treatment beds with host carriers, sealed patient ledgers, needle trays, medicine grinding tables, broken wax seals, hidden implant evidence in open drawers, and investigators finding that healing procedures disguised control.
+Style/medium: high quality AAA wuxia CRPG interior environment concept art, painterly realism, restrained historical fantasy, cool bureaucratic city light, slate roof shadows, warm cabinet lacquer, pale paper, brass, medicinal green glass, soft herbal smoke.
+Composition/framing: wide 16:9 playable interior view with clear foreground medicine table and opened archive boxes, midground aisles of records and screened treatment beds, background high lattice windows and hanging diagnostic instruments; tiny scale figures only.
+Lighting/mood: quiet ethical tension, morning shafts through dust and herb smoke, compassionate surface with institutional guilt underneath.
+Source motifs: canon/03-map-design.md 慈心总馆; canon/02-world-setting.md 稳心治疗, 药引, 暗植种针, 医馆病录; canon/04-political-faction-restructure.md 慈心医脉守医者, 赎罪者, 投机者; canon/05-mainline-quest-skeleton.md 牒钥 is treatment right; canon/06-origin-character-baseline.md 桑芷医脉内视 pressure.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; interior only, no desert, no tents, no arena, no weapons display, no battle, no text, no readable labels, no UI, no watermark, no logo, no signature, no close-up portraits.
+```

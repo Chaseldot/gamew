@@ -2985,3 +2985,180 @@ Lighting/mood: quiet ethical tension, morning shafts through dust and herb smoke
 Source motifs: canon/03-map-design.md 慈心总馆; canon/02-world-setting.md 稳心治疗, 药引, 暗植种针, 医馆病录; canon/04-political-faction-restructure.md 慈心医脉守医者, 赎罪者, 投机者; canon/05-mainline-quest-skeleton.md 牒钥 is treatment right; canon/06-origin-character-baseline.md 桑芷医脉内视 pressure.
 Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; interior only, no desert, no tents, no arena, no weapons display, no battle, no text, no readable labels, no UI, no watermark, no logo, no signature, no close-up portraits.
 ```
+## 2026-04-30T13:13:49+08:00 - accepted
+
+- Chapter: 01-第一章-山水县境
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddccb-06bc-7be2-94ec-5e6135d040d2/ig_0a9e51559d1cab9d0169f2e45b4a9481918aa519d7ca795de4.png
+- Asset: assets/01-第一章-山水县境/05-任务与副本图/第一章-任务图-琴声错拍稳心复核.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png :: primary chapter style anchor
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 音律调心, 药师调命
+- canon/02-world-setting.md :: 稳心验脉, 药引, 引脉, 显影归档
+- canon/03-map-design.md :: 山水县城
+- canon/04-political-faction-restructure.md :: 缉武司复核, 慈心医脉治疗接口
+- canon/05-mainline-quest-skeleton.md :: 第一章封境复核, 局部触发异常
+- canon/06-origin-character-baseline.md :: 柳听弦, 桑芷内视
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 1 quest concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape quest image for "第一章-任务图-琴声错拍稳心复核" inside 山水县城.
+Input images: assets/01-第一章-山水县境/01-章节主视觉/第一章-章节主视觉-山水县境远景.png as primary chapter style anchor.
+Scene/backdrop: A rain-dark county clinic annex connected to a yamen record room: low treatment couches, pulse-reading table, bowls of calming medicine, acupuncture trays, sealed grain-road waitlist, bamboo blinds shaking in storm wind, a small musician's screen with a muted qin and handbell used to disturb rhythm, constables holding lanterns outside, worried townsfolk seen through wet lattice windows.
+Subject: A tense noncombat investigation of wrong-beat heart rhythm: one host carrier reacts with faint black vein patterns while a doctor, a clerk, and hidden watchers try to turn a public steady-heart check into a recordable reaction.
+Style/medium: high quality AAA wuxia CRPG quest concept art, painterly realism, grounded low-magic, damp county-town materials, muted ink blue rain, warm paper lanterns, dark lacquer records, herb smoke.
+Composition/framing: wide 16:9 playable interior-exterior view; foreground medicine table and qin screen, midground patient couch and pulse tools, background yamen archive door and rainy street; tiny scale figures only, readable tactical investigation space.
+Lighting/mood: quiet dread, rain, herb smoke, moral ambiguity between treatment and control.
+Source motifs: canon/01-build-system-milestone.md 音律调心 and 药师调命; canon/02-world-setting.md 稳心验脉, 药引, 引脉, 显影归档; canon/03-map-design.md 山水县城; canon/04-political-faction-restructure.md 缉武司基层复核 and 慈心医脉治疗接口; canon/05-mainline-quest-skeleton.md 第一章封境复核 and 局部触发异常; canon/06-origin-character-baseline.md 柳听弦复仇曲被铃阵利用 and 桑芷医脉内视.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no readable text, no letters, no UI, no watermark, no logo, no signature, no close-up portrait, no gore focus, no modern instruments.
+```
+
+## 2026-04-30T13:15:32+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 03-场景图
+- Generated: /Users/bytedance/.codex/generated_images/019ddcca-9940-79e0-aba3-edf9f50745f0/ig_07d4c46ac1e154460169f2e52764648191bb2da53b24678295.png
+- Asset: assets/02-第二章-槐安古道/03-场景图/第二章-场景-千佛石窟旧史回音壁.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary chapter style anchor
+- assets/02-第二章-槐安古道/99-高质量参考/第二章-场景-千佛石窟荒漠古阵-风格.png :: cave material and lighting reference
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 音律 and 奇门 as sound/space systems
+- canon/02-world-setting.md :: 照影铃, 档案关键词, 显影归档
+- canon/03-map-design.md :: 千佛石窟壁画与回音指向照影局旧史
+- canon/04-political-faction-restructure.md :: 照影局潜伏旧史, 百工硬件接口
+- canon/05-mainline-quest-skeleton.md :: 第二章证据网, 真相被争夺
+- canon/06-origin-character-baseline.md :: Tav baseline key truth access
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 representative scene art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape scene image for "第二章-场景-千佛石窟旧史回音壁" inside 千佛石窟 in 槐安古道.
+Input images: assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png as primary chapter style anchor; assets/02-第二章-槐安古道/99-高质量参考/第二章-场景-千佛石窟荒漠古阵-风格.png as cave material and light reference.
+Scene/backdrop: An interior desert grotto chamber carved with silent Buddhas and damaged murals: windblown sand at the cave threshold, incense ash, cracked frescoes showing early bell arrays and archive tablets, echo niches, dangling bronze chimes, a hidden recess with old relay gears, torn cloth seals, and small investigators comparing mural fragments to a recovered tie-record shard.
+Subject: The environment reveals old照影局 history without exposition: the wall itself becomes evidence, where sound, mural, archive and mechanism align.
+Style/medium: high quality AAA wuxia CRPG scene concept art, painterly realism, grounded low-magic archaeology, warm sandstone, worn pigments, oxidized bronze, pale dust shafts.
+Composition/framing: wide 16:9 playable cavern view; foreground broken mural pieces and sand, midground carved Buddha wall and echo niches, background dark passage to a mechanism alcove; tiny scale figures only, no readable inscriptions.
+Lighting/mood: solemn, dry, ancient, investigative; quiet awe with threat of hidden listeners.
+Source motifs: canon/01-build-system-milestone.md 音律 and 奇门 as sound/space systems; canon/02-world-setting.md 照影铃, 档案关键词, 显影归档; canon/03-map-design.md 千佛石窟壁画与回音指向照影局旧史; canon/04-political-faction-restructure.md 照影局潜伏旧史 and 百工硬件接口; canon/05-mainline-quest-skeleton.md 第二章证据网, 真相被争夺; canon/06-origin-character-baseline.md Tav baseline does not require one origin to uncover key truth.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no readable text, no letters, no UI, no watermark, no logo, no signature, no close-up portraits, no gore, no glowing magic runes.
+```
+
+## 2026-04-30T13:17:22+08:00 - accepted
+
+- Chapter: 02-第二章-槐安古道
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddcca-9940-79e0-aba3-edf9f50745f0/ig_07d4c46ac1e154460169f2e58e35d88191b44121fce6962bf4.png
+- Asset: assets/02-第二章-槐安古道/05-任务与副本图/第二章-任务图-镜湖书院水照失卷校对.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png :: primary chapter style anchor
+- assets/02-第二章-槐安古道/99-高质量参考/第二章-地点概念-镜湖书院.png :: architecture and water reference
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 奇门布局, 游锋应变
+- canon/02-world-setting.md :: 显影归档, 牒录残片, 档案关键词
+- canon/03-map-design.md :: 镜湖书院旧档深藏
+- canon/04-political-faction-restructure.md :: 证据流向, 公开质证, 证人保护, 鬼市交易风险
+- canon/05-mainline-quest-skeleton.md :: 第二章开放证据网
+- canon/06-origin-character-baseline.md :: 任无踪潜入 and Tav baseline
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 2 quest concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape quest image for "第二章-任务图-镜湖书院水照失卷校对" inside 镜湖书院 in 槐安古道.
+Input images: assets/02-第二章-槐安古道/01-章节主视觉/第二章-章节主视觉-槐安古道黄沙边关远景.png as primary chapter style anchor; assets/02-第二章-槐安古道/99-高质量参考/第二章-地点概念-镜湖书院.png as architecture and water reference.
+Scene/backdrop: A lakeside academy archive built over still black water: open shelves with missing scroll gaps, reed mats, broken seals, suspended drying papers, moonlit water channels under the floor, brass mirror trays catching reflections, sand-dusted lattice windows, and a hidden lower pier where evidence packets can be passed to boats.
+Subject: Investigators use the lake reflection to compare erased archive pages and recover a missing visible-record entry; the composition should show how documents, water reflection, and identity evidence can be traded, saved, or falsified.
+Style/medium: high quality AAA wuxia CRPG quest and investigation concept art, painterly realism, grounded low-magic, desert academy meets water pavilion, pale paper, black lacquer shelves, cool moonlight, amber study lamps.
+Composition/framing: wide 16:9 playable interior with foreground mirror trays and scroll fragments, midground empty archive shelves and figures kneeling by water reflection, background open lake pier and shadowed boat; tactical pathways readable.
+Lighting/mood: quiet intellectual danger, fragile truth, evidence at risk of becoming another weapon.
+Source motifs: canon/01-build-system-milestone.md 奇门布局 and 游锋应变 for investigation routes; canon/02-world-setting.md 显影归档, 牒录残片, 档案关键词; canon/03-map-design.md 镜湖书院旧档深藏, 书卷能救人也能替杀局立名; canon/04-political-faction-restructure.md 证据流向, 缉武司公开质证, 同尘盟证人保护, 鬼市交易风险; canon/05-mainline-quest-skeleton.md 第二章开放证据网; canon/06-origin-character-baseline.md 任无踪牒钥/鬼市/潜入 and Tav baseline.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no readable text, no labels, no UI, no watermark, no logo, no signature, no close-up portraits, no modern library objects, no magical holograms.
+```
+
+## 2026-04-30T13:20:23+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddcca-9940-79e0-aba3-edf9f50745f0/ig_07d4c46ac1e154460169f2e5fdcd448191ae49297dea18671c.png
+- Asset: assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-武籍区风险账本改判.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 游锋, 影踪, 奇门 multiple solution routes
+- canon/02-world-setting.md :: 显影归档, 武籍, 风险等级, 档案权限
+- canon/03-map-design.md :: 武籍区掌册之地
+- canon/04-political-faction-restructure.md :: 缉武司公开律法 vs 预防处置, 照影局寄生暗线
+- canon/05-mainline-quest-skeleton.md :: 第三章三钥, 武籍大审回收证据
+- canon/06-origin-character-baseline.md :: Tav完整裁决, 无名煞后果记录
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 quest concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape quest image for "第三章-任务图-武籍区风险账本改判" inside 武籍区 in 照影城.
+Input images: assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png as primary chapter style anchor.
+Scene/backdrop: A stern imperial registry hall, not a throne room: tall rotating record racks, sealed martial ledgers, bronze index drums, hanging warrant plaques turned face-down, guarded desks, evidence boxes from 山水县 and 槐安古道, witness benches, rain on high black-tile windows, and a concealed bell-pulse apparatus wired behind the shelves.
+Subject: A legal and stealth quest space where players can amend a risk ledger, preserve or destroy visible-record evidence, challenge a pre-crime classification, or expose照影局 manipulation without turning it into a battlefield.
+Style/medium: high quality AAA wuxia CRPG quest concept art, painterly realism, grounded bureaucratic fantasy, imperial city scale, muted red columns, black lacquer, brass, wet stone, cold grey daylight and warm desk lamps.
+Composition/framing: wide 16:9 playable interior; foreground open ledger table and evidence boxes, midground witness bench and guarded archive machinery, background towering record racks and hidden bell-pulse device; tiny scale figures only.
+Lighting/mood: procedural pressure, public law versus hidden predictive control, tense but not chaotic.
+Source motifs: canon/01-build-system-milestone.md 游锋/影踪/奇门 multiple solution routes; canon/02-world-setting.md 显影归档, 武籍, 风险等级, 档案权限; canon/03-map-design.md 武籍区掌册之地; canon/04-political-faction-restructure.md 缉武司公开律法 vs 预防处置, 照影局寄生暗线; canon/05-mainline-quest-skeleton.md 第三章三钥 and 武籍大审回收证据; canon/06-origin-character-baseline.md Tav完整裁决 and 无名煞后果记录.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no readable text or symbols, no labels, no UI, no watermark, no logo, no signature, no close-up portraits, no modern courtroom, no throne, no magical holograms.
+```
+
+## 2026-04-30T13:22:11+08:00 - accepted
+
+- Chapter: 03-第三章-照影城
+- Asset type: 05-任务与副本图
+- Generated: /Users/bytedance/.codex/generated_images/019ddcca-9940-79e0-aba3-edf9f50745f0/ig_07d4c46ac1e154460169f2e6b7db288191a70f3046e5de1469.png
+- Asset: assets/03-第三章-照影城/05-任务与副本图/第三章-任务图-地下母局铜铃牒牌雨阵.png
+- Settings: 3840x2160, 4K landscape, high quality, stylized-concept, no text/UI/watermark
+- Notes: (none)
+
+References:
+- assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png :: primary chapter style anchor
+
+Motif sources:
+- canon/01-build-system-milestone.md :: 奇门机括, 音律铃阵, 药师治疗 separation
+- canon/02-world-setting.md :: 暗植种针 -> 稳心验脉 -> 引脉 -> 显影归档
+- canon/03-map-design.md :: 地下照影母局铜铃与牒牌记录天下武人命数
+- canon/04-political-faction-restructure.md :: 照影局司命风险账本, 慈心治疗权, 百工硬件权, 鬼市证据流
+- canon/05-mainline-quest-skeleton.md :: 三钥治疗权/硬件权/信任权
+- canon/06-origin-character-baseline.md :: Tav裁决母局, 无名煞自由问题
+
+Prompt:
+```text
+Use case: stylized-concept
+Asset type: GameW chapter 3 finale dungeon concept art, final project asset
+Primary request: Generate a clean 3840x2160 4K landscape finale dungeon image for "第三章-任务图-地下母局铜铃牒牌雨阵" inside 地下照影母局 in 照影城.
+Input images: assets/03-第三章-照影城/01-章节主视觉/第三章-章节主视觉-照影城宫城下城远景.png as primary chapter style anchor.
+Scene/backdrop: A vast underground mother-bureau chamber beneath the city, more archive machine than magic altar: circular tiers of bronze bells, thousands of hanging identity plaques like rain, water dripping from stone vaults, rotating ledger wheels, silent treatment interface tables, key sockets for 牒钥, 阵钥 and 心钥 placed in three different reachable platforms, and distant maintenance bridges leading to shutdown or reform routes.
+Subject: The space visualizes the final institutional question: treatment, hardware authority and trust are separated into terrain choices; small party silhouettes stand at the threshold while officials, craftworkers, doctors and witnesses remain on different bridges.
+Style/medium: high quality AAA wuxia CRPG finale environment concept art, painterly realism, grounded low-magic machinery, imperial underground archive, oxidized bronze, black stone, wet reflections, muted red seals, cold blue shaft light and sparse amber lanterns.
+Composition/framing: wide 16:9 cinematic playable dungeon view; foreground threshold and three diverging paths, midground bell-and-plaque rain array, background deep circular mother-bureau core; readable as explorable final space, not abstract symbolism.
+Lighting/mood: severe, monumental, morally unresolved; a system that records people before judging them.
+Source motifs: canon/01-build-system-milestone.md 奇门机括, 音律铃阵, 药师治疗 separation; canon/02-world-setting.md 暗植种针 -> 稳心验脉 -> 引脉 -> 显影归档; canon/03-map-design.md 地下照影母局铜铃与牒牌记录天下武人命数; canon/04-political-faction-restructure.md 照影局司命风险账本, 慈心治疗权, 百工硬件权, 鬼市证据流; canon/05-mainline-quest-skeleton.md 三钥: 牒钥治疗权, 阵钥硬件权, 心钥信任权; canon/06-origin-character-baseline.md Tav裁决母局 and 无名煞自由问题.
+Strict constraints: 3840x2160, 4K landscape, high quality, stylized-concept; no readable text, no letters, no labels, no UI, no watermark, no logo, no signature, no close-up faces, no glowing fantasy portal, no sci-fi screens, no gore.
+```
+

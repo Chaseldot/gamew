@@ -1,0 +1,774 @@
+:root {
+  color-scheme: dark;
+  --ink: #f4efe5;
+  --muted: #c8bda9;
+  --soft: rgba(244, 239, 229, 0.72);
+  --line: rgba(244, 239, 229, 0.18);
+  --panel: rgba(17, 20, 22, 0.82);
+  --panel-strong: rgba(22, 27, 30, 0.94);
+  --accent: #d9b46d;
+  --accent-2: #6fb5b7;
+  --danger: #d86b5f;
+  --good: #8ec78f;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.36);
+  font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(111, 181, 183, 0.18), transparent 36rem),
+    linear-gradient(135deg, #111416 0%, #202625 52%, #101214 100%);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button {
+  font: inherit;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.slice-hero {
+  position: relative;
+  min-height: 56vh;
+  display: grid;
+  align-items: end;
+  padding: clamp(1rem, 4vw, 3rem);
+  background-image: var(--hero-image);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-shade,
+.map-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 12, 13, 0.12), rgba(10, 12, 13, 0.88)),
+    linear-gradient(90deg, rgba(10, 12, 13, 0.8), transparent 62%);
+  pointer-events: none;
+}
+
+.hero-panel {
+  position: relative;
+  width: min(760px, 100%);
+  padding: clamp(1.1rem, 3vw, 2rem);
+  background: rgba(12, 15, 16, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+  margin: 0 0 0.55rem;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.25rem, 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+}
+
+.hero-copy,
+.scene-lead,
+.screen-header p {
+  max-width: 62ch;
+  color: var(--soft);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 1.8;
+}
+
+.flag-count {
+  width: max-content;
+  margin-top: 1rem;
+  padding: 0.4rem 0.7rem;
+  color: #15100a;
+  background: var(--accent);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.setup-band,
+.slice-screen,
+.combat-shell,
+.ending-screen {
+  width: min(1320px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 3rem) 0;
+}
+
+.section-title,
+.screen-header {
+  margin-bottom: 1.25rem;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.choice-tile,
+.approach-option,
+.skill-button,
+.final-choice-grid button {
+  min-height: 8.25rem;
+  display: grid;
+  gap: 0.65rem;
+  align-content: start;
+  padding: 1rem;
+  color: var(--ink);
+  text-align: left;
+  background: rgba(244, 239, 229, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.choice-tile:hover,
+.approach-option:hover,
+.skill-button:hover,
+.final-choice-grid button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(217, 180, 109, 0.55);
+  background: rgba(217, 180, 109, 0.1);
+}
+
+.choice-tile.is-selected {
+  border-color: var(--accent);
+  background: rgba(217, 180, 109, 0.17);
+}
+
+.choice-tile strong,
+.approach-option strong {
+  font-size: 1.05rem;
+}
+
+.choice-tile span,
+.approach-option span,
+.skill-button small {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.tile-mark {
+  min-height: 1.15rem;
+  color: var(--accent);
+}
+
+.sticky-command {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.primary-command,
+.ghost-command {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.72rem 1rem;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.primary-command {
+  color: #16120b;
+  background: var(--accent);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.ghost-command {
+  color: var(--ink);
+  background: rgba(244, 239, 229, 0.07);
+  border: 1px solid var(--line);
+}
+
+.icon {
+  display: inline-grid;
+  width: 1.4em;
+  height: 1.4em;
+  place-items: center;
+  font-weight: 900;
+}
+
+.scene-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  width: min(1440px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 3rem) 0;
+}
+
+.scene-media {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.scene-media img {
+  width: 100%;
+  min-height: 62vh;
+  object-fit: cover;
+}
+
+.scene-copy {
+  padding: clamp(1rem, 3vw, 2rem);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.dialogue-stack {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.dialogue-line {
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.055);
+  border-left: 3px solid var(--accent-2);
+  border-radius: 4px;
+}
+
+.dialogue-line strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+}
+
+.dialogue-line p {
+  margin: 0;
+  color: var(--soft);
+  line-height: 1.65;
+}
+
+.party-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.party-portrait {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.party-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+}
+
+.party-portrait div {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.65rem;
+}
+
+.party-portrait span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.command-row,
+.topbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.status-rail {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 0.85rem;
+  margin: 1rem 0;
+}
+
+.objective-stack,
+.pressure-box,
+.combat-log,
+.ending-block {
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.objective-stack h2,
+.pressure-box h2,
+.combat-log h2,
+.ending-block h2 {
+  margin-bottom: 0.85rem;
+  font-size: 1rem;
+}
+
+.objective-meter {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.objective-meter:first-of-type {
+  border-top: 0;
+}
+
+.objective-meter div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.objective-meter span {
+  color: var(--muted);
+}
+
+.objective-meter.is-complete strong {
+  color: var(--good);
+}
+
+meter {
+  width: 100%;
+  height: 0.48rem;
+}
+
+meter::-webkit-meter-bar {
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  border-radius: 999px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  border-radius: 999px;
+}
+
+.pressure-track {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.pressure-track span {
+  height: 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.pressure-track span.is-hot {
+  background: var(--danger);
+  box-shadow: 0 0 18px rgba(216, 107, 95, 0.42);
+}
+
+.pressure-box p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.combat-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.combat-topbar h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.combat-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 1rem;
+}
+
+.tactical-map {
+  position: relative;
+  min-height: 640px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  background: #0c1011;
+}
+
+.tactical-map > img {
+  width: 100%;
+  height: 100%;
+  min-height: 640px;
+  object-fit: cover;
+}
+
+.map-node,
+.actor-token,
+.enemy-token {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.map-node {
+  min-width: 6rem;
+  padding: 0.38rem 0.55rem;
+  color: var(--ink);
+  background: rgba(10, 14, 15, 0.74);
+  border: 1px solid rgba(217, 180, 109, 0.45);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.map-node span {
+  display: block;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.actor-token,
+.enemy-token {
+  display: grid;
+  place-items: center;
+  width: 4.4rem;
+  min-height: 4.4rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  text-align: center;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.38);
+}
+
+.actor-token {
+  color: #111;
+  background: linear-gradient(160deg, #f0dba5, #8bc9c5);
+  border: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.enemy-token {
+  color: white;
+  background: linear-gradient(160deg, #8d342f, #2b1514);
+  border: 2px solid rgba(255, 190, 160, 0.55);
+}
+
+.actor-token strong,
+.enemy-token strong {
+  font-size: 1.2rem;
+}
+
+.actor-token span,
+.enemy-token span {
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.combat-sidebar {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.combat-log {
+  max-height: 320px;
+  overflow: auto;
+}
+
+.combat-log p {
+  color: var(--soft);
+  line-height: 1.5;
+}
+
+.action-dock {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.actor-panel {
+  padding: 0.85rem;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.actor-panel header {
+  display: grid;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.actor-panel header span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.skill-row {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.skill-button {
+  min-height: 5.5rem;
+}
+
+.skill-button span {
+  color: var(--ink);
+}
+
+.final-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.final-choice-grid button {
+  min-height: 6rem;
+  align-content: center;
+  font-weight: 800;
+}
+
+.dice-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(5, 7, 8, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.dice-modal {
+  width: min(420px, 100%);
+  padding: 1.5rem;
+  text-align: center;
+  background: #171b1d;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.dice-face {
+  width: 7rem;
+  height: 7rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+  color: #17110a;
+  background: var(--accent);
+  border-radius: 50%;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.dice-formula {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.dice-formula span,
+.dice-formula strong {
+  padding: 0.45rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 6px;
+}
+
+.ending-screen {
+  min-height: 100vh;
+}
+
+.ending-hero {
+  min-height: 36vh;
+  display: grid;
+  align-content: end;
+  padding: clamp(1rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(15, 18, 19, 0.12), rgba(15, 18, 19, 0.9)),
+    url('../../assets/01-第一章-山水县境/05-任务与副本图/第一章-任务图-龙王庙水闸追凶夺钥.png') center / cover;
+  box-shadow: var(--shadow);
+}
+
+.ending-hero h1 {
+  max-width: 880px;
+}
+
+.ending-hero p {
+  max-width: 760px;
+  color: var(--soft);
+  line-height: 1.7;
+}
+
+.ending-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ending-block.wide {
+  grid-column: 1 / -1;
+}
+
+.ending-block p {
+  color: var(--soft);
+  line-height: 1.7;
+}
+
+.variable-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.variable-list div {
+  padding: 0.65rem;
+  background: rgba(255, 255, 255, 0.055);
+  border-radius: 6px;
+}
+
+.variable-list dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.variable-list dd {
+  margin: 0.2rem 0 0;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1040px) {
+  .choice-grid,
+  .approach-grid,
+  .action-dock {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .scene-layout,
+  .combat-grid,
+  .status-rail,
+  .ending-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .combat-sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tactical-map,
+  .tactical-map > img {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 680px) {
+  .choice-grid,
+  .approach-grid,
+  .action-dock,
+  .party-row,
+  .combat-sidebar,
+  .final-choice-grid,
+  .variable-list,
+  .dice-formula {
+    grid-template-columns: 1fr;
+  }
+
+  .scene-media img {
+    min-height: 360px;
+  }
+
+  .combat-topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .topbar-actions,
+  .command-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primary-command,
+  .ghost-command {
+    width: 100%;
+  }
+
+  .tactical-map,
+  .tactical-map > img {
+    min-height: 460px;
+  }
+
+  .actor-token,
+  .enemy-token {
+    width: 3.55rem;
+    min-height: 3.55rem;
+  }
+}

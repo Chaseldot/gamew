@@ -1,0 +1,3 @@
+[build]
+  command = "npm --prefix showcase/site run build:data"
+  publish = "showcase/site"
